@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>envent dashboard</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript">
+
+
+
+      google.charts.load('current', {packages:['corechart']});
+      google.charts.setOnLoadCallback(drawStuff);
+
+        function drawStuff() {
+          var data = new google.visualization.DataTable();
+          data.addColumn('string', 'Country');
+          data.addColumn('number', 'GDP');
+          data.addRows([
+            ['1', 7000.00],
+            ['2', 10990.00],
+            ['3', 4998.00],
+          ]);
+
+         var options = {
+        //    title: 'GDP of selected countries, in US $millions',
+           width: 500,
+           height: 350,
+           legend: 'none',
+           backgroundColor: 'transparent',
+           colors:['limegreen','#52FF00'],
+           bar: {groupWidth: '35%'},
+           
+           vAxis: { gridlines: { count: 1 } }
+           
+           
+         };
+         
+
+         var chart = new google.visualization.ColumnChart(document.getElementById('number_format_chart'));
+         chart.draw(data, options);
+
+        //  document.getElementById('format-select').onchange = function() {
+        //    options['vAxis']['format'] = this.value;
+        //    chart.draw(data, options);
+        //  };
+      };
+      $(window).resize(function(){
+        drawStuff();
+      })
+    </script>
+
+
+
+
+</head>
+<body>
+    
+
+    <div class="white_effect"></div>
+    <nav class="nav">
+        <div class="logo">
+            <img src="./imgs/b37371f7c9f89d198dd7ecd158ec99fb.png" alt="Logo Image">
+        </div>
+        <div class="hamburger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <ul class="navs-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">ORGANIZERS</a></li>
+            <li><a href="#">EVENTS</a></li>
+            <li><a href="#" class="li_active">CREATE EVENT</a></li>
+        </ul>
+        <!-- <button class="login-button" href="#">Login</button> -->
+        <select name="" id="" class="nav_select">
+            <option value="">House of Blues</option>
+            <option value="">House of Yellow</option>
+            <option value="">Chill up</option>
+        </select>
+    </nav>
+
+
+    <main>
+        <div class="dashboard_main">
+            <div class="dashboard_section">
+                <div class="sidebar close">
+                    <div class="logo-details">
+                      <!-- <i class='bx bxl-c-plus-plus'></i> -->
+                      <!-- <span class="logo_name">CodingLab</span> -->
+                    </div>
+                    <ul class="nav-links">
+                      <li>
+                        <a href="./dashboard.html">
+                          <img src="./imgs/dashboard 1.png" alt="">
+                          <span class="link_name yellow_m">Dashboard</span>
+                        </a>
+                        <ul class="sub-menu blank">
+                          <li><a class="link_name" href="./dashboard.html">Dashboard</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <div class="iocn-link">
+                          <a href="./newevent.html">
+                            <i class='bx bx-plus-circle' style='color:#ffffff' ></i>
+                            <span class="link_name">CREATE AN EVENT</span>
+                          </a>
+                          <ul class="sub-menu blank">
+                            <li><a class="link_name" href="./newevent.html">CREATE AN EVENT</a></li>
+                          </ul>
+                          <!-- <i class='bx bxs-chevron-down arrow' ></i> -->
+                        </div>
+                      </li>
+                      <li>
+                        <div class="iocn-link">
+                          <a href="./event.html">
+                            <i class='bx bx-calendar' style='color:#ffffff' ></i>
+                            <span class="link_name">EVENTS</span>
+                          </a>
+                          <ul class="sub-menu blank">
+                            <li><a class="link_name" href="./event.html">EVENT</a></li>
+                          </ul>
+                          <!-- <i class='bx bxs-chevron-down arrow' ></i> -->
+                        </div>
+                      </li>
+                      <li>
+                        <a href="#">
+                            <i class='bx bx-map' style='color:#ffffff' ></i>
+                          <span class="link_name">VENUES</span>
+                        </a>
+                        <ul class="sub-menu blank">
+                            <li><a class="link_name" href="#">VENUES</a></li>
+                          </ul>
+                      </li>
+                      <li>
+                        <a href="#">
+                            <!-- <box-icon name='money-withdraw' color='#ffffff' ></box-icon> -->
+                            <i class='bx bx-money-withdraw' style='color:#ffffff' ></i>
+                          <span class="link_name">REPORTS</span>
+                        </a>
+                        <ul class="sub-menu blank">
+                            <li><a class="link_name" href="#">REPORTS</a></li>
+                          </ul>
+                      </li>
+                      <li>
+                        <a href="#">
+                            <i class='bx bx-cog' ></i>
+                          <span class="link_name">SETTINGS</span>
+                        </a>
+                        <ul class="sub-menu blank">
+                            <li><a class="link_name" href="#">SETTINGS</a></li>
+                          </ul>
+                      </li>
+                      <li>
+                        <div class="iocn-link">
+                          <a href="#">
+                            <i class='bx bx-message' style='color:#ffffff' ></i>
+                            <span class="link_name">SMS CAMPAIGNS</span>
+                          </a>
+                          <ul class="sub-menu blank">
+                            <li><a class="link_name" href="#">SMS CAMPAIGNS</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="iocn-link">
+                          <a href="#">
+                            <i class='bx bx-user' style='color:#ffffff' ></i>
+                            <span class="link_name">MY ACCOUNT</span>
+                          </a>
+                          <ul class="sub-menu blank">
+                            <li><a class="link_name" href="#">MY ACCOUNT</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                </ul>
+                  </div>
+                  <section class="home-section">
+                    <div class="home-content">
+                        <i class='bx bx-chevron-right' style='color:#FFE100' ></i>
+                        <div class="dash_container">
+                            <div class="dash_data">
+                                <div class="upcoming_events"style="overflow-x:auto;">
+                                    <table>
+                                        <caption>Upcoming Events</caption>
+                                        <thead>
+                                        <tr>
+                                            <th>No.</th>
+                                            <th>Event Title</th>
+                                            <th>Date</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>1.</td>
+                                            <td>Drake | Sublime | Bob Marley</td>
+                                            <td>10/31/2025</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2.</td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>3.</td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="line_chat_section">
+                                        <h3>Revenue to Date by Event </h3>
+                                        <div id="chart_wrap">
+                                            <div id="number_format_chart">
+                                        </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="dash_options">
+                            <div class="sms">
+                                <h4>SMS Campaigns</h4>
+                                <p>Credits</p>
+                                <p>450 Remaining of 1400 Total</p>
+                                <div class="range_divs">
+                                    <div class="green_range"></div>
+                                    <!-- <div class="red_range"></div> -->
+                                </div>
+                                <div class="sms_btns">
+                                    <a href="" class="btn sm">Get More Credits</a>
+                                    <a href="" class="btn sm">New Campaign</a>
+
+                                </div>
+                            </div>
+                            <div class="req_show">
+                                <h4>Get Help Creating Your Seating Chart</h4>
+                                <img src="./imgs/Designer - 4th floor 1.png" alt="">
+                                <a href="" class="btn sm">Submit Request</a>
+                            </div>
+                            <div class="new_event_list">
+                              
+                                <h4>List a New Event</h4>
+                                <a href="./event.html">
+                                  <i class='bx bx-plus-circle'  ></i>
+
+                                </a>
+                            </div>
+                            <div class="total">
+                                <h4>Total Accumulated Revenue</h4>
+                                <p>$25,567.13</p>
+                            </div>
+                        </div>
+                    </div>
+                  </section>
+                  
+                  <!-- <div class="one"></div> -->
+                  
+
+            </div>
+        </div>
+    </main>
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ------------------------fooooooooter---------------- -->
+
+    <footer>
+        <div class="footer_container">
+            <div class="footer_mail">
+                <h2 class="footer_mail_heading">Join our mailing list</h2>
+                <form action="" class="footer_form">
+                    <div class="footer_form_input">
+                        <!-- <label for="">Email *</label> -->
+                        <input type="email" required  placeholder="Enter your email">
+                    </div>
+                    <button type="submit">Sign Up</button>
+                </form>
+            </div>
+            <div class="footer_info">
+                <div class="footer_info_imgs">
+                    <img src="./imgs/4736150369408c50504a5b1df6f6db67.png" alt="logo">
+                    <p>support@eventvisionary.com</p>
+                    <p>Event Visionary, LLC</p>
+                    <p>30 N Gould St, Ste R,<br>
+                        Sheridan, WY 82801</p>
+                </div>
+                <div class="footer_info_links">
+                    <b>Quick Links</b>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Create an Event</a></li>
+                        <li><a href="">Organizer Dashboard</a></li>
+                        <li><a href="">Pricing</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Terms and Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="footer_info_follow">
+                    <b>Follow Us.</b>
+                    <div class="footer_info_follow_img">
+                        <a href="https://www.facebook.com/">
+                            <img src="./imgs/facebook.png" alt="">
+
+                        </a>
+                        <a href="https://www.instagram.com/">
+                            <img src="./imgs/Group.png" alt="">
+
+                        </a>
+                        <a href="https://twitter.com/home">
+
+                            <img src="./imgs/twitter.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_copy">
+            Copyright 2023, Event Visionary LLC
+        </div>
+    </footer>
+
+
+    <script>
+        let arrow = document.querySelectorAll(".arrow");
+        for (var i = 0; i < arrow.length; i++) {
+          arrow[i].addEventListener("click", (e)=>{
+         let arrowParent = e.target.parentElement.parentElement;//selecting main parent of arrow
+         arrowParent.classList.toggle("showMenu");
+          });
+        }
+        let sidebar = document.querySelector(".sidebar");
+        let sidebarBtn = document.querySelector(".bx-chevron-right");
+        console.log(sidebarBtn);
+        sidebarBtn.addEventListener("click", ()=>{
+          sidebar.classList.toggle("close");
+        });
+        </script>
+    <script src="./js.js"></script>
+
+
+    <script
+src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+</script>
+</body>
+</html>
