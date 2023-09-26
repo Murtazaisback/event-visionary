@@ -50,3 +50,24 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+
+
+
+
+
+$(document).ready(function(){
+    $(".ticket_type_multi").click(function(){
+      $(".ticket_form_sec_hide").toggle();
+    });
+  });
+
+
+$(function() {
+  $("#Sales_tax").on("click",function() {
+    $(".tax_inputs").toggle(this.checked);
+  });
+});
+
+
+

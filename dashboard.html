@@ -8,6 +8,8 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script type="text/javascript">
 
 
@@ -71,10 +73,10 @@
             <div class="line3"></div>
         </div>
         <ul class="navs-links">
-            <li><a href="#">Home</a></li>
+            <li><a href="./index.html">Home</a></li>
             <li><a href="#">ORGANIZERS</a></li>
-            <li><a href="#">EVENTS</a></li>
-            <li><a href="#" class="li_active">CREATE EVENT</a></li>
+            <li><a href="./event.html">EVENTS</a></li>
+            <li><a href="./newevent.html" class="li_active">CREATE EVENT</a></li>
         </ul>
         <!-- <button class="login-button" href="#">Login</button> -->
         <select name="" id="" class="nav_select">
@@ -88,104 +90,112 @@
     <main>
         <div class="dashboard_main">
             <div class="dashboard_section">
-                <div class="sidebar close">
-                    <div class="logo-details">
-                      <!-- <i class='bx bxl-c-plus-plus'></i> -->
-                      <!-- <span class="logo_name">CodingLab</span> -->
-                    </div>
-                    <ul class="nav-links">
-                      <li>
+              <div class="sidebar close">
+                <div class="logo-details">
+                    <!-- <i class='bx bxl-c-plus-plus'></i> -->
+                    <!-- <span class="logo_name">CodingLab</span> -->
+                </div>
+                <ul class="nav-links">
+                    <li>
                         <a href="./dashboard.html">
-                          <img src="./imgs/dashboard 1.png" alt="">
-                          <span class="link_name yellow_m">Dashboard</span>
+                            <img src="./imgs/dashboard 1.png" alt="">
+                            <span class="link_name yellow_m">Dashboard</span>
                         </a>
-                        <ul class="sub-menu blank">
-                          <li><a class="link_name" href="./dashboard.html">Dashboard</a></li>
-                        </ul>
-                      </li>
-                      <li>
+                        <!-- <ul class="sub-menu blank">
+                            <li><a class="link_name" href="./dashboard.html">Dashboard</a></li>
+                        </ul> -->
+                    </li>
+                    <li>
                         <div class="iocn-link">
-                          <a href="./newevent.html">
-                            <i class='bx bx-plus-circle' style='color:#ffffff' ></i>
-                            <span class="link_name">CREATE AN EVENT</span>
-                          </a>
-                          <ul class="sub-menu blank">
-                            <li><a class="link_name" href="./newevent.html">CREATE AN EVENT</a></li>
-                          </ul>
-                          <!-- <i class='bx bxs-chevron-down arrow' ></i> -->
+                            <a href="./newevent.html">
+                                <i class='bx bx-plus-circle' style='color:#ffffff'></i>
+                                <span class="link_name">CREATE AN EVENT</span>
+                            </a>
+                            <!-- <ul class="sub-menu blank">
+                                <li><a class="link_name" href="./newevent.html">CREATE AN EVENT</a></li>
+                            </ul> -->
+                            <!-- <i class='bx bxs-chevron-down arrow' ></i> -->
                         </div>
-                      </li>
-                      <li>
+                    </li>
+                    <li>
                         <div class="iocn-link">
-                          <a href="./event.html">
-                            <i class='bx bx-calendar' style='color:#ffffff' ></i>
-                            <span class="link_name">EVENTS</span>
-                          </a>
-                          <ul class="sub-menu blank">
-                            <li><a class="link_name" href="./event.html">EVENT</a></li>
-                          </ul>
-                          <!-- <i class='bx bxs-chevron-down arrow' ></i> -->
+                            <a href="./event.html">
+                                <i class='bx bx-calendar' style='color:#ffffff'></i>
+                                <span class="link_name">EVENTS</span>
+                            </a>
+                            <!-- <ul class="sub-menu blank">
+                                <li><a class="link_name" href="./event.html">EVENT</a></li>
+                            </ul> -->
+                            <!-- <i class='bx bxs-chevron-down arrow' ></i> -->
                         </div>
-                      </li>
-                      <li>
+                    </li>
+                    <li>
                         <a href="#">
-                            <i class='bx bx-map' style='color:#ffffff' ></i>
-                          <span class="link_name">VENUES</span>
+                            <i class='bx bx-map' style='color:#ffffff'></i>
+                            <span class="link_name">VENUES</span>
                         </a>
-                        <ul class="sub-menu blank">
+                        <!-- <ul class="sub-menu blank">
                             <li><a class="link_name" href="#">VENUES</a></li>
-                          </ul>
-                      </li>
-                      <li>
+                        </ul> -->
+                    </li>
+                    <li>
                         <a href="#">
                             <!-- <box-icon name='money-withdraw' color='#ffffff' ></box-icon> -->
-                            <i class='bx bx-money-withdraw' style='color:#ffffff' ></i>
-                          <span class="link_name">REPORTS</span>
+                            <i class='bx bx-money-withdraw' style='color:#ffffff'></i>
+                            <span class="link_name">REPORTS</span>
                         </a>
-                        <ul class="sub-menu blank">
+                        <!-- <ul class="sub-menu blank">
                             <li><a class="link_name" href="#">REPORTS</a></li>
-                          </ul>
-                      </li>
-                      <li>
+                        </ul> -->
+                    </li>
+                    <li>
                         <a href="#">
-                            <i class='bx bx-cog' ></i>
-                          <span class="link_name">SETTINGS</span>
+                            <i class='bx bx-cog'></i>
+                            <span class="link_name">SETTINGS</span>
                         </a>
-                        <ul class="sub-menu blank">
+                        <!-- <ul class="sub-menu blank">
                             <li><a class="link_name" href="#">SETTINGS</a></li>
-                          </ul>
-                      </li>
-                      <li>
+                        </ul> -->
+                    </li>
+                    <li>
                         <div class="iocn-link">
-                          <a href="#">
-                            <i class='bx bx-message' style='color:#ffffff' ></i>
-                            <span class="link_name">SMS CAMPAIGNS</span>
-                          </a>
-                          <ul class="sub-menu blank">
-                            <li><a class="link_name" href="#">SMS CAMPAIGNS</a></li>
-                          </ul>
+                            <a href="#">
+                                <i class='bx bx-message' style='color:#ffffff'></i>
+                                <span class="link_name">SMS CAMPAIGNS</span>
+                            </a>
+                            <!-- <ul class="sub-menu blank">
+                                <li><a class="link_name" href="#">SMS CAMPAIGNS</a></li>
+                            </ul> -->
                         </div>
-                      </li>
-                      <li>
+                    </li>
+                    <li>
                         <div class="iocn-link">
-                          <a href="#">
-                            <i class='bx bx-user' style='color:#ffffff' ></i>
-                            <span class="link_name">MY ACCOUNT</span>
-                          </a>
-                          <ul class="sub-menu blank">
-                            <li><a class="link_name" href="#">MY ACCOUNT</a></li>
-                          </ul>
+                            <a href="#">
+                                <i class='bx bx-user' style='color:#ffffff'></i>
+                                <span class="link_name">MY ACCOUNT</span>
+                            </a>
+                            <!-- <ul class="sub-menu blank">
+                                <li><a class="link_name" href="#">MY ACCOUNT</a></li>
+                            </ul> -->
                         </div>
-                      </li>
+                    </li>
                 </ul>
-                  </div>
+            </div>
                   <section class="home-section">
                     <div class="home-content">
-                        <i class='bx bx-chevron-right' style='color:#FFE100' ></i>
+                        
+
+                        <div class="icon">
+
+                            <input type="checkbox" id="animation1">
+                            <label for="animation1">
+                                <div class="arrow"></div>
+                            </label>
+                        </div>
                         <div class="dash_container">
                             <div class="dash_data">
-                                <div class="upcoming_events"style="overflow-x:auto;">
-                                    <table>
+                                <div class="upcoming_events"style="overflow-x:auto;" data-aos="fade-up" data-aos-delay="50">
+                                    <table  >
                                         <caption>Upcoming Events</caption>
                                         <thead>
                                         <tr>
@@ -214,7 +224,7 @@
                                     </table>
                                 </div>
 
-                                <div class="line_chat_section">
+                                <div class="line_chat_section" data-aos="fade-up" data-aos-delay="200">
                                         <h3>Revenue to Date by Event </h3>
                                         <div id="chart_wrap">
                                             <div id="number_format_chart">
@@ -224,7 +234,7 @@
                             
                         </div>
                         <div class="dash_options">
-                            <div class="sms">
+                            <div class="sms" data-aos="fade-up" data-aos-delay="">
                                 <h4>SMS Campaigns</h4>
                                 <p>Credits</p>
                                 <p>450 Remaining of 1400 Total</p>
@@ -238,20 +248,20 @@
 
                                 </div>
                             </div>
-                            <div class="req_show">
+                            <div class="req_show" data-aos="fade-up" data-aos-delay="100">
                                 <h4>Get Help Creating Your Seating Chart</h4>
                                 <img src="./imgs/Designer - 4th floor 1.png" alt="">
                                 <a href="" class="btn sm">Submit Request</a>
                             </div>
-                            <div class="new_event_list">
+                            <div class="new_event_list"  data-aos="fade-up" data-aos-delay="200">
                               
                                 <h4>List a New Event</h4>
-                                <a href="./event.html">
+                                <a href="./newevent.html">
                                   <i class='bx bx-plus-circle'  ></i>
 
                                 </a>
                             </div>
-                            <div class="total">
+                            <div class="total"  data-aos="fade-up" data-aos-delay="200">
                                 <h4>Total Accumulated Revenue</h4>
                                 <p>$25,567.13</p>
                             </div>
@@ -352,7 +362,7 @@
           });
         }
         let sidebar = document.querySelector(".sidebar");
-        let sidebarBtn = document.querySelector(".bx-chevron-right");
+        let sidebarBtn = document.querySelector("#animation1");
         console.log(sidebarBtn);
         sidebarBtn.addEventListener("click", ()=>{
           sidebar.classList.toggle("close");
@@ -364,5 +374,10 @@
     <script
 src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
 </script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>

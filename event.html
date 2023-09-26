@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
 </head>
@@ -26,10 +27,10 @@
             <div class="line3"></div>
         </div>
         <ul class="navs-links">
-            <li><a href="#">Home</a></li>
+            <li><a href="./index.html">Home</a></li>
             <li><a href="#">ORGANIZERS</a></li>
-            <li><a href="#">EVENTS</a></li>
-            <li><a href="#" class="li_active">CREATE EVENT</a></li>
+            <li><a href="./event.html">EVENTS</a></li>
+            <li><a href="./newevent.html" class="li_active">CREATE EVENT</a></li>
         </ul>
         <!-- <button class="login-button" href="#">Login</button> -->
         <select name="" id="" class="nav_select">
@@ -51,34 +52,34 @@
                     <ul class="nav-links">
                         <li>
                             <a href="./dashboard.html">
-                                <img src="./imgs/dashboard 1.png" alt="">
-                                <span class="link_name yellow_m">Dashboard</span>
+                                <img src="./imgs/dashboard 1 w.png" alt="">
+                                <span class="link_name ">Dashboard</span>
                             </a>
-                            <ul class="sub-menu blank">
+                            <!-- <ul class="sub-menu blank">
                                 <li><a class="link_name" href="./dashboard.html">Dashboard</a></li>
-                            </ul>
+                            </ul> -->
                         </li>
                         <li>
                             <div class="iocn-link">
                                 <a href="./newevent.html">
                                     <i class='bx bx-plus-circle' style='color:#ffffff'></i>
-                                    <span class="link_name">CREATE AN EVENT</span>
+                                    <span class="link_name ">CREATE AN EVENT</span>
                                 </a>
-                                <ul class="sub-menu blank">
+                                <!-- <ul class="sub-menu blank">
                                     <li><a class="link_name" href="./newevent.html">CREATE AN EVENT</a></li>
-                                </ul>
+                                </ul> -->
                                 <!-- <i class='bx bxs-chevron-down arrow' ></i> -->
                             </div>
                         </li>
                         <li>
                             <div class="iocn-link">
-                                <a href="#">
-                                    <i class='bx bx-calendar' style='color:#ffffff'></i>
-                                    <span class="link_name">EVENTS</span>
+                                <a href="./event.html">
+                                    <i class='bx bx-calendar yellow_m '></i>
+                                    <span class="link_name yellow_m">EVENTS</span>
                                 </a>
-                                <ul class="sub-menu blank">
-                                    <li><a class="link_name" href="#">EVENT</a></li>
-                                </ul>
+                                <!-- <ul class="sub-menu blank">
+                                    <li><a class="link_name" href="./event.html">EVENT</a></li>
+                                </ul> -->
                                 <!-- <i class='bx bxs-chevron-down arrow' ></i> -->
                             </div>
                         </li>
@@ -87,9 +88,9 @@
                                 <i class='bx bx-map' style='color:#ffffff'></i>
                                 <span class="link_name">VENUES</span>
                             </a>
-                            <ul class="sub-menu blank">
+                            <!-- <ul class="sub-menu blank">
                                 <li><a class="link_name" href="#">VENUES</a></li>
-                            </ul>
+                            </ul> -->
                         </li>
                         <li>
                             <a href="#">
@@ -97,18 +98,18 @@
                                 <i class='bx bx-money-withdraw' style='color:#ffffff'></i>
                                 <span class="link_name">REPORTS</span>
                             </a>
-                            <ul class="sub-menu blank">
+                            <!-- <ul class="sub-menu blank">
                                 <li><a class="link_name" href="#">REPORTS</a></li>
-                            </ul>
+                            </ul> -->
                         </li>
                         <li>
                             <a href="#">
                                 <i class='bx bx-cog'></i>
                                 <span class="link_name">SETTINGS</span>
                             </a>
-                            <ul class="sub-menu blank">
+                            <!-- <ul class="sub-menu blank">
                                 <li><a class="link_name" href="#">SETTINGS</a></li>
-                            </ul>
+                            </ul> -->
                         </li>
                         <li>
                             <div class="iocn-link">
@@ -116,9 +117,9 @@
                                     <i class='bx bx-message' style='color:#ffffff'></i>
                                     <span class="link_name">SMS CAMPAIGNS</span>
                                 </a>
-                                <ul class="sub-menu blank">
+                                <!-- <ul class="sub-menu blank">
                                     <li><a class="link_name" href="#">SMS CAMPAIGNS</a></li>
-                                </ul>
+                                </ul> -->
                             </div>
                         </li>
                         <li>
@@ -127,18 +128,24 @@
                                     <i class='bx bx-user' style='color:#ffffff'></i>
                                     <span class="link_name">MY ACCOUNT</span>
                                 </a>
-                                <ul class="sub-menu blank">
+                                <!-- <ul class="sub-menu blank">
                                     <li><a class="link_name" href="#">MY ACCOUNT</a></li>
-                                </ul>
+                                </ul> -->
                             </div>
                         </li>
                     </ul>
                 </div>
                 <section class="home-section">
                     <div class="home-content">
-                        <i class='bx bx-chevron-right' style='color:#FFE100'></i>
+                        <div class="icon">
 
-                        <div class="events_section">
+                            <input type="checkbox" id="animation1">
+                            <label for="animation1">
+                                <div class="arrow"></div>
+                            </label>
+                        </div>
+
+                        <div class="events_section " data-aos="fade-up" data-aos-delay="100">
                             <div class="events_row_1">
                                 <div class="para">
                                     <p class="para_title">Share a public version of this page. </p>
@@ -157,7 +164,7 @@
                                 <div class="new_event_list">
                               
                                     <h4>List a New Event</h4>
-                                    <a href="./event.html">
+                                    <a href="./newevent.html">
                                       <i class='bx bx-plus-circle'  ></i>
     
                                     </a>
@@ -165,7 +172,7 @@
                                 
                             </div>
                             <div class="events_row_2">
-                                <div class="event_cards">
+                                <div class="event_cards" data-aos="fade-up" data-aos-delay="100">
                                     <div class="event_card">
                                         <img src="./imgs/Rectangle 11.png" alt="">
                                         <div class="card_info">
@@ -294,7 +301,7 @@
             });
         }
         let sidebar = document.querySelector(".sidebar");
-        let sidebarBtn = document.querySelector(".bx-chevron-right");
+        let sidebarBtn = document.querySelector("#animation1");
         console.log(sidebarBtn);
         sidebarBtn.addEventListener("click", () => {
             sidebar.classList.toggle("close");
@@ -304,6 +311,10 @@
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
 </body>
 

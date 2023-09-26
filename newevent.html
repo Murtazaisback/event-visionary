@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
 </head>
@@ -26,10 +28,10 @@
             <div class="line3"></div>
         </div>
         <ul class="navs-links">
-            <li><a href="#">Home</a></li>
+            <li><a href="./index.html">Home</a></li>
             <li><a href="#">ORGANIZERS</a></li>
-            <li><a href="#">EVENTS</a></li>
-            <li><a href="#" class="li_active">CREATE EVENT</a></li>
+            <li><a href="./event.html">EVENTS</a></li>
+            <li><a href="./newevent.html" class="li_active">CREATE EVENT</a></li>
         </ul>
         <!-- <button class="login-button" href="#">Login</button> -->
         <select name="" id="" class="nav_select">
@@ -51,22 +53,22 @@
                     <ul class="nav-links">
                         <li>
                             <a href="./dashboard.html">
-                                <img src="./imgs/dashboard 1.png" alt="">
-                                <span class="link_name yellow_m">Dashboard</span>
+                                <img src="./imgs/dashboard 1 w.png" alt="">
+                                <span class="link_name ">Dashboard</span>
                             </a>
-                            <ul class="sub-menu blank">
+                            <!-- <ul class="sub-menu blank">
                                 <li><a class="link_name" href="./dashboard.html">Dashboard</a></li>
-                            </ul>
+                            </ul> -->
                         </li>
                         <li>
                             <div class="iocn-link">
                                 <a href="./newevent.html">
-                                    <i class='bx bx-plus-circle' style='color:#ffffff'></i>
-                                    <span class="link_name">CREATE AN EVENT</span>
+                                    <i class='bx bx-plus-circle yellow_m '></i>
+                                    <span class="link_name yellow_m">CREATE AN EVENT</span>
                                 </a>
-                                <ul class="sub-menu blank">
+                                <!-- <ul class="sub-menu blank">
                                     <li><a class="link_name" href="./newevent.html">CREATE AN EVENT</a></li>
-                                </ul>
+                                </ul> -->
                                 <!-- <i class='bx bxs-chevron-down arrow' ></i> -->
                             </div>
                         </li>
@@ -76,9 +78,9 @@
                                     <i class='bx bx-calendar' style='color:#ffffff'></i>
                                     <span class="link_name">EVENTS</span>
                                 </a>
-                                <ul class="sub-menu blank">
+                                <!-- <ul class="sub-menu blank">
                                     <li><a class="link_name" href="./event.html">EVENT</a></li>
-                                </ul>
+                                </ul> -->
                                 <!-- <i class='bx bxs-chevron-down arrow' ></i> -->
                             </div>
                         </li>
@@ -87,9 +89,9 @@
                                 <i class='bx bx-map' style='color:#ffffff'></i>
                                 <span class="link_name">VENUES</span>
                             </a>
-                            <ul class="sub-menu blank">
+                            <!-- <ul class="sub-menu blank">
                                 <li><a class="link_name" href="#">VENUES</a></li>
-                            </ul>
+                            </ul> -->
                         </li>
                         <li>
                             <a href="#">
@@ -97,18 +99,18 @@
                                 <i class='bx bx-money-withdraw' style='color:#ffffff'></i>
                                 <span class="link_name">REPORTS</span>
                             </a>
-                            <ul class="sub-menu blank">
+                            <!-- <ul class="sub-menu blank">
                                 <li><a class="link_name" href="#">REPORTS</a></li>
-                            </ul>
+                            </ul> -->
                         </li>
                         <li>
                             <a href="#">
                                 <i class='bx bx-cog'></i>
                                 <span class="link_name">SETTINGS</span>
                             </a>
-                            <ul class="sub-menu blank">
+                            <!-- <ul class="sub-menu blank">
                                 <li><a class="link_name" href="#">SETTINGS</a></li>
-                            </ul>
+                            </ul> -->
                         </li>
                         <li>
                             <div class="iocn-link">
@@ -116,9 +118,9 @@
                                     <i class='bx bx-message' style='color:#ffffff'></i>
                                     <span class="link_name">SMS CAMPAIGNS</span>
                                 </a>
-                                <ul class="sub-menu blank">
+                                <!-- <ul class="sub-menu blank">
                                     <li><a class="link_name" href="#">SMS CAMPAIGNS</a></li>
-                                </ul>
+                                </ul> -->
                             </div>
                         </li>
                         <li>
@@ -127,28 +129,41 @@
                                     <i class='bx bx-user' style='color:#ffffff'></i>
                                     <span class="link_name">MY ACCOUNT</span>
                                 </a>
-                                <ul class="sub-menu blank">
+                                <!-- <ul class="sub-menu blank">
                                     <li><a class="link_name" href="#">MY ACCOUNT</a></li>
-                                </ul>
+                                </ul> -->
                             </div>
                         </li>
                     </ul>
                 </div>
                 <section class="home-section">
                     <div class="home-content">
-                        <i class='bx bx-chevron-right' style='color:#FFE100'></i>
+
+                        <!-- <i class='bx bx-chevron-right' style='color:#FFE100'></i> -->
+                        <div class="icon">
+
+                            <input type="checkbox" id="animation1">
+                            <label for="animation1">
+                                <div class="arrow"></div>
+                            </label>
+                        </div>
+
+
                         <div class="tabs_container">
                             <div class="w3-bar w3-black tabs_section">
                                 <button class="w3-bar-item w3-button tablink w3-red tab_btn"
-                                    onclick="openCity(event,'Details')">Enter Event Details</button>
+                                    onclick="openCity(event,'Details')" data-aos="fade-right" data-aos-delay="0">Enter
+                                    Event Details</button>
+                                <button class="w3-bar-item w3-button tablink tab_btn" onclick="openCity(event,'Prices')"
+                                    data-aos="fade-right" data-aos-delay="100">Define Ticket Prices</button>
                                 <button class="w3-bar-item w3-button tablink tab_btn"
-                                    onclick="openCity(event,'Prices')">Define Ticket Prices</button>
-                                <button class="w3-bar-item w3-button tablink tab_btn"
-                                    onclick="openCity(event,'Publish')">Publish Event</button>
-                                <button class="w3-bar-item w3-button tablink tab_btn"
-                                    onclick="openCity(event,'share')">share Event</button>
+                                    onclick="openCity(event,'Publish')" data-aos="fade-right"
+                                    data-aos-delay="200">Publish Event</button>
+                                <button class="w3-bar-item w3-button tablink tab_btn" onclick="openCity(event,'share')"
+                                    data-aos="fade-right" data-aos-delay="300">share Event</button>
                             </div>
-                            <div id="Details" class="w3-container w3-border city">
+                            <div id="Details" class="w3-container w3-border city" data-aos="fade-in"
+                                data-aos-delay="300">
                                 <form action="Create_event" class="event_from">
                                     <div class="left_area_form">
 
@@ -203,6 +218,7 @@
                                                     <input type="time">
 
                                                 </div>
+
                                             </div>
                                         </div>
                                     </div>
@@ -249,10 +265,8 @@
                                                 <p>Let customers select their own seats</p>
                                             </div>
                                             <div class="age_row">
-                                                <div>
-                                                    <input type="radio" id="huey" name="drone" value="huey" checked />
-                                                    <label for="huey">Use the existing chart</label>
-                                                </div>
+                                                <input type="radio" id="huey" name="drone" value="huey" checked />
+                                                <label for="huey">Use the existing chart</label>
 
                                             </div>
                                             <div class="age_row">
@@ -270,10 +284,11 @@
                                         </div>
                                         <div class="next_btn">
 
-                                            <a class="w3-bar-item w3-button tablink tab_btn" onclick="openCity(event,'Prices')">Next</a>
+                                            <a class="w3-bar-item w3-button tablink tab_btn"
+                                                onclick="openCity(event,'Prices')">Next</a>
                                         </div>
-                                        
-                                        </div>
+
+                                    </div>
                                 </form>
                             </div>
 
@@ -282,47 +297,250 @@
 
 
                             <div id="Prices" class="w3-container w3-border city" style="display:none">
-                                <form action="Create_event" class="event_from" >
-                                    <div class="left_area_form">
-                                        
+                                <form action="Create_event" class="event_from">
+                                    <div class=" ticket_form">
+
                                         <div class="form_price_option">
                                             <label class="switch">
                                                 <input type="checkbox" checked>
                                                 <span class="slider round"></span>
                                             </label>
-                                            <p>Customer absorbs service fees.</p>
+                                            <p class="ticket_fee_t">Customer absorbs service fees.</p>
+                                        </div>
+                                        <div class="ticket_form_sec">
+
+                                            <table>
+
+                                                <thead>
+                                                    <tr>
+                                                        <th>Del</th>
+                                                        <th>Ticket Type</th>
+                                                        <th>Price</th>
+                                                        <th>QTY</th>
+                                                        <th>Box Office Only</th>
+                                                        <th>Multi-Level Pricing</th>
+                                                    </tr>
+                                                </thead>
+                                            </table>
+                                            <div class="table_body">
+                                                <div class="main_table_body">
+
+                                                    <div class="del_table_btn">
+
+                                                        <i class='bx bx-x'></i>
+                                                    </div>
+                                                    <div class="ticket_type_input">
+                                                        <input type="text">
+                                                    </div>
+                                                    <div class="ticket_type_Price">
+                                                        <input type="text">
+                                                    </div>
+                                                    <div class="ticket_type_qty">
+                                                        <input type="text">
+                                                    </div>
+                                                    <div class="ticket_type_only">
+                                                        <label class="switch">
+                                                            <input type="checkbox">
+                                                            <span class="slider round"></span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="ticket_type_multi">
+                                                        <i class='bx bx-chevrons-down' onclick=""></i>
+                                                    </div>
+                                                </div>
+                                                <div class="main_table_body">
+
+                                                    <div class="del_table_btn">
+
+                                                        <i class='bx bx-x'></i>
+                                                    </div>
+                                                    <div class="ticket_type_input">
+                                                        <input type="text">
+                                                    </div>
+                                                    <div class="ticket_type_Price">
+                                                        <input type="text">
+                                                    </div>
+                                                    <div class="ticket_type_qty">
+                                                        <input type="text">
+                                                    </div>
+                                                    <div class="ticket_type_only">
+                                                        <label class="switch">
+                                                            <input type="checkbox">
+                                                            <span class="slider round"></span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="ticket_type_multi">
+                                                        <i class='bx bx-chevrons-down' onclick=""></i>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
 
-                                        <div class="add_ticket_header">
-                                            <p class="del">Del</p>
-                                            <p  class="type">Ticket Type</p>
-                                            <p class="Price">Price</p>
-                                            <p class="QTY">QTY</p>
-                                            <p class="box"> Box Office Only</p>
-                                            <p class="Multi">Multi-Level Pricing</p>
+
+
+
+                                        <div class="ticket_form_sec_hide">
+
+                                            <table>
+
+                                                <thead>
+                                                    <tr>
+                                                        <th>Del</th>
+                                                        <th>Ticket Type</th>
+                                                        <th>Price</th>
+                                                        <th>QTY</th>
+                                                        <th>Box Office Only</th>
+                                                    </tr>
+                                                </thead>
+                                            </table>
+                                            <div class="table_body">
+                                                <div class="main_table_body">
+
+                                                    <div class="del_table_btn">
+
+                                                        <i class='bx bx-x'></i>
+                                                    </div>
+                                                    <div class="ticket_type_input">
+                                                        <input type="text">
+                                                    </div>
+                                                    <div class="ticket_type_Price">
+                                                        <input type="text">
+                                                    </div>
+                                                    <div class="ticket_type_qty">
+                                                        <input type="text">
+                                                    </div>
+                                                    <div class="ticket_type_only">
+                                                        <label class="switch">
+                                                            <input type="checkbox">
+                                                            <span class="slider round"></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="main_table_body">
+
+                                                    <div class="del_table_btn">
+
+                                                        <i class='bx bx-x'></i>
+                                                    </div>
+                                                    <div class="ticket_type_input">
+                                                        <input type="text">
+                                                    </div>
+                                                    <div class="ticket_type_Price">
+                                                        <input type="text">
+                                                    </div>
+                                                    <div class="ticket_type_qty">
+                                                        <input type="text">
+                                                    </div>
+                                                    <div class="ticket_type_only">
+                                                        <label class="switch">
+                                                            <input type="checkbox">
+                                                            <span class="slider round"></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="add_sub">
+                                                <i class='bx bx-plus-circle' style='color:#ffffff'></i>
+                                                <p>Add New Sub-Level Ticket Type</p>
+                                            </div>
+                                        </div>
+                                        <div class="add_ticket_type">
+                                            <i class='bx bx-plus-circle' style='color:#ffffff'></i>
+                                            <p>Add New Ticket Type</p>
+
+                                        </div>
+                                        <div class="enable_sale_tax_section">
+                                            <div class="tax_btn">
+                                                <label class="switch">
+                                                    <input type="checkbox" id="Sales_tax">
+                                                    <span class="slider round"></span>
+                                                </label>
+                                                <p>Enable Sales Tax?</p>
+
+                                            </div>
+                                            <div class="tax_inputs">
+                                                <div class="per_tax">
+                                                    <input type="number">
+                                                    <span>%</span>
+
+                                                </div>
+                                                <div class="start_tax">
+                                                    <div class="start_tax_sec">
+
+                                                        <p>When Should Ticket Sales Start?</p>
+                                                        <div class="start_tax_inputs">
+                                                            <input type="date">
+                                                            <input type="time">
+
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <p class="start_tax_caption"> Start Ticket Sales Immediately</p>
+
+                                                    </div>
+
+                                                </div>
+                                                <div class="start_tax">
+                                                    <div class="start_tax_sec">
+
+                                                        <p>When Should Ticket Sales End?</p>
+                                                        <div class="start_tax_inputs">
+                                                            <input type="date">
+                                                            <input type="time">
+
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <p class="start_tax_caption"> Start Ticket Sales Immediately</p>
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
                                         </div>
 
 
 
 
 
-                                        
-                                        <div class="add_ticket_body">
-                                            <i class='bx bx-x del' style='color:#ffffff' ></i>
-                                            <input type="text" class="type">
-                                            <input type="number" class="Price">
-                                            <input type="number" class="QTY">
-                                            <label class="switch" class="box">
-                                                <input type="checkbox" checked>
-                                                <span class="slider round"></span>
-                                            </label>
-                                            <i class='bx bxs-chevrons-down Multi' style='color:#ffffff' ></i>
-                                        </div>
+
 
 
                                     </div>
 
-                                    <div class="right_area_form"></div>
+                                    <div class="right_area_form">
+                                        <div class="ticket_right">
+                                            <p>Have Tables Bookable as a Whole?</p>
+                                            <div class="right_info_ticket">
+                                                <label class="switch">
+                                                    <input type="checkbox">
+                                                    <span class="slider round"></span>
+                                                </label>
+                                                <p>Generate ticket types for tables bookable as a whole</p>
+
+                                            </div>
+                                            <form action="" class="ticket_right_ins">
+                                                <div class="ticket_right_cat">
+                                                    <label for="">Category</label>
+                                                    <input type="text">
+                                                </div>
+
+                                                <div class="ticket_right_cat">
+                                                    <label for="">Table of</label>
+                                                    <input type="text">
+                                                </div>
+                                                <button type="submit" class="right_btn">Generate</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="next_btn">
+
+                                        <a class="w3-bar-item w3-button tablink tab_btn"
+                                            onclick="openCity(event,'Publish')">Next</a>
+                                    </div>
+
+
 
                                 </form>
                             </div>
@@ -330,15 +548,15 @@
                             <div id="Publish" class="w3-container w3-border city" style="display:none">
                                 <div class="publish_section">
 
-                                
-                                <img src="./imgs/Designer - Section 1.png" alt="">
 
-                                <div class="publish_btns">
-                                    <button class="save_btn">save Draft</button>
-                                    <button class="w3-bar-item w3-button tablink tab_btn publish_btn"
-                                    onclick="openCity(event,'share')">Publish</button>
+                                    <img src="./imgs/Designer - Section 1.png" alt="">
+
+                                    <div class="publish_btns">
+                                        <button class="save_btn">save Draft</button>
+                                        <button class="w3-bar-item w3-button tablink tab_btn publish_btn"
+                                            onclick="openCity(event,'share')">Publish</button>
+                                    </div>
                                 </div>
-                            </div>
                             </div>
 
                             <div id="share" class="w3-container w3-border city" style="display:none">
@@ -346,33 +564,33 @@
                                     <p class="share_event_title">Your event has been published successfully</p>
                                     <div class="share_portion">
 
-                                    
-                                    <div class="exit_event">
-                                        <p>You can view your event here</p>
-                                        <img src="./imgs/enter 1.png" alt="">
-                                    </div>
-                                    <h3>Share Options</h3>
-                                    <div class="share_link">
-                                        <p>Shareable Link:</p>
-                                        <input type="text" disabled>
-                                        <img src="./imgs/copy 1.png" alt="">
-                                    </div>
-                                    <div class="directly">
-                                        <p>Share Directly:</p>
-                                        <div class="share_icon">
-                                            <i class='bx bxl-facebook'  ></i>
-                                            <i class='bx bxl-linkedin-square'  ></i>
-                                            <i class='bx bxl-twitter'  ></i>
+
+                                        <div class="exit_event">
+                                            <p>You can view your event here</p>
+                                            <img src="./imgs/enter 1.png" alt="">
+                                        </div>
+                                        <h3>Share Options</h3>
+                                        <div class="share_link">
+                                            <p>Shareable Link:</p>
+                                            <input type="text" disabled>
+                                            <img src="./imgs/copy 1.png" alt="">
+                                        </div>
+                                        <div class="directly">
+                                            <p>Share Directly:</p>
+                                            <div class="share_icon">
+                                                <i class='bx bxl-facebook'></i>
+                                                <i class='bx bxl-linkedin-square'></i>
+                                                <i class='bx bxl-twitter'></i>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
 
                                 </div>
                                 <div class="share_btns">
                                     <button class="w3-bar-item w3-button tablink w3-red tab_btn new_envet_btn"
-                                    onclick="openCity(event,'Details')">Create a New Event</button>    
+                                        onclick="openCity(event,'Details')">Create a New Event</button>
                                     <a href="./event.html" class="publish_btn">Done</a>
-    
+
                                 </div>
                             </div>
                         </div>
@@ -474,7 +692,7 @@
             });
         }
         let sidebar = document.querySelector(".sidebar");
-        let sidebarBtn = document.querySelector(".bx-chevron-right");
+        let sidebarBtn = document.querySelector("#animation1");
         console.log(sidebarBtn);
         sidebarBtn.addEventListener("click", () => {
             sidebar.classList.toggle("close");
@@ -484,6 +702,17 @@
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+    </script>
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 </body>
 
