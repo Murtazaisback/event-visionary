@@ -26,6 +26,9 @@ function openCity(evt, cityName) {
     }
     document.getElementById(cityName).style.display = "block";
     evt.currentTarget.className += " w3-red";
+    
+
+
   }
 
 
@@ -61,6 +64,50 @@ $(document).ready(function(){
       $(".ticket_form_sec_hide").toggle();
     });
   });
+
+// $(document).ready(function(){
+//     $(".onee").click(function(){
+//       $(".svg_main1").toggle();
+//     });
+//   });
+// $(document).ready(function(){
+//     $(".two").click(function(){
+//       $(".svg_main2").toggle();
+//     });
+//   });
+// $(document).ready(function(){
+//     $(".three").click(function(){
+//       $(".svg_main3").toggle();
+//     });
+//   });
+// $(document).ready(function(){
+//     $(".four").click(function(){
+//       $(".svg_main4").toggle();
+//     });
+//   });
+
+
+
+
+const teamMember = document.getElementsByClassName("team-member");
+const teamMemberInfo = document.getElementsByClassName("team-member-info");
+for (let i = 0; i < teamMember.length; i++) {
+  teamMember[i].addEventListener("click", function() {
+    for (let a = 0; a < teamMemberInfo.length; a++) {
+      teamMemberInfo[a].style.display = "none";
+    }
+    teamMemberInfo[i].style.display = "block";
+
+  });
+}
+
+
+
+
+
+
+
+
 
 
 $(function() {
