@@ -15,7 +15,7 @@
         color: #f2f5f7;
         font-family: 'Inter', sans-serif;
         letter-spacing: 1px;
-        font-weight: 300;
+        font-weight: 400;
     }
 
     ul {
@@ -37,7 +37,7 @@
     /* ------------------effects----------- */
     .white_effect {
         border-radius: 1117px;
-        background: conic-gradient(from 2deg at 36.93% 32.15%, #636363 69.37499821186066deg, rgba(71, 71, 71, 0.61) 99.37499642372131deg, rgba(75, 75, 75, 0.66) 121.87499642372131deg, rgba(61, 61, 61, 0.47) 219.375deg, rgba(28, 28, 28, 0.00) 299.9999928474426deg);
+        background: conic-gradient(from 2deg at 36.93% 32.15%, #636363 69.37499821186066deg, rgba(71, 71, 71, 1.61) 99.37499642372131deg, rgba(75, 75, 75, 1.66) 121.87499642372131deg, rgba(61, 61, 61, 0.97) 219.375deg, rgba(28, 28, 28, 0.00) 299.9999928474426deg);
         filter: blur(250px);
         width: 1117px;
         height: 599px;
@@ -211,6 +211,7 @@
     .header_box {
         display: flex;
         gap: 225px;
+        flex-wrap: wrap;
     }
 
     .header_info {
@@ -320,7 +321,7 @@
         align-items: center;
         gap: 30px;
         margin-top: 50px;
-        /* flex-wrap: wrap; */
+        flex-wrap: wrap;
         /* justify-content: center; */
         justify-content: space-between;
     }
@@ -391,7 +392,8 @@
     .show_container {
         display: flex;
         text-align: right;
-        gap: 20px;
+        gap: 0px;
+        /* flex-wrap: wrap; */
 
     }
 
@@ -426,7 +428,7 @@
         color: #FFF;
         text-align: right;
         font-family: Inter;
-        font-size: 48px;
+        font-size: 41px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
@@ -1116,6 +1118,7 @@
         background: radial-gradient(90.84% 51.46% at 12.16% 50%, rgba(38, 38, 38, 0.20) 0%, rgba(0, 0, 0, 0.00) 100%), radial-gradient(243.33% 331.01% at 100% 100%, rgba(250, 225, 0, 0.10) 0%, rgba(103, 93, 0, 0.01) 56.25%), rgba(0, 0, 0, 0.10);
         box-shadow: 2px 2px 4px 0px #212121 inset, -2px -2px 4px 0px #25251F inset, 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
         padding: 20px;
+        padding-bottom: 50px;
     }
 
     .sms {
@@ -1289,7 +1292,7 @@
     }
 
     .w3-red {
-        box-shadow: 0px 5px 5px 0px rgba(250, 234, 0, 0.41);
+        /* box-shadow: 0px 5px 5px 0px rgba(250, 234, 0, 0.41); */
         outline: none;
     }
 
@@ -1644,7 +1647,8 @@
         background: radial-gradient(90.84% 51.46% at 12.16% 50%, rgba(38, 38, 38, 0.20) 0%, rgba(0, 0, 0, 0.00) 100%), radial-gradient(243.33% 331.01% at 100% 100%, rgba(250, 225, 0, 0.10) 0%, rgba(103, 93, 0, 0.01) 56.25%), rgba(0, 0, 0, 0.10);
         box-shadow: 2px 2px 4px 0px #212121 inset, -2px -2px 4px 0px #25251F inset, 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
         padding: 25px 50px 15px 50px;
-        /* width: 600px; */
+        width: 700px;
+        /* min-width: 100%; */
     }
 
     .share_event_title {
@@ -1684,6 +1688,8 @@
         font-size: 59px;
         color: var(--color-yellow);
         margin-top: 20px;
+        color: #53ACFF;
+        cursor: pointer;
     }
 
     .share_btns {
@@ -1795,13 +1801,13 @@
     .event_cards {
         display: flex;
         align-items: center;
-        /* justify-content: space-between; */
-        gap: 50px;
+        justify-content: space-between;
+        /* gap: 50px; */
         flex-wrap: wrap;
     }
 
     .event_card img {
-        width: 240px;
+        width: 340px;
     }
 
     .ticket_form_sec {
@@ -2172,7 +2178,7 @@
 
 
     /*Stying for small screens*/
-    @media screen and (max-width: 820px) {
+    @media screen and (max-width: 860px) {
 
         .nav {
             /* position: fixed; */
@@ -2351,14 +2357,15 @@
         }
 
         .show_imgs img:nth-child(2) {
-            margin-top: -70px;
+            margin-top: -35px;
             margin-left: 0;
             width: 320px;
             height: 160px;
         }
 
         .show_imgs img:nth-child(3) {
-            margin-top: -70px;
+            margin-top: -35px;
+            margin-bottom: 20px;
             margin-left: 0;
             width: 320px;
             height: 160px;
@@ -2523,6 +2530,7 @@
         .share_event {
             padding: 20px;
             text-align: center;
+            width: auto;
         }
 
         .share_link {
@@ -2589,6 +2597,12 @@
         .footer_info {
             margin-bottom: 30px;
         }
+    }
+    @media screen and (max-width: 1060px) {
+        .share_event{
+            width: auto;
+        }
+        
     }
 
     /*Animating Hamburger Icon on Click*/
@@ -3041,7 +3055,7 @@
         position: absolute;
         /* left: 50%; */
         top: 41%;
-        left: -35px;
+        left: -25px;
         z-index: 1000;
         border-style: solid;
         border-width: 27.5px 39.0px 27.5px 1px;
@@ -3051,12 +3065,27 @@
         /* background-image: url(./imgs/1200px-TriangleArrow-Left.svg.png);
         background-repeat: no-repeat;
         background-size: cover; */
+        /* border-left-style: r; */
     }
 
     #animation1 {
         display: none;
         font-size: 19px;
     }
+    .team-member{
+        position: relative;
+    }
+    .team-member img{
+        width: 150px;
+    }
+    .team-member-small img{
+        width: 120px;
+    }
+    .team-member-info{
+        position: absolute;
+        bottom: -10px;
+    }
+
 
     .team-member-info {
         display: none;
@@ -3073,3 +3102,74 @@
         fill: white !important;
         /* color: yellow !important; */
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .dropbtn {
+        color: white;
+        padding: 26px;
+        /* font-size: 16px; */
+        border: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        border-radius: 10px;
+        background: radial-gradient(481.54% 370.08% at 23.2% 19.89%, rgba(38, 38, 38, 0.50) 0%, rgba(0, 0, 0, 0.00) 100%), radial-gradient(243.33% 331.01% at 100% 100%, rgba(250, 225, 0, 0.30) 0%, rgba(103, 93, 0, 0.04) 56.25%), rgba(0, 0, 0, 0.10);
+        box-shadow: 2px 2px 4px 0px #212121 inset, -2px -2px 4px 0px #25251F inset, 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
+        padding: 10px 15px;
+        margin-top: 20px;
+        margin-left: 40px;
+        cursor: pointer;
+        width: 100%;
+      }
+      .dropbtn i{
+        font-size: 19px;
+
+      }
+      
+      
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #000;
+        min-width: 160px;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      .dropdown-content a {
+        /* color: black; */
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        transition: all ease-in 0.25s;
+      }
+      
+      .dropdown a:hover {
+        color: var(--color-yellow);
+      }
+      
+      .show {display: block;}

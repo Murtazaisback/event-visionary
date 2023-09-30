@@ -169,68 +169,39 @@
 
                         <div class="tabs_container">
                             <div class="w3-bar w3-black tabs_section">
-                                <button class="w3-bar-item w3-button tablink w3-red tab_btn onee team-member" 
-                                    onclick="openCity(event,'Details')" data-aos="fade-right" data-aos-delay="0">1. Enter
+                                <button class="w3-bar-item w3-button tablink w3-red tab_btn  team-member" 
+                                    onclick="openCity(event,'Details')" >1. Enter
                                     Event Details
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="180" height="23" viewBox="0 0 200 23" fill="none">
-                                        <ellipse cx="100" cy="11.5" rx="100" ry="11.5" transform="matrix(1 0 0 -1 0 23)" fill="url(#paint0_radial_38_211)" class="svg_main1  team-member-info" id="og"/>
-                                        <defs>
-                                          <radialGradient id="paint0_radial_38_211" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(100 11.5) rotate(90) scale(11.5 100)">
-                                            <stop stop-color="#FAEA00"/>
-                                            <stop offset="1" stop-color="#FAE100" stop-opacity="0"/>
-                                          </radialGradient>
-                                        </defs>
-                                      </svg>
-                                
-                                
+                                    <img src="./imgs/Ellipse 3.png" class="team-member-info" alt="">
+                                    
+                                    
                                 </button>
-                                <button class="w3-bar-item w3-button tablink tab_btn two team-member" onclick="openCity(event,'Prices')"
-                                    data-aos="fade-right" data-aos-delay="100">2. Define Ticket Prices
-
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="190" height="23" viewBox="0 0 200 23" fill="none">
-                                        <ellipse cx="100" cy="11.5" rx="100" ry="11.5" transform="matrix(1 0 0 -1 0 23)" fill="url(#paint0_radial_38_211)" class="svg_main2 team-member-info" id="og2"/>
-                                        <defs>
-                                          <radialGradient id="paint0_radial_38_211" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(100 11.5) rotate(90) scale(11.5 100)" >
-                                            <stop stop-color="#FAEA00" />
-                                            <stop offset="1" stop-color="#FAE100" stop-opacity="0"/>
-                                          </radialGradient>
-                                        </defs>
-                                      </svg>
+                                <button class="w3-bar-item w3-button tablink tab_btn  team-member" onclick="openCity(event,'Prices')"
+                                >2. Define Ticket Prices
+                                <img src="./imgs/Ellipse 3.png" class="team-member-info" alt="">
                                 
-                                </button>
-                                <button class="w3-bar-item w3-button tablink tab_btn three team-member"
-                                    onclick="openCity(event,'Publish')" data-aos="fade-right"
-                                    data-aos-delay="200">3. Publish Event
-
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="150" height="23" viewBox="0 0 200 23" fill="none">
-                                        <ellipse cx="100" cy="11.5" rx="100" ry="11.5" transform="matrix(1 0 0 -1 0 23)" fill="url(#paint0_radial_38_211)" class="svg_main3 team-member-info"/>
-                                        <defs>
-                                          <radialGradient id="paint0_radial_38_211" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(100 11.5) rotate(90) scale(11.5 100)">
-                                            <stop stop-color="#FAEA00"/>
-                                            <stop offset="1" stop-color="#FAE100" stop-opacity="0"/>
-                                          </radialGradient>
-                                        </defs>
-                                      </svg>
                                 
-                                </button>
-                                <button class="w3-bar-item w3-button tablink tab_btn four team-member" onclick="openCity(event,'share')"
-                                    data-aos="fade-right" data-aos-delay="300">4. share Event
+                                
+                            </button>
+                            <button class="w3-bar-item w3-button tablink tab_btn  team-member team-member-small"
+                            onclick="openCity(event,'Publish')" >3. Publish Event
+                            <img src="./imgs/Ellipse 3.png" class="team-member-info" alt="">
+                            
+                            
+                            
+                        </button>
+                        <button class="w3-bar-item w3-button tablink tab_btn  team-member team-member-small" onclick="openCity(event,'share')"
+                        >4. share Event
+                        <img src="./imgs/Ellipse 3.png" class="team-member-info" alt="">
 
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="135" height="23" viewBox="0 0 200 23" fill="none">
-                                        <ellipse cx="100" cy="11.5" rx="100" ry="11.5" transform="matrix(1 0 0 -1 0 23)" fill="url(#paint0_radial_38_211)" class="svg_main4 team-member-info"/>
-                                        <defs>
-                                          <radialGradient id="paint0_radial_38_211" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(100 11.5) rotate(90) scale(11.5 100)">
-                                            <stop stop-color="#FAEA00"/>
-                                            <stop offset="1" stop-color="#FAE100" stop-opacity="0"/>
-                                          </radialGradient>
-                                        </defs>
-                                      </svg>
                                 
                                 </button>
                             </div>
                             <div id="Details" class="w3-container w3-border city" data-aos="fade-in"
                                 data-aos-delay="300">
-                                <form action="Create_event" class="event_from">
+                                    <div class="event_from">
+
+                                    
                                     <div class="left_area_form">
 
 
@@ -253,10 +224,13 @@
                                                 <input type="text">
                                             </div>
                                             <div class="event_in">
-                                                <div class="new_venue">
-                                                    <i class='bx bx-plus-circle' style='color:#ffffff'></i>
-                                                    <p>Add New Venue</p>
-                                                </div>
+                                                <div class="dropdown">
+                                                    <button onclick="myFunction()" class="dropbtn">
+                                                        <i class='bx bx-plus-circle' style='color:#ffffff'></i>
+                                                        Add New Venue
+                                                    
+                                                    </button>
+                                                  </div>
                                             </div>
                                         </div>
 
@@ -355,7 +329,7 @@
                                         </div>
 
                                     </div>
-                                </form>
+                                </div>
                             </div>
 
 
@@ -526,7 +500,7 @@
                                             </div>
                                             <div class="tax_inputs">
                                                 <div class="per_tax">
-                                                    <input type="number">
+                                                    <input type="number" min="0">
                                                     <span>%</span>
 
                                                 </div>
@@ -750,7 +724,7 @@
 
 
     <script>
-        let arrow = document.querySelectorAll(".arrow");
+        let arrow = document.querySelectorAll(".main_btns_side");
         for (var i = 0; i < arrow.length; i++) {
             arrow[i].addEventListener("click", (e) => {
                 let arrowParent = e.target.parentElement.parentElement;//selecting main parent of arrow
@@ -758,11 +732,16 @@
             });
         }
         let sidebar = document.querySelector(".sidebar");
-        let sidebarBtn = document.querySelector("#animation1");
+        let sidebarBtn = document.querySelector(".main_btns_side");
         console.log(sidebarBtn);
         sidebarBtn.addEventListener("click", () => {
             sidebar.classList.toggle("close");
         });
+
+
+
+
+        
     </script>
     <script src="./js.js"></script>
 

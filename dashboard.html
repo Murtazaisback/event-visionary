@@ -35,11 +35,20 @@
            backgroundColor: 'transparent',
            colors:['limegreen','#52FF00'],
            bar: {groupWidth: '35%'},
+           baselineColor: '#fff',
+         gridlineColor: '#000',
+        //  series: { 0: { color: lineColor, pointSize: 5, lineWidth: 4 }}, 
+        
            
-           vAxis: { gridlines: { count: 1 } }
+           vAxis: { gridlines: { count: 1 },   textStyle:{color: '#FFF'} },
+           hAxis: {  textStyle:{color: '#FFF'}   },
            
            
+           
+           
+
          };
+         
          
 
          var chart = new google.visualization.ColumnChart(document.getElementById('number_format_chart'));
