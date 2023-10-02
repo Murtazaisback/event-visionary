@@ -65,6 +65,12 @@ $(document).ready(function(){
     });
   });
 
+$(document).ready(function(){
+    $(".add_ticket_type").click(function(){
+      $(".ticket_form_sec_hide").toggle();
+    });
+  });
+
 // $(document).ready(function(){
 //     $(".onee").click(function(){
 //       $(".svg_main1").toggle();

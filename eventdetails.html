@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
@@ -32,6 +33,7 @@
             <li><a href="./event.html">EVENTS</a></li>
             <li><a href="./newevent.html" class="li_active">CREATE EVENT</a></li>
         </ul>
+        <!-- <button class="login-button" href="#">Login</button> -->
         <div class="dropdown">
             <button class="dropbtn">
                 Hero of house
@@ -103,12 +105,12 @@
                                 <div class="inner_nav_links">
                                     <p class="Event_Title yellow_m">Event Title</p>
                                     <ul class="inner_nav_items">
-                                        <li class="inner_nav_item"><a href="./sell_tickets.html">Sell Tickets</a></li>
+                                        <li class="inner_nav_item"><a href="./sell_tickets.html" >Sell Tickets</a></li>
                                         <li class="inner_nav_item"><a href="./managetwo.html">Hold Seats</a></li>
                                         <li class="inner_nav_item"><a href="">Scan Tickets</a></li>
                                         <li class="inner_nav_item"><a href="./attendees.html">Attendees</a></li>
                                         <li class="inner_nav_item"><a href="./manage_order.html"  >Manage Orders</a></li>
-                                        <li class="inner_nav_item"><a href="./eventdetails.html">Event Details</a></li>
+                                        <li class="inner_nav_item"><a href="./eventdetails.html" class="yellow_m">Event Details</a></li>
                                         <li class="inner_nav_item"><a href="./ticketprices.html">Ticket Prices</a></li>
                                         <li class="inner_nav_item"><a href="">Seating Chart</a></li>
                                     </ul>
@@ -139,7 +141,7 @@
                             </ul> -->
                         </li>
                         <li>
-                            <a href="./settingdash.html">
+                            <a href="#">
                                 <i class='bx bx-cog'></i>
                                 <span class="link_name">SETTINGS</span>
                             </a>
@@ -174,9 +176,8 @@
                 <section class="home-section">
                     <div class="home-content">
 
-
-
-                         <div class="main_btns_side">
+                        <!-- <i class='bx bx-chevron-right' style='color:#FFE100'></i> -->
+                        <div class="main_btns_side">
                         <span class="triangle">
                         <div class="icon">
 
@@ -184,76 +185,150 @@
                                 <label for="animation1">
                                     <div class="arrow"></div>
                                 </label>
-                            </div>
+                            </div> 
                         </span>
                     </div>
 
-                        <div class="events_section " data-aos="fade-up" data-aos-delay="100">
-                            <div class="events_row_1">
-                                <div class="para">
-                                    <p class="para_title">Share a public version of this page. </p>
-                                    <p class="para_p">For example, you can add this to your bio link section on your social media, or share on your website to lead customers to your events.</p>
-                                    <div class="copy_links">
-                                        <input type="text" disabled class="cursor_pointer">
-                                        <img src="./imgs/copy 1.png" alt="" class="cursor_pointer">
+
+                        <div class="tabs_container">
+                            <div >
+                                    <div class="event_from">
+
+                                    
+                                    <div class="left_area_form">
+                                        <h2>Event Details: Event Title Show Here</h2>
+
+
+                                        <label for="">Event Title</label>
+                                        <input type="text">
+                                        <div class="event_inputs">
+                                            <div class="event_in">
+                                                <label for="">Event Type</label>
+                                                <input type="text">
+                                            </div>
+                                            <div class="event_in">
+                                                <label for="">Category</label>
+                                                <input type="text">
+                                            </div>
+                                        </div>
+
+                                        <div class="event_inputs">
+                                            <div class="event_in">
+                                                <label for="">Venue</label>
+                                                <input type="text">
+                                            </div>
+                                            <div class="event_in">
+                                                <div class="flexd_div">
+
+                                                    <i class='bx bx-plus-circle' style='color:#ffffff'></i>
+                                                    Add New Venue
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <label for="">Tell your customers a little bit about this event</label>
+                                        <textarea name="" id="" rows="6" class="desc_event"></textarea>
+                                        <label for="" class="tickets_note">Add a special note to your tickets</label>
+                                        <textarea name="" id="" cols="30" rows="10"
+                                            placeholder="This note will appear on your customer’s tickets under their order information"></textarea>
+
+
+                                        <div class="date_inputs">
+                                            <div class="date_in">
+                                                <label for="">Start Date/Start Time</label>
+                                                <div class="event_inputs">
+                                                    <input type="date" class="cursor_pointer">
+                                                    <input type="time" class="cursor_pointer">
+
+                                                </div>
+                                            </div>
+                                            <div class="date_in">
+                                                <label for="">End Date/End Time</label>
+                                                <div class="event_inputs">
+                                                    <input type="date" class="cursor_pointer">
+                                                    <input type="time" class="cursor_pointer">
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right_area_form">
+                                        <div class="age">
+                                            <p>Age Restrictions</p>
+                                            <div class="age_row">
+                                                <label class="switch">
+                                                    <input type="checkbox">
+                                                    <span class="slider round"></span>
+                                                </label>
+                                                <p>This event is an All Ages event</p>
+                                            </div>
+                                            <div class="age_row">
+                                                <label class="switch">
+                                                    <input type="checkbox" checked>
+                                                    <span class="slider round"></span>
+                                                </label>
+                                                <p>This event is an All Ages event</p>
+                                            </div>
+                                            <div class="age_row">
+                                                <label class="switch">
+                                                    <input type="checkbox">
+                                                    <span class="slider round"></span>
+                                                </label>
+                                                <p>This event is an All Ages event</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="option">
+                                            <p>More Options</p>
+                                            <div class="age_row">
+                                                <label class="switch">
+                                                    <input type="checkbox" checked>
+                                                    <span class="slider round"></span>
+                                                </label>
+                                                <p>Make this event FREE</p>
+                                            </div>
+                                            <div class="age_row">
+                                                <label class="switch">
+                                                    <input type="checkbox">
+                                                    <span class="slider round"></span>
+                                                </label>
+                                                <p>Let customers select their own seats</p>
+                                            </div>
+                                            <div class="age_row">
+                                                <input type="radio" id="huey" name="drone" value="huey"  class="cursor_pointer" />
+                                                <label for="huey">Use the existing chart</label>
+
+                                            </div>
+                                            <div class="age_row">
+                                                <input type="radio" id="dewey" name="drone" value="dewey" class="cursor_pointer"/>
+                                                <label for="dewey">Clone the existing Chart</label>
+                                            </div>
+
+                                            <div>
+                                            </div>
+
+                                        </div>
+                                        <div class="file_form cursor_pointer" >
+                                            <img src="./imgs/upload 1.png" alt="">
+                                            <p>Drag and drop image here</p>
+                                        </div>
+                                        <div class="next_btn">
+
+                                            <a class="w3-bar-item w3-button tablink tab_btn cursor_pointer"
+                                                onclick="openCity(event,'Prices')">Save Changes</a>
+                                        </div>
 
                                     </div>
-                                    <div class="icons">
-                                        <i class='bx bxl-facebook'  ></i>
-                                            <i class='bx bxl-linkedin-square'  ></i>
-                                            <i class='bx bxl-twitter'  ></i>
-                                    </div>
-                                </div>
-                                <div class="new_event_list">
-                              
-                                    <h4>List a New Event</h4>
-                                    <a href="./newevent.html">
-                                      <i class='bx bx-plus-circle'  ></i>
-    
-                                    </a>
-                                </div>
-                                
-                            </div>
-                            <div class="events_row_2">
-                                <div class="event_cards" data-aos="fade-up" data-aos-delay="100">
-                                    <div class="event_card">
-                                        <img src="./imgs/Rectangle 11.png" alt="">
-                                        <div class="card_info">
-                                            <p>Event Title</p>
-                                            <p>Sat, July 15, 2025 • 7:30 PM</p>
-                                            <p>Venue Name</p>
-                                            <a href="./sell_tickets.html" class="btn sm">Sell tickets</a>
-                                        </div>
-                                    </div>
-                                    <div class="event_card">
-                                        <img src="./imgs/Rectangle 11.png" alt="">
-                                        <div class="card_info">
-                                            <p>Event Title</p>
-                                            <p>Sat, July 15, 2025 • 7:30 PM</p>
-                                            <p>Venue Name</p>
-                                            <a href="./sell_tickets.html" class="btn sm">Sell tickets</a>
-                                        </div>
-                                    </div>
-                                    <div class="event_card">
-                                        <img src="./imgs/Rectangle 11.png" alt="">
-                                        <div class="card_info">
-                                            <p>Event Title</p>
-                                            <p>Sat, July 15, 2025 • 7:30 PM</p>
-                                            <p>Venue Name</p>
-                                            <a href="./sell_tickets.html" class="btn sm">Sell tickets</a>
-                                        </div>
-                                    </div>
-                                    <div class="event_card">
-                                        <img src="./imgs/Rectangle 11.png" alt="">
-                                        <div class="card_info">
-                                            <p>Event Title</p>
-                                            <p>Sat, July 15, 2025 • 7:30 PM</p>
-                                            <p>Venue Name</p>
-                                            <a href="./sell_tickets.html" class="btn sm">Sell tickets</a>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
+
+
+
+
+
+                            
                         </div>
 
 
@@ -294,7 +369,7 @@
                 <form action="" class="footer_form">
                     <div class="footer_form_input">
                         <!-- <label for="">Email *</label> -->
-                        <input type="email" required>
+                        <input type="email" required >
                     </div>
                     <button type="submit">Sign Up</button>
                 </form>
@@ -347,26 +422,33 @@
     <script>
         let arrow = document.querySelectorAll(".arrow");
         for (var i = 0; i < arrow.length; i++) {
-            arrow[i].addEventListener("click", (e) => {
-                let arrowParent = e.target.parentElement.parentElement;//selecting main parent of arrow
-                arrowParent.classList.toggle("showMenu");
-            });
+          arrow[i].addEventListener("click", (e)=>{
+         let arrowParent = e.target.parentElement.parentElement;//selecting main parent of arrow
+         arrowParent.classList.toggle("showMenu");
+          });
         }
         let sidebar = document.querySelector(".sidebar");
         let sidebarBtn = document.querySelector("#animation1");
         console.log(sidebarBtn);
-        sidebarBtn.addEventListener("click", () => {
-            sidebar.classList.toggle("close");
+        sidebarBtn.addEventListener("click", ()=>{
+          sidebar.classList.toggle("close");
         });
-    </script>
+        </script>   
     <script src="./js.js"></script>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
     </script>
+
+
+
+
+
+
+
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init();
+        AOS.init();
     </script>
 </body>
 
