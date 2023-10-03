@@ -71,6 +71,46 @@ $(document).ready(function(){
     });
   });
 
+
+  $('input:checkbox').click(function(){
+
+    var id = ($(this).attr('id'));
+ 
+    // alert(id)
+ 
+     var $inputs = $("#id")
+ 
+         if($(this).is(':checked')){
+ 
+             // $("."+id).prop('disabled', true); // <-- disable all but checked one
+ 
+              $("."+id).not(this).prop('disabled',true);
+ 
+         }else{
+ 
+            // $inputs.prop('disabled',false); // <--
+ 
+            $("."+id).prop('disabled', false);
+ 
+         }
+ 
+     })
+
+
+
+
+
+
+
+     $(document).ready(function () { 
+      $("#watch-me").click(function() {
+       $("#show-me:hidden").show('slow');
+       });
+       $("#watch-me").click(function(){
+       if($('watch-me').prop('checked')===false) {
+          $('#show-me').hide();}
+          });
+      });
 // $(document).ready(function(){
 //     $(".onee").click(function(){
 //       $(".svg_main1").toggle();

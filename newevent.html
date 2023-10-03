@@ -10,7 +10,10 @@
     <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
+    <script type="text/javascript" src=
+    "https://code.jquery.com/jquery-3.6.0.min.js">
+        </script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
 </head>
 
@@ -229,11 +232,58 @@
                                                 <input type="text">
                                             </div>
                                             <div class="event_in">
-                                                <div class="flexd_div">
+                                                    <a class="" href="#popup20">
+                                                        
+                                                        <div class="flexd_div">
+        
+                                                            <i class='bx bx-plus-circle' style='color:#ffffff'></i>
+                                                            Add New Venue
+                                                        </div>
+                                                    </a>
+                                                    <div id="popup20" class="overlay">
+                                                        <div class="add_venue">
+                                                            <a class="jclose" href="#">×</a>
+                                                            <h2>Add a New Venue</h2>
+                                                            <form action="">
+                                                                <label for="">Venue Name</label>
+                                                                <input type="text">
+                                                                <label for="">Venue Name</label>
+                                                                <input type="text">
+                                                                <h3>Venue Location</h3>
+                                                                <label for="">Venue Name</label>
+                                                                <input type="text">
+                                                                <div class="sub_venue">
+                                                                    <div class="sub_vi">
 
-                                                    <i class='bx bx-plus-circle' style='color:#ffffff'></i>
-                                                    Add New Venue
-                                                </div>
+                                                                        <label for="">Venue Name</label>
+                                                                        <input type="text">
+                                                                    </div>
+                                                                    <div class="sub_vi">
+
+                                                                        <label for="">Venue Name</label>
+                                                                        <input type="text">
+                                                                    </div>
+
+                                                                </div>
+                                                                <div class="sub_venue">
+                                                                    <div class="sub_vi">
+
+                                                                        <label for="">Venue Name</label>
+                                                                        <input type="text">
+                                                                    </div>
+                                                                    <div class="sub_vi">
+
+                                                                        <label for="">Venue Name</label>
+                                                                        <input type="text">
+                                                                    </div>
+
+                                                                </div>
+                                                                <button type="submit" class="btn">Create Venue</button>
+                                                            </form>
+
+                                                        </div>
+                                                    </div>
+
                                             </div>
                                         </div>
 
@@ -268,41 +318,45 @@
                                     <div class="right_area_form">
                                         <div class="age">
                                             <p>Age Restrictions</p>
+                                            <form action="">
+                                                
+                                            
                                             <div class="age_row">
                                                 <label class="switch">
-                                                    <input type="checkbox">
+                                                    <input type="checkbox" class="Present 1" name="attedence[]" id ="1"  value="P" >
                                                     <span class="slider round"></span>
                                                 </label>
                                                 <p>This event is an All Ages event</p>
                                             </div>
                                             <div class="age_row">
                                                 <label class="switch">
-                                                    <input type="checkbox" checked>
+                                                    <input type="checkbox"  class="Present 1" name="attedence[]" id ="1" value="A">
                                                     <span class="slider round"></span>
                                                 </label>
                                                 <p>This event is an All Ages event</p>
                                             </div>
                                             <div class="age_row">
                                                 <label class="switch">
-                                                    <input type="checkbox">
+                                                    <input type="checkbox" class="Present 1" name="attedence[]" id ="1"  value="H" >
                                                     <span class="slider round"></span>
                                                 </label>
                                                 <p>This event is an All Ages event</p>
                                             </div>
+                                        </form>
                                         </div>
 
                                         <div class="option">
                                             <p>More Options</p>
                                             <div class="age_row">
                                                 <label class="switch">
-                                                    <input type="checkbox" checked>
+                                                    <input type="checkbox" class="Present 2" name="attedence[]" id ="2"  value="P" >
                                                     <span class="slider round"></span>
                                                 </label>
                                                 <p>Make this event FREE</p>
                                             </div>
                                             <div class="age_row">
                                                 <label class="switch">
-                                                    <input type="checkbox">
+                                                    <input type="checkbox" class="Present 2" name="attedence[]" id ="2" value="A">
                                                     <span class="slider round"></span>
                                                 </label>
                                                 <p>Let customers select their own seats</p>
@@ -313,12 +367,16 @@
 
                                             </div>
                                             <div class="age_row">
-                                                <input type="radio" id="dewey" name="drone" value="dewey" class="cursor_pointer"/>
+                                                <input type="radio"  name="drone" value="dewey" class="cursor_pointer" id='watch-me' />
                                                 <label for="dewey">Clone the existing Chart</label>
+                                            </div>
+                                            <div class="name_yourc" id='show-me' style='display:none'>
+
+                                                <input type="text" placeholder="Name Your Chart"  >
                                             </div>
 
                                             <div>
-                                            </div>
+                                        </div>
 
                                         </div>
                                         <div class="file_form cursor_pointer" >
