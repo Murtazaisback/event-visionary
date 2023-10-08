@@ -72,6 +72,8 @@ $(document).ready(function(){
   });
 
 
+
+  
   $('input:checkbox').click(function(){
 
     var id = ($(this).attr('id'));
@@ -102,15 +104,86 @@ $(document).ready(function(){
 
 
 
-     $(document).ready(function () { 
-      $("#watch-me").click(function() {
-       $("#show-me:hidden").show('slow');
-       });
-       $("#watch-me").click(function(){
-       if($('watch-me').prop('checked')===false) {
-          $('#show-me').hide();}
-          });
-      });
+    //  $(document).ready(function () { 
+    //   $("#watch-me").click(function() {
+    //    $("#show-me:hidden").show('slow');
+    //    });
+    //    $("#watch-me").click(function(){
+    //    if($('watch-me').prop('checked')===false) {
+    //       $('#show-me').hide();}
+    //       });
+    //   });
+
+    const checkbox = document.getElementById('watch-me');
+
+    const box = document.getElementById('show-me');
+    
+    checkbox.addEventListener('click', function handleClick() {
+      if (checkbox.checked) {
+        box.style.display = 'block';
+      } else {
+        box.style.display = 'none';
+      }
+    });
+
+    
+    const checkbox2 = document.getElementById('huey');
+
+    const box2 = document.getElementById('show-me');
+    
+    checkbox2.addEventListener('click', function handleClick() {
+      if (checkbox2.checked) {
+        box2.style.display = 'none';
+      }
+    });
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // ----------------------main-------------check
+    const mainop = document.getElementById('watch-main');
+
+    const mainsh = document.getElementById('show-main');
+    
+    mainop.addEventListener('click', function handleClick() {
+      if (mainop.checked) {
+        mainsh.style.display = 'block';
+      } else {
+        mainsh.style.display = 'none';
+      }
+    });
+
+
+
+    const mainop2 = document.getElementById('watch-mainn');
+
+    const mainsh2 = document.getElementById('show-main');
+    
+    mainop2.addEventListener('click', function handleClick() {
+      if (mainop2.checked) {
+        mainsh2.style.display = 'none';
+      }
+    });
+
+
+  
+
 // $(document).ready(function(){
 //     $(".onee").click(function(){
 //       $(".svg_main1").toggle();
@@ -190,3 +263,57 @@ window.onclick = function(event) {
     }
   }
 }
+
+
+
+
+
+
+
+// Get references to the input element and the button
+const inputElements  = document.querySelectorAll(".myInput2");
+const toggleButton = document.getElementById("toggleButton2");
+
+// Add a click event listener to the button
+toggleButton.addEventListener("click", function() {
+  // Loop through the input elements and toggle their disabled state
+  inputElements.forEach(function(inputElement) {
+    inputElement.disabled = !inputElement.disabled;
+  });
+  
+ 
+});
+const inputElements2  = document.querySelectorAll(".myInput3");
+const toggleButton2 = document.getElementById("toggleButton3");
+
+// Add a click event listener to the button
+toggleButton2.addEventListener("click", function() {
+  // Loop through the input elements and toggle their disabled state
+  inputElements2.forEach(function(inputElement2) {
+    inputElement2.disabled = !inputElement2.disabled;
+  });
+  
+ 
+});
+
+
+function btnss() {
+  var x = document.getElementById("myDiv2");
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "flex";
+  }
+}
+function btnss2() {
+  var x = document.getElementById("myDiv3");
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "flex";
+  }
+}
+
+
+
+

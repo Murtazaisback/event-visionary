@@ -277,7 +277,7 @@
                                             <h2>Enter Payment Information and Confirm Purchase</h2>
                                             <h3>Event Title</h3>
                                             <a class="jclose" href="#">×</a>
-                                            <form action="" class="sell_form_section">
+                                            <div action="" class="sell_form_section">
                                                 <div class="sell_forma">
                                                     <div class="row_form">
                                                         <label for="">First Name *</label>
@@ -340,17 +340,17 @@
                                                     <div>
 
 
-                                                        <input type="radio" id="Card" name="form" value="Card"
-                                                            checked />
+                                                        <input type="radio" id="showRadio" name="form" value="Card"
+                                                             />
                                                         <label for="Card">Credit/Debit Card</label>
                                                     </div>
 
                                                     <div>
-                                                        <input type="radio" id="Cash" name="form" value="Cash" />
+                                                        <input type="radio" id="hideRadio" name="form" value="Cash" />
                                                         <label for="Cash">Cash</label>
                                                     </div>
                                                 </div>
-                                                <div class="sell_forma">
+                                                <div class="sell_forma " id="sell_fos2" style="display: none;"  >
                                                     <div class="row_form">
                                                         <input type="number" placeholder="Card Number" class="cnumber">
                                                     </div>
@@ -362,10 +362,10 @@
                                                     </div>
                                                 </div>
 
+                                            </div>
+
+
                                         </div>
-
-
-                                        </form>
 
                                         <div class="info_order_section ">
                                             <h2>Order Summary</h2>
@@ -590,6 +590,7 @@
     <script>
         AOS.init();
     </script>
+    <script src="./java.js"></script>
 </body>
 
 </html>
