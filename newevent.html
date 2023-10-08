@@ -463,8 +463,8 @@
                                                             </label>
                                                         </div>
                                                     </div>
-                                                    <div class="ticket_type_multi">
-                                                        <i class='bx bx-chevrons-down' onclick="myFunctione()" ></i>
+                                                    <div class="ticket_type_multi top-1">
+                                                        <i class='bx bx-chevrons-down' onclick="myFunctione()" id="Multi-Level-btn" ></i>
                                                     </div>
                                                 </div>
 
@@ -499,7 +499,7 @@
 
 
 
-                                        <div class="ticket_form_sec_hide">
+                                        <div class="ticket_form_sec_hide bot-1">
 
                                             <table>
 
@@ -564,6 +564,134 @@
                                                 <p>Add New Sub-Level Ticket Type</p>
                                             </div>
                                         </div>
+                                        <div class="ticket_form_sec second_sec">
+                                            <div class="table_body">
+                                                <div class="main_table_body">
+
+                                                    <div class="del_table_btn">
+
+                                                        <i class='bx bx-x'></i>
+                                                    </div>
+                                                    <div class="ticket_type_input">
+                                                        <input type="text">
+                                                    </div>
+                                                    <div id="ds2">
+
+                                                        <div class="ticket_type_Price">
+                                                            <input type="text">
+                                                        </div>
+                                                        <div class="ticket_type_qty" id="ids">
+                                                            <input type="text">
+                                                        </div>
+                                                        <div class="ticket_type_only" >
+                                                            <label class="switch">
+                                                                <input type="checkbox">
+                                                                <span class="slider round"></span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="ticket_type_multi top-2">
+                                                        <i class='bx bx-chevrons-down' onclick="myFunctione()" id="Multi-Level-btn2" ></i>
+                                                    </div>
+                                                </div>
+
+                                                <!-- <div class="main_table_body">
+
+                                                    <div class="del_table_btn">
+
+                                                        <i class='bx bx-x'></i>
+                                                    </div>
+                                                    <div class="ticket_type_input">
+                                                        <input type="text">
+                                                    </div>
+                                                    <div class="ticket_type_Price">
+                                                        <input type="text">
+                                                    </div>
+                                                    <div class="ticket_type_qty">
+                                                        <input type="text">
+                                                    </div>
+                                                    <div class="ticket_type_only">
+                                                        <label class="switch">
+                                                            <input type="checkbox">
+                                                            <span class="slider round"></span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="ticket_type_multi">
+                                                        <i class='bx bx-chevrons-down' onclick=""></i>
+                                                    </div>
+                                                </div> -->
+                                            </div>
+                                        </div>
+
+
+
+
+                                        <div class="ticket_form_sec_hide bot-2">
+
+                                            <table>
+
+                                                <thead>
+                                                    <tr>
+                                                        <th>Del</th>
+                                                        <th>Ticket Type</th>
+                                                        <th>Price</th>
+                                                        <th>QTY</th>
+                                                        <th>Box Office Only</th>
+                                                    </tr>
+                                                </thead>
+                                            </table>
+                                            <div class="table_body">
+                                                <div class="main_table_body">
+
+                                                    <div class="del_table_btn">
+
+                                                        <i class='bx bx-x'></i>
+                                                    </div>
+                                                    <div class="ticket_type_input">
+                                                        <input type="text">
+                                                    </div>
+                                                    <div class="ticket_type_Price">
+                                                        <input type="text">
+                                                    </div>
+                                                    <div class="ticket_type_qty">
+                                                        <input type="text">
+                                                    </div>
+                                                    <div class="ticket_type_only">
+                                                        <label class="switch">
+                                                            <input type="checkbox">
+                                                            <span class="slider round"></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <!-- <div class="main_table_body">
+
+                                                    <div class="del_table_btn">
+
+                                                        <i class='bx bx-x'></i>
+                                                    </div>
+                                                    <div class="ticket_type_input">
+                                                        <input type="text">
+                                                    </div>
+                                                    <div class="ticket_type_Price">
+                                                        <input type="text">
+                                                    </div>
+                                                    <div class="ticket_type_qty">
+                                                        <input type="text">
+                                                    </div>
+                                                    <div class="ticket_type_only">
+                                                        <label class="switch">
+                                                            <input type="checkbox">
+                                                            <span class="slider round"></span>
+                                                        </label>
+                                                    </div>
+                                                </div> -->
+                                            </div>
+                                            <div class="add_sub">
+                                                <i class='bx bx-plus-circle' style='color:#ffffff'></i>
+                                                <p>Add New Sub-Level Ticket Type</p>
+                                            </div>
+                                        </div>
+
                                         <div class="add_ticket_type">
                                             <i class='bx bx-plus-circle' style='color:#ffffff'></i>
                                             <p>Add New Ticket Type</p>
@@ -837,6 +965,7 @@
     <script>
         AOS.init();
     </script>
+    <script src="./java.js"></script>
 </body>
 
 </html>

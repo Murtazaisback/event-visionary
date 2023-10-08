@@ -197,7 +197,8 @@
         padding: 10px;
 
     }
-    .li_active:hover{
+
+    .li_active:hover {
         background: var(--color-yellow);
         color: #000 !important;
     }
@@ -823,7 +824,7 @@
         text-align: center;
         line-height: 50px;
         color: #fff;
-        font-size: 20px;
+        font-size: 25px;
         cursor: pointer;
         transition: all 0.3s ease;
     }
@@ -1824,13 +1825,14 @@
         margin-top: 25px;
     }
 
-    .icons{
+    .icons {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 20px;
         margin-top: 20px;
     }
+
     .icons svg {
         font-size: 29px;
         /* margin-top: 20px; */
@@ -1874,6 +1876,9 @@
 
     .ticket_form_sec {
         padding: 20px;
+    }
+    .second_sec{
+        padding-top: 0 !important   ;
     }
 
     .ticket_form_sec table thead tr {
@@ -1986,11 +1991,17 @@
         cursor: pointer;
     }
 
-    #ds{
+    #ds {
         display: flex;
         align-items: center;
         gap: 5px;
     }
+    #ds2 {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
     .hide_table_body {
         display: flex;
         align-items: center;
@@ -2107,6 +2118,7 @@
     .enable_sale_tax_section {
         margin-top: 50px;
         /* padding: 20px; */
+        /* margin-bottom: 200px !important; */
     }
 
     .tax_btn {
@@ -2114,6 +2126,7 @@
         align-items: center;
         gap: 10px;
         font-size: 14px;
+        margin-bottom: 40px;
 
     }
 
@@ -2184,12 +2197,15 @@
         border: none;
         cursor: pointer;
     }
-    .start_tax_caption:focus{
-        background: #ffe100b3;
+
+    .start_tax_caption:focus {
+        background: var(--color-yellow);
+        color: #000;
         box-shadow: none;
     }
+
     .start_tax_caption:focus.start_tax_inputs {
-        display: none ;
+        display: none;
     }
 
 
@@ -3971,7 +3987,7 @@
         left: -20px;
         z-index: 1000;
         border-style: solid;
-        border-width: 32.5px 39.0px 32.5px 1px;
+        border-width: 42.5px 39.0px 42.5px 0px;
         border-radius: 50%;
 
         border-color: transparent #000 transparent transparent;
@@ -3980,6 +3996,10 @@
         background-repeat: no-repeat;
         background-size: cover; */
         /* border-left-style: r; */
+        /* fill: #000; */
+        box-shadow: 2px 2px 4px 0px #212121 inset, -2px -2px 4px 0px #25251F inset;
+        filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.25));
+
     }
 
     #animation1 {
@@ -4125,58 +4145,68 @@
         text-align: center;
         padding-left: 20px;
     }
-    .add_venue form{
+
+    .add_venue form {
         display: flex;
         flex-direction: column;
         text-align: left;
         width: 100%;
         gap: 10px;
     }
-    .add_venue form h3{
+
+    .add_venue form h3 {
         font-weight: 600;
     }
-    .add_venue form button{
+
+    .add_venue form button {
         width: 60%;
         margin: auto;
         margin-top: 20px;
         background: transparent;
     }
-    .add_venue form input{
+
+    .add_venue form input {
         background: white;
         padding: 5px;
     }
-    .sub_venue{
+
+    .sub_venue {
         display: flex;
         align-items: center;
-        
+
     }
-    .sub_vi{
+
+    .sub_vi {
         width: 50%;
         margin-top: 10px;
         display: flex;
         flex-direction: column;
     }
-    .full_in{
+
+    .full_in {
         width: 88% !important;
     }
 
-    .sign_btnss{
+    .sign_btnss {
         display: flex;
         align-items: center;
         gap: 10px;
         flex-wrap: wrap;
     }
-    .sign_btnss a{
+
+    .sign_btnss a {
         padding: 5px;
         border: 1px solid var(--color-yellow);
         border-radius: 30px;
         transition: all ease-in-out 0.2s;
 
     }
-    .sign_btnss a:hover{
+
+    .sign_btnss a:hover {
         background: var(--color-yellow);
         color: #000;
     }
+
     /*Stying for small screens*/
     @media screen and (max-width: 860px) {
 
@@ -4828,7 +4858,8 @@
         .main_btns_side {
             top: 5%;
         }
-        .coustomer_form{
+
+        .coustomer_form {
             width: 100%;
         }
 
@@ -5277,4 +5308,9 @@
             bottom: -4px;
             transform: rotate(-45deg);
         }
+    }
+
+
+    .arrow2 {
+        /* margin-top: 20px; */
     }

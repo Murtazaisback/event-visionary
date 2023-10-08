@@ -60,16 +60,23 @@ for (i = 0; i < acc.length; i++) {
 
 
 $(document).ready(function(){
-    $(".ticket_type_multi").click(function(){
-      $(".ticket_form_sec_hide").toggle();
+    $(".top-1").click(function(){
+      $(".bot-1").toggle();
     });
   });
 
+
 $(document).ready(function(){
-    $(".add_ticket_type").click(function(){
-      $(".ticket_form_sec_hide").toggle();
+    $(".top-2").click(function(){
+      $(".bot-2").toggle();
     });
   });
+
+// $(document).ready(function(){
+//     $(".add_ticket_type").click(function(){
+//       $(".ticket_form_sec_hide").toggle();
+//     });
+//   });
 
 
 
@@ -315,5 +322,49 @@ function btnss2() {
 }
 
 
+
+
+
+
+
+
+
+var divToHide = document.getElementById("ds");
+var toggleButton6 = document.getElementById("Multi-Level-btn");
+
+// Set an initial flag to track visibility
+var isHidden = false;
+
+// Add an onclick event handler to the toggleButton
+toggleButton6.onclick = function() {
+  // Toggle the visibility based on the current state
+  if (isHidden) {
+    divToHide.style.visibility = "visible";
+  } else {
+    divToHide.style.visibility = "hidden";
+  }
+  
+  // Update the flag
+  isHidden = !isHidden;
+};
+
+var divToHide2 = document.getElementById("ds2");
+var toggleButton7 = document.getElementById("Multi-Level-btn2");
+
+// Set an initial flag to track visibility
+var isHidden = false;
+
+// Add an onclick event handler to the toggleButton
+toggleButton7.onclick = function() {
+  // Toggle the visibility based on the current state
+  if (isHidden) {
+    divToHide2.style.visibility = "visible";
+  } else {
+    divToHide2.style.visibility = "hidden";
+  }
+  
+  // Update the flag
+  isHidden = !isHidden;
+};
 
 
