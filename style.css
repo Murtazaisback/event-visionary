@@ -2214,7 +2214,7 @@
     .ticket_right {
         display: flex;
         flex-direction: column;
-        padding: 40px;
+        padding: 10px;
         /* justify-content: center; */
         align-items: center;
         gap: 20px;
@@ -2233,7 +2233,7 @@
 
     .right_info_ticket .switch {
         /* margin-right: 30px; */
-        width: 60px;
+        width: 50px;
     }
 
     .ticket_right_cat input {
@@ -5337,18 +5337,16 @@
     }
 
 
-    .arrow2 a{
-        /* margin-top: 20px; */
-        margin-left: 10px;
-        /* padding-bottom: 30px; */
-    }
     .arrow2 a i{
         background: #000;
         border-radius: 50%;
-        min-width: 40px !important;
-        height: 40px !important;
-        margin-top: 0px;
+        min-width: 45px !important;
+        height: 45px !important;
+        margin-top: 0px !important;
         color: var(--color-yellow) !important;
+    }
+    #Iconss{
+        margin: 0 !important;
     }
     .setting_save{
         padding: 5px 10px;
