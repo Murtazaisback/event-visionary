@@ -5,11 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>create an event</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
 </head>
 
@@ -19,7 +23,7 @@
     <div class="white_effect"></div>
     <nav class="nav">
         <div class="logo">
-            <img src="./imgs/b37371f7c9f89d198dd7ecd158ec99fb.png" alt="Logo Image">
+            <img src="../imgs/b37371f7c9f89d198dd7ecd158ec99fb.png" alt="Logo Image">
         </div>
         <div class="hamburger">
             <div class="line1"></div>
@@ -27,26 +31,27 @@
             <div class="line3"></div>
         </div>
         <ul class="navs-links">
-            <li><a href="./index.html">Home</a></li>
+            <li><a href="../index.html">Home</a></li>
             <li><a href="#">ORGANIZERS</a></li>
-            <li><a href="./event.html">EVENTS</a></li>
-            <li><a href="./newevent.html" class="li_active">CREATE EVENT</a></li>
+            <li><a href="../event.html">EVENTS</a></li>
+            <li><a href="../newevent.html" class="li_active">CREATE EVENT</a></li>
         </ul>
+        <!-- <button class="login-button" href="#">Login</button> -->
         <div class="dropdown">
             <button class="dropbtn">
                 Hero of house
-                <i class='bx bx-chevron-down'  ></i>
+                <i class='bx bx-chevron-down'></i>
             </button>
             <div class="dropdown-content">
-              <a href="./dashboard.html">Dashboard</a>
-              <a href="./event.html">Create an Event</a>
-              <a href="">Events</a>
-              <a href="#">Settings</a>
-              <a href="#">SMS Campaigns</a>
-              <a href="#">My Account</a>
-              
+                <a href="../dashboard.html">Dashboard</a>
+                <a href="../event.html">Create an Event</a>
+                <a href="">Events</a>
+                <a href="#">Settings</a>
+                <a href="#">SMS Campaigns</a>
+                <a href="#">My Account</a>
+
             </div>
-          </div>
+        </div>
     </nav>
 
 
@@ -67,7 +72,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="./dashboard.html">
+                            <a href="../dashboard.html">
 
 
                                 <i class="dashboard_icon w">
@@ -91,9 +96,9 @@
                         </li>
                         <li>
                             <div class="iocn-link">
-                                <a href="./newevent.html">
-                                    <i class='bx bx-plus-circle' style='color:#ffffff'></i>
-                                    <span class="link_name ">CREATE AN EVENT</span>
+                                <a href="../newevent.html">
+                                    <i class='bx bx-plus-circle yellow_m '></i>
+                                    <span class="link_name yellow_m">CREATE AN EVENT</span>
                                 </a>
                                 <!-- <ul class="sub-menu blank">
                                     <li><a class="link_name" href="./newevent.html">CREATE AN EVENT</a></li>
@@ -103,9 +108,9 @@
                         </li>
                         <li>
                             <div class="iocn-link">
-                                <a href="./event.html">
-                                    <i class='bx bx-calendar  '></i>
-                                    <span class="link_name ">EVENTS</span>
+                                <a href="../event.html">
+                                    <i class='bx bx-calendar' style='color:#ffffff'></i>
+                                    <span class="link_name">EVENTS</span>
                                 </a>
                                 <!-- <ul class="sub-menu blank">
                                     <li><a class="link_name" href="./event.html">EVENT</a></li>
@@ -133,9 +138,9 @@
                             </ul> -->
                         </li>
                         <li>
-                            <a href="./settingdash.html">
-                                <i class='bx bx-cog yellow_m'></i>
-                                <span class="link_name yellow_m">SETTINGS</span>
+                            <a href="../settingdash.html">
+                                <i class='bx bx-cog'></i>
+                                <span class="link_name">SETTINGS</span>
                             </a>
                             <!-- <ul class="sub-menu blank">
                                 <li><a class="link_name" href="#">SETTINGS</a></li>
@@ -168,129 +173,84 @@
                 <section class="home-section">
                     <div class="home-content">
 
+                        <!-- <i class='bx bx-chevron-right' style='color:#FFE100'></i> -->
+                        <!-- <div class="main_btns_side">
+                            <span class="triangle">
+                                <div class="icon">
+
+                                    <input type="checkbox" id="animation1">
+                                    <label for="animation1">
+                                        <div class="arrow"></div>
+                                    </label>
+                                </div>
+                            </span>
+                        </div> -->
 
 
-                         <!-- <div class="main_btns_side">
-                        <span class="triangle">
-                        <div class="icon">
+                        <div class="tabs_container">
+                            <div class="w3-bar w3-black tabs_section">
+                                <a class="w3-bar-item w3-button tablink w3-red tab_btn  team-member" href="../newevent.html">1. Enter
+                                    Event Details
+                                    <img src="./imgs/Ellipse 3.png" class="team-member-info " alt="">
 
-                                <input type="checkbox" id="animation1">
-                                <label for="animation1">
-                                    <div class="arrow"></div>
-                                </label>
+
+                                </a>
+                                <a class="w3-bar-item w3-button tablink tab_btn  team-member" href="./Define Ticket Prices.html">2. Define Ticket Prices
+                                    <img src="./imgs/Ellipse 3.png" class="team-member-info" alt="">
+
+
+
+                                </a>
+                                <a class="w3-bar-item w3-button tablink tab_btn  team-member team-member-small" href="./Publish Event.html" >3. Publish Event
+                                    <img src="./imgs/Ellipse 3.png" class="team-member-info one_active" alt="">
+
+
+
+                                </a>
+                                <a class="w3-bar-item w3-button tablink tab_btn  team-member team-member-small" href="./share Event.html">4. share Event
+                                    <img src="../imgs/Ellipse 3.png" class="team-member-info one_active" alt="">
+
+
+                                </a>
                             </div>
-                        </span>
-                        
-                        
-                    </div> -->
-                    <div class="main_setting">
-                        <h1>Settings</h1>
-                        <div class="main_set">
-                            <div class="main_set_left">
-                                <h2>Payout Method</h2>
-                                <p>Choose an option below to connect your account to a payout method. This is how you will receive payouts for customers’ ticket purchases.</p>
-                                <div class="set_icons">
-                                    <img src="./imgs/stripe 3.png" alt="">
-                                    <img src="./imgs/Square_LogoLockup_White 1.png" alt="">
+
+                            <div id="share" class="w3-container w3-border city" >
+                                <div class="share_event">
+                                    <p class="share_event_title">Your event has been published successfully</p>
+                                    <div class="share_portion">
+
+
+                                        <div class="exit_event">
+                                            <p>You can view your event here</p>
+                                            <img src="../imgs/enter 1.png" alt="">
+                                        </div>
+                                        <h3>Share Options</h3>
+                                        <div class="share_link">
+                                            <p>Shareable Link:</p>
+                                            <input type="text" disabled>
+                                            <img src="../imgs/copy 1.png" alt="">
+                                        </div>
+                                        <div class="directly">
+                                            <p>Share Directly:</p>
+                                            <div class="share_icon">
+                                                <i class='bx bxl-facebook'></i>
+                                                <i class='bx bxl-linkedin-square'></i>
+                                                <i class='bx bxl-twitter'></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 </div>
-                                <div class="logo2">
-                                    <p>logo</p>
-                                    <img src="./imgs/Rectangle 74.png" alt="">
+                                <div class="share_btns">
+                                    <a class="w3-bar-item w3-button tablink w3-red tab_btn new_envet_btn" href="../newevent.html">Create a New Event</a>
+                                    <a href="../event.html" class="publish_btn">Done</a>
+
                                 </div>
-                                
-                                <p>Display Contact Information</p>
-                                <div class="info_tdisplay">
-                                    <div class="itdisplay">
-                                        <label class="switch">
-                                            <input type="checkbox" checked>
-                                            <span class="slider round"></span>
-                                        </label>
-                                        <label for="">Email:</label>
-                                        <input type="email">
-
-                                    </div>
-                                    <div class="itdisplay">
-                                        <label class="switch">
-                                            <input type="checkbox" checked>
-                                            <span class="slider round"></span>
-                                        </label>
-                                        <label for="">Email:</label>
-                                        <input type="email">
-
-                                    </div>
-                                </div>
-                               
-
-                            </div>
-                            <div class="main_set_right">
-                                <form action="">
-                                    <h2>Payment Method</h2>
-                                    <p>Billing Information</p>
-                                    <p>You will only be charged in the event you elect to absorb service fees or use our SMS campaigns service.</p>
-                                    <div class="set_form">
-                                        <div class="set_formI">
-
-                                            <label for="">First Name</label>
-                                            <input type="text">
-                                        </div>
-                                        <div class="set_formI">
-
-                                            <label for="">Last Name</label>
-                                            <input type="text">
-                                        </div>
-                                    </div>
-                                    <div class="set_formI">
-                                        
-                                        <label for="">Billing Address</label>
-                                        <input type="text" class="in_long">
-                                    </div>
-                                    
-                                    <div class="set_form">
-                                        <div class="set_formI">
-
-                                            <label for=""> City</label>
-                                            <input type="text">
-                                        </div>
-                                        <div class="set_formI">
-
-                                            <label for="">State </label>
-                                            <input type="text">
-                                        </div>
-                                    </div>
-                                    
-                                    
-                                    <div class="set_form">  
-                                        <div class="set_form2">
-                                            
-                                            <label for=""> Postal Code</label>
-                                            <input type="text">
-                                        </div>
-                                    </div>
-                                    <div class="set_formI">
-                                        
-                                        <label for="">Credit/Debit Card</label>
-                                        <input type="text" class="in_long">
-                                    </div>
-
-
-                                    <div class="set_form">
-                                        <div class="set_form2">
-
-                                            <label for=""> Security Code</label>
-                                            <input type="text">
-                                        </div>
-                                        <div class="set_form2">
-
-                                            <label for="">Exp Date</label>
-                                            <input type="text">
-                                        </div>
-                                    </div>
-                                </form>
-                                <button type="submit" class="setting_save">Save</button>
-                                
                             </div>
 
                         </div>
+
+
                     </div>
                 </section>
 
@@ -335,7 +295,7 @@
             </div>
             <div class="footer_info">
                 <div class="footer_info_imgs">
-                    <img src="./imgs/4736150369408c50504a5b1df6f6db67.png" alt="logo">
+                    <img src="../imgs/4736150369408c50504a5b1df6f6db67.png" alt="logo">
                     <p>support@eventvisionary.com</p>
                     <p>Event Visionary, LLC</p>
                     <p>30 N Gould St, Ste R,<br>
@@ -357,16 +317,16 @@
                     <b>Follow Us.</b>
                     <div class="footer_info_follow_img">
                         <a href="https://www.facebook.com/">
-                            <img src="./imgs/facebook.png" alt="">
+                            <img src="../imgs/facebook.png" alt="">
 
                         </a>
                         <a href="https://www.instagram.com/">
-                            <img src="./imgs/Group.png" alt="">
+                            <img src="../imgs/Group.png" alt="">
 
                         </a>
                         <a href="https://twitter.com/home">
 
-                            <img src="./imgs/twitter.png" alt="">
+                            <img src="../imgs/twitter.png" alt="">
                         </a>
                     </div>
                 </div>
@@ -393,14 +353,39 @@
           sidebar.classList.toggle("close");
         });
         </script>
-    <script src="./js.js"></script>
+    <script src="../js.js"></script>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
     </script>
+
+
+
+
+
+
+
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init();
+        AOS.init();
+    </script>
+    <script src="../java.js"></script>
+
+    <script>
+        function toggleIcon() {
+            var iconElement = document.getElementById("Multi-Level-btn");
+
+            // Check if the current class is "fa-chevron-down"
+            if (iconElement.classList.contains("bx-chevron-down")) {
+                // Change to "fa-chevron-up"
+                iconElement.classList.remove("bx-chevron-down");
+                iconElement.classList.add("bx-chevron-up");
+            } else {
+                // Change back to "bx-chevron-down"
+                iconElement.classList.remove("bx-chevron-up");
+                iconElement.classList.add("bx-chevron-down");
+            }
+        }
     </script>
 </body>
 

@@ -109,19 +109,19 @@
     <main>
         <div class="dashboard_main">
             <div class="dashboard_section">
-                <div class="sidebar close">
+                <div class="sidebar ">
                     <div class="logo-details">
                         <!-- <i class='bx bxl-c-plus-plus'></i> -->
                         <!-- <span class="logo_name">CodingLab</span> -->
                     </div>
                     <ul class="nav-links">
-                        <!-- <li id="Iconss" class="arrow2">
+                        <li id="Iconss" class="arrow2 showMenu">
                             <a >
 
-                                <i class='bx bx-menu'></i>
-                                <span class="link_name yellow_m">menu</span>
+                                <i class='bx bx-chevron-right'></i>
+                                <!-- <span class="link_name yellow_m">menu</span> -->
                             </a>
-                        </li> -->
+                        </li>
                         <li>
                             <a href="./dashboard.html" >
                                 
@@ -174,7 +174,7 @@
                             </ul> -->
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="./reports.html">
                                 <!-- <box-icon name='money-withdraw' color='#ffffff' ></box-icon> -->
                                 <i class='bx bx-money-withdraw' style='color:#ffffff'></i>
                                 <span class="link_name">REPORTS</span>
@@ -220,7 +220,7 @@
                     <div class="home-content">
                         
 
-                        <div class="main_btns_side">
+                        <!-- <div class="main_btns_side">
                             <span class="triangle">
                             <div class="icon">
     
@@ -230,7 +230,7 @@
                                     </label>
                                 </div>
                             </span>
-                        </div>
+                        </div> -->
 
 
                         <div class="dash_container">
@@ -395,7 +395,7 @@
 
 
     <script>
-        let arrow = document.querySelectorAll(".arrow");
+        let arrow = document.querySelectorAll(".arrow2");
         for (var i = 0; i < arrow.length; i++) {
           arrow[i].addEventListener("click", (e)=>{
          let arrowParent = e.target.parentElement.parentElement;//selecting main parent of arrow
@@ -403,7 +403,7 @@
           });
         }
         let sidebar = document.querySelector(".sidebar");
-        let sidebarBtn = document.querySelector("#animation1");
+        let sidebarBtn = document.querySelector("#Iconss");
         console.log(sidebarBtn);
         sidebarBtn.addEventListener("click", ()=>{
           sidebar.classList.toggle("close");

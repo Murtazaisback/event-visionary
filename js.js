@@ -331,6 +331,7 @@ function btnss2() {
 
 var divToHide = document.getElementById("ds");
 var toggleButton6 = document.getElementById("Multi-Level-btn");
+var iconElement = document.getElementById("Multi-Level-btn");
 
 // Set an initial flag to track visibility
 var isHidden = false;
@@ -343,28 +344,75 @@ toggleButton6.onclick = function() {
   } else {
     divToHide.style.visibility = "hidden";
   }
+
+  // function toggleIcon() {
   
-  // Update the flag
-  isHidden = !isHidden;
-};
+    // Check if the current class is "fa-chevron-down"
+    // bx-chevron-up
+    if (iconElement.classList.contains("bx-chevron-up")) {
+      // Change to "fa-chevron-up"
+      iconElement.classList.remove("bx-chevron-up");
+      iconElement.classList.add("bx-chevron-down");
+    } else {
+      // Change back to "bx-chevron-down"
+      iconElement.classList.remove("bx-chevron-down");
+      iconElement.classList.add("bx-chevron-up");
+    }
+    // }
+    
+    
+    // Update the flag
+    isHidden = !isHidden;
+  };
 
-var divToHide2 = document.getElementById("ds2");
-var toggleButton7 = document.getElementById("Multi-Level-btn2");
+  var divToHide2 = document.getElementById("ds2");
+  var toggleButton7 = document.getElementById("Multi-Level-btn2");
+  var iconElement2 = document.getElementById("Multi-Level-btn2");
+  
+  // Set an initial flag to track visibility
+  var isHidden = false;
 
-// Set an initial flag to track visibility
-var isHidden = false;
-
-// Add an onclick event handler to the toggleButton
-toggleButton7.onclick = function() {
-  // Toggle the visibility based on the current state
+  // Add an onclick event handler to the toggleButton
+  toggleButton7.onclick = function() {
+    // Toggle the visibility based on the current state
   if (isHidden) {
     divToHide2.style.visibility = "visible";
   } else {
     divToHide2.style.visibility = "hidden";
   }
+
+  if (iconElement2.classList.contains("bx-chevron-up")) {
+    // Change to "fa-chevron-up"
+    iconElement2.classList.remove("bx-chevron-up");
+    iconElement2.classList.add("bx-chevron-down");
+} else {
+    // Change back to "bx-chevron-down"
+    iconElement2.classList.remove("bx-chevron-down");
+    iconElement2.classList.add("bx-chevron-up");
+}
   
   // Update the flag
   isHidden = !isHidden;
 };
 
 
+
+// alert("c")
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function toggleClass() {
+//   $("#Multi-Level-btn").toggleClass("bx-chevrons-down bx-chevrons-up");
+// }
+
+// alert("nh")

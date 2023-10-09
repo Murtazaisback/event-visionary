@@ -55,12 +55,17 @@
     <main>
         <div class="dashboard_main">
             <div class="dashboard_section">
-                <div class="sidebar close">
+                <div class="sidebar ">
                     <div class="logo-details">
                         <!-- <i class='bx bxl-c-plus-plus'></i> -->
                         <!-- <span class="logo_name">CodingLab</span> -->
                     </div>
                     <ul class="nav-links">
+                        <li id="Iconss" class="arrow2 showMenu">
+                            <a >
+                                <i class='bx bx-chevron-right'></i>
+                            </a>
+                        </li>
                         <li>
                             <a href="./dashboard.html">
                 
@@ -462,7 +467,7 @@
 
 
     <script>
-        let arrow = document.querySelectorAll(".arrow");
+        let arrow = document.querySelectorAll(".arrow2");
         for (var i = 0; i < arrow.length; i++) {
           arrow[i].addEventListener("click", (e)=>{
          let arrowParent = e.target.parentElement.parentElement;//selecting main parent of arrow
@@ -470,12 +475,12 @@
           });
         }
         let sidebar = document.querySelector(".sidebar");
-        let sidebarBtn = document.querySelector("#animation1");
+        let sidebarBtn = document.querySelector("#Iconss");
         console.log(sidebarBtn);
         sidebarBtn.addEventListener("click", ()=>{
           sidebar.classList.toggle("close");
         });
-        </script>   
+        </script> 
     <script src="./js.js"></script>
 
 
