@@ -19,7 +19,10 @@
     <div class="white_effect"></div>
     <nav class="nav">
         <div class="logo">
-            <img src="./imgs/b37371f7c9f89d198dd7ecd158ec99fb.png" alt="Logo Image">
+            <a href="./index.html">
+
+                <img src="./imgs/b37371f7c9f89d198dd7ecd158ec99fb.png" alt="Logo Image">
+            </a>
         </div>
         <div class="hamburger">
             <div class="line1"></div>
@@ -107,8 +110,8 @@
                                     <i class='bx bx-calendar yellow_m '></i>
                                     <span class="link_name yellow_m">EVENTS</span>
                                 </a>
-                                <div class="inner_nav_links">
-                                    <p class="Event_Title yellow_m">Event Title</p>
+                                <div class="inner_nav_links " id="none_h">
+                                    <p class="Event_Title ">Event Title</p>
                                     <ul class="inner_nav_items">
                                         <li class="inner_nav_item"><a href="./sell_tickets.html">Sell Tickets</a></li>
                                         <li class="inner_nav_item"><a href="./managetwo.html">Hold Seats</a></li>
@@ -383,6 +386,26 @@
         sidebarBtn.addEventListener("click", ()=>{
           sidebar.classList.toggle("close");
         });
+
+
+
+
+
+        var toggleButton = document.getElementById("Iconss");
+var toggleElement = document.getElementById("none_h");
+
+// Function to toggle the display property
+function toggleDisplay() {
+  if (toggleElement.style.display === "none") {
+    toggleElement.style.display = "flex";
+  } else {
+    toggleElement.style.display = "none";
+  }
+}
+
+// Add a click event listener to the button
+toggleButton.addEventListener("click", toggleDisplay);
+
         </script>
     <script src="./js.js"></script>
 

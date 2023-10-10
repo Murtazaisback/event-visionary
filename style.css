@@ -1780,7 +1780,7 @@
         width: 100%;
         display: flex;
         justify-content: space-between;
-        gap: 50px;
+        gap: 20px;
         /* align-items: baseline; */
         padding-top: 10px;
     }
@@ -1872,7 +1872,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        gap: 30px;
+        gap: 10px;
         flex-wrap: wrap;
     }
 
@@ -2645,6 +2645,17 @@
         padding: 40px;
         padding-top: 5px;
         padding-bottom: 10px;
+    }
+    .inner_nav_links p{
+        margin-left: 20px;
+    }
+    .none_h{
+        /* width: 0 !important; */
+        /* height: 0 !important; */
+        display: none ;
+    }
+    .none_show{
+        display: flex !important;
     }
 
     .inner_nav_items {
