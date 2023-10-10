@@ -67,7 +67,7 @@
 
                         <li id="Iconss" class="arrow2 showMenu">
                             <a >
-                                <i class='bx bx-chevron-right ' id="myBtns"></i>
+                                <i class='bx bx-chevron-left' id="myBtns"></i>
                             </a>
                         </li>
 
@@ -522,12 +522,12 @@
         // Add a click event listener to the div element
         myBtns.addEventListener('click', function () {
             // Toggle the CSS class on the div element
-            if (myBtns.classList.contains('bx-chevron-right')) {
-                myBtns.classList.remove('bx-chevron-right');
-                myBtns.classList.add('bx-chevron-left');
-            } else {
+            if (myBtns.classList.contains('bx-chevron-left')) {
                 myBtns.classList.remove('bx-chevron-left');
                 myBtns.classList.add('bx-chevron-right');
+            } else {
+                myBtns.classList.remove('bx-chevron-right');
+                myBtns.classList.add('bx-chevron-left');
             }
         });
 

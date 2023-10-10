@@ -1020,7 +1020,7 @@
         position: relative;
         height: 100%;
         /* box-shadow: 2px 2px 4px 0px #212121 inset, -2px -2px 4px 0px #25251F inset; */
-        padding-bottom: 2px;
+        padding-bottom: 20px;
     }
 
 
@@ -1072,7 +1072,7 @@
         display: flex;
         flex-direction: column;
         /* align-items: flex-end; */
-        gap: 10px;
+        gap: 25px;
     }
 
     .upcoming_events {
@@ -1200,7 +1200,7 @@
         padding: 20px;
         flex-direction: column;
         align-items: center;
-        margin-top: 10px;
+        /* margin-top: 10px; */
         gap: 10px;
     }
 
@@ -1884,8 +1884,9 @@
     .ticket_form_sec {
         padding: 20px;
     }
-    .second_sec{
-        padding-top: 0 !important   ;
+
+    .second_sec {
+        padding-top: 0 !important;
     }
 
     .ticket_form_sec table thead tr {
@@ -2003,11 +2004,13 @@
         align-items: center;
         gap: 5px;
     }
+
     #dss {
         display: flex;
         align-items: center;
         gap: 5px;
     }
+
     #ds2 {
         display: flex;
         align-items: center;
@@ -2652,15 +2655,18 @@
         padding-top: 5px;
         padding-bottom: 10px;
     }
-    .inner_nav_links p{
+
+    .inner_nav_links p {
         margin-left: 20px;
     }
-    .none_h{
+
+    .none_h {
         /* width: 0 !important; */
         /* height: 0 !important; */
-        display: none ;
+        display: none;
     }
-    .none_show{
+
+    .none_show {
         display: flex !important;
     }
 
@@ -3328,17 +3334,21 @@
         flex-direction: column;
         gap: 30px;
         align-items: center;
+        padding: 10px;
+        padding-bottom: 30px;
+        width: 70%;
         border-radius: 10px;
         background: radial-gradient(79.36% 84.72% at -61.47% 22.46%, rgba(99, 99, 99, 0.80) 0%, rgba(99, 99, 99, 0.00) 100%), radial-gradient(209.84% 203.35% at 275.29% 88.29%, rgba(250, 225, 0, 0.90) 0%, rgba(0, 0, 0, 0.00) 100%), rgba(0, 0, 0, 0.10);
-        padding: 10px;
-        width: 90%;
+        box-shadow: 4px 4px 4px 0px rgba(131, 131, 131, 0.25) inset;
     }
 
     .single_event_share {
-        width: 90%;
-        padding: 20px;
+        width: 70%;
+        padding: 10px;
         border-radius: 10px;
-        background: radial-gradient(79.36% 84.72% at -61.47% 22.46%, rgba(99, 99, 99, 0.80) 0%, rgba(99, 99, 99, 0.00) 100%), radial-gradient(209.84% 203.35% at 275.29% 88.29%, rgba(250, 225, 0, 0.90) 0%, rgba(0, 0, 0, 0.00) 100%), rgba(0, 0, 0, 0.10);
+        border-radius: 10px;
+background: radial-gradient(79.36% 84.72% at -61.47% 22.46%, rgba(99, 99, 99, 0.80) 0%, rgba(99, 99, 99, 0.00) 100%), radial-gradient(209.84% 203.35% at 275.29% 88.29%, rgba(250, 225, 0, 0.90) 0%, rgba(0, 0, 0, 0.00) 100%), rgba(0, 0, 0, 0.10);
+box-shadow: 4px 4px 4px 0px rgba(131, 131, 131, 0.25) inset;
         display: flex;
         flex-direction: column;
         gap: 10px;
@@ -3911,10 +3921,12 @@
         align-items: flex-end;
         text-align: left;
     }
-    .main_set_right form h2{
+
+    .main_set_right form h2 {
         margin-bottom: 30px;
     }
-    .main_set_right form p{
+
+    .main_set_right form p {
         margin-bottom: 10px;
     }
 
@@ -3945,7 +3957,8 @@
         gap: 10px;
         text-align: left;
     }
-    .logo2 img{
+
+    .logo2 img {
         width: 200px;
     }
 
@@ -4054,13 +4067,15 @@
         bottom: -10px;
         /* right: 0; */
     }
-    .next_b{
+
+    .next_b {
         /* display: flex; */
         position: relative;
         justify-content: right;
         flex-direction: column;
     }
-    .next_b img{
+
+    .next_b img {
         width: 70px;
         position: absolute;
         right: 0;
@@ -5354,7 +5369,7 @@
     }
 
 
-    .arrow2 a i{
+    .arrow2 a i {
         background: #000;
         border-radius: 50%;
         min-width: 45px !important;
@@ -5362,35 +5377,40 @@
         margin-top: 0px !important;
         color: var(--color-yellow) !important;
     }
-    #Iconss{
+
+    #Iconss {
         margin: 0 !important;
     }
-    .setting_save{
+
+    .setting_save {
         padding: 5px 10px;
         background: transparent;
         outline: none;
         border: 1px solid var(--color-yellow);
         border-radius: 25px;
-        
+
     }
-    .yellow_tables td{
+
+    .yellow_tables td {
         color: var(--color-yellow);
     }
 
-    .tiktct_mbtns{
+    .tiktct_mbtns {
         display: flex;
         justify-content: right;
         margin-bottom: 20px;
     }
-    .tiktct_mbtns button{
+
+    .tiktct_mbtns button {
         padding: 10px 20px;
         background: #000;
         border-radius: 25px;
         border: 1px solid var(--color-yellow);
 
     }
-    .tiktct_mbtn button{
-        
+
+    .tiktct_mbtn button {
+
         padding: 10px 20px;
         background: #000;
         border-radius: 25px;
