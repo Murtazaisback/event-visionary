@@ -66,7 +66,7 @@
                         <li id="Iconss" class="arrow2 showMenu">
                             <a >
 
-                                <i class='bx bx-chevron-right'></i>
+                                <i class='bx bx-chevron-right' id="myBtns"></i>
                                 <!-- <span class="link_name yellow_m">menu</span> -->
                             </a>
                         </li>
@@ -617,6 +617,23 @@ toggleButton.addEventListener("click", toggleDisplay);
         AOS.init();
     </script>
     <script src="./java.js"></script>
+    <script>
+        const myBtns = document.getElementById('myBtns');
+
+        // Add a click event listener to the div element
+        myBtns.addEventListener('click', function () {
+            // Toggle the CSS class on the div element
+            if (myBtns.classList.contains('bx-chevron-right')) {
+                myBtns.classList.remove('bx-chevron-right');
+                myBtns.classList.add('bx-chevron-left');
+            } else {
+                myBtns.classList.remove('bx-chevron-left');
+                myBtns.classList.add('bx-chevron-right');
+            }
+        });
+
+    </script>
+
 </body>
 
 </html>
