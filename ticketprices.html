@@ -117,12 +117,12 @@
                                     <ul class="inner_nav_items">
                                         <li class="inner_nav_item"><a href="./sell_tickets.html">Sell Tickets</a></li>
                                         <li class="inner_nav_item"><a href="./managetwo.html">Hold Seats</a></li>
-                                        <li class="inner_nav_item"><a href="">Scan Tickets</a></li>
+                                        <li class="inner_nav_item"><a href="./scan_tickets.html">Scan Tickets</a></li>
                                         <li class="inner_nav_item"><a href="./attendees.html">Attendees</a></li>
                                         <li class="inner_nav_item"><a href="./manage_order.html"  >Manage Orders</a></li>
                                         <li class="inner_nav_item"><a href="./eventdetails.html">Event Details</a></li>
                                         <li class="inner_nav_item"><a href="./ticketprices.html" class="yellow_m">Ticket Prices</a></li>
-                                        <li class="inner_nav_item"><a href="">Seating Chart</a></li>
+                                        <li class="inner_nav_item"><a href="./setting_chart.html">Seating Chart</a></li>
                                     </ul>
                                 </div>
                                 <!-- <ul class="sub-menu blank">
@@ -245,23 +245,28 @@
                                                     <div class="ticket_type_input">
                                                         <input type="text">
                                                     </div>
-                                                    <div class="ticket_type_Price">
-                                                        <input type="text">
+                                                    <div id="dss">
+
+                                                        <div class="ticket_type_Price">
+                                                            <input type="text">
+                                                        </div>
+                                                        <div class="ticket_type_qty" id="ids">
+                                                            <input type="text">
+                                                        </div>
+                                                        <div class="ticket_type_only">
+                                                            <label class="switch">
+                                                                <input type="checkbox">
+                                                                <span class="slider round"></span>
+                                                            </label>
+                                                        </div>
                                                     </div>
-                                                    <div class="ticket_type_qty">
-                                                        <input type="text">
-                                                    </div>
-                                                    <div class="ticket_type_only">
-                                                        <label class="switch">
-                                                            <input type="checkbox">
-                                                            <span class="slider round"></span>
-                                                        </label>
-                                                    </div>
-                                                    <div class="ticket_type_multi">
-                                                        <i class='bx bx-chevrons-down' onclick=""></i>
+                                                    <div class="ticket_type_multi top-1">
+                                                        <i class='bx bx-chevrons-down'
+                                                            onclick="myFunctione();" id="Multi-Level-btn20" ></i>
                                                     </div>
                                                 </div>
-                                                <div class="main_table_body">
+
+                                                <!-- <div class="main_table_body">
 
                                                     <div class="del_table_btn">
 
@@ -285,14 +290,14 @@
                                                     <div class="ticket_type_multi">
                                                         <i class='bx bx-chevrons-down' onclick=""></i>
                                                     </div>
-                                                </div>
+                                                </div> -->
                                             </div>
                                         </div>
 
 
 
 
-                                        <div class="ticket_form_sec_hide">
+                                        <div class="ticket_form_sec_hide bot-1">
 
                                             <table>
 
@@ -329,7 +334,7 @@
                                                         </label>
                                                     </div>
                                                 </div>
-                                                <div class="main_table_body">
+                                                <!-- <div class="main_table_body">
 
                                                     <div class="del_table_btn">
 
@@ -350,13 +355,14 @@
                                                             <span class="slider round"></span>
                                                         </label>
                                                     </div>
-                                                </div>
+                                                </div> -->
                                             </div>
                                             <div class="add_sub">
                                                 <i class='bx bx-plus-circle' style='color:#ffffff'></i>
                                                 <p>Add New Sub-Level Ticket Type</p>
                                             </div>
                                         </div>
+
                                         <div class="add_ticket_type">
                                             <i class='bx bx-plus-circle' style='color:#ffffff'></i>
                                             <p>Add New Ticket Type</p>
@@ -377,34 +383,39 @@
                                                     <span>%</span>
 
                                                 </div>
+
+                                            </div>
+                                            <div class="tax_inss">
                                                 <div class="start_tax">
-                                                    <div class="start_tax_sec">
+                                                    <div class="start_tax_sec" >
 
                                                         <p>When Should Ticket Sales Start?</p>
                                                         <div class="start_tax_inputs">
-                                                            <input type="date">
-                                                            <input type="time">
+                                                            <input type="date" class="myInput2" >
+                                                            <input type="time" class="myInput2">
 
                                                         </div>
                                                     </div>
                                                     <div>
-                                                        <p class="start_tax_caption"> Start Ticket Sales Immediately</p>
+                                                        <button type="reset" class="start_tax_caption"
+                                                            id="toggleButton2"> Start Ticket Sales Immediately</button>
 
                                                     </div>
 
                                                 </div>
                                                 <div class="start_tax">
-                                                    <div class="start_tax_sec">
+                                                    <div class="start_tax_sec" id="mainia2">
 
                                                         <p>When Should Ticket Sales End?</p>
                                                         <div class="start_tax_inputs">
-                                                            <input type="date">
-                                                            <input type="time">
+                                                            <input type="date" class="myInput3">
+                                                            <input type="time" class="myInput3">
 
                                                         </div>
                                                     </div>
                                                     <div>
-                                                        <p class="start_tax_caption"> Start Ticket Sales Immediately</p>
+                                                        <button type="reset" class="start_tax_caption  "
+                                                            id="toggleButton3">End Ticket Sales Immediately</button>
 
                                                     </div>
                                                 </div>
@@ -449,8 +460,9 @@
                                     </div>
                                     <div class="next_btn">
 
-                                        <a class="w3-bar-item w3-button tablink tab_btn"
-                                            onclick="openCity(event,'Publish')">Save Changes</a>
+                                        <a class="w3-bar-item w3-button tablink tab_btn " href="./Publish Event.html">Save changes
+                                        <!-- <img src="../imgs/Ellipse 3.png" class="team-member-info one_active" alt=""> -->
+                                        </a>
                                     </div>
 
 
@@ -561,24 +573,8 @@
         sidebarBtn.addEventListener("click", ()=>{
           sidebar.classList.toggle("close");
         });
-
-
-        var toggleButton = document.getElementById("Iconss");
-var toggleElement = document.getElementById("none_h");
-
-// Function to toggle the display property
-function toggleDisplay() {
-  if (toggleElement.style.display === "none") {
-    toggleElement.style.display = "flex";
-  } else {
-    toggleElement.style.display = "none";
-  }
-}
-
-// Add a click event listener to the button
-toggleButton.addEventListener("click", toggleDisplay);
         </script>
-    <script src="./js.js"></script>
+    <script src="../java.js"></script>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
@@ -593,6 +589,104 @@ toggleButton.addEventListener("click", toggleDisplay);
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
+    </script>
+    <script src="./js.js"></script>
+    <script src="./java.js"></script>
+
+    <script>
+        function toggleIcon() {
+            var iconElement = document.getElementById("Multi-Level-btn");
+
+            // Check if the current class is "fa-chevron-down"
+            if (iconElement.classList.contains("bx-chevron-down")) {
+                // Change to "fa-chevron-up"
+                iconElement.classList.remove("bx-chevron-down");
+                iconElement.classList.add("bx-chevron-up");
+            } else {
+                // Change back to "bx-chevron-down"
+                iconElement.classList.remove("bx-chevron-up");
+                iconElement.classList.add("bx-chevron-down");
+            }
+        }
+
+
+
+
+const toggleDiv = document.getElementById('toggleButton2');
+const toggleInputs = document.querySelectorAll('.myInput2');
+
+// Add a click event listener to the div element
+toggleDiv.addEventListener('click', function() {
+  // Loop through all the input elements with the class 'toggleInput'
+  toggleInputs.forEach(input => {
+    // Toggle the 'disabled' property of each input element
+    input.disabled = !input.disabled;
+  });
+});
+
+
+
+
+
+    </script>
+    <script>
+        const toggleDiv2 = document.getElementById('toggleButton3');
+const toggleInputs2 = document.querySelectorAll('.myInput3');
+
+// Add a click event listener to the div element
+toggleDiv2.addEventListener('click', function() {
+  // Loop through all the input elements with the class 'toggleInput'
+  toggleInputs2.forEach(input => {
+    // Toggle the 'disabled' property of each input element
+    input.disabled = !input.disabled;
+  });
+});
+
+
+
+var divToHide2 = document.getElementById("dss");
+  var toggleButton7 = document.getElementById("Multi-Level-btn20");
+  var iconElement2 = document.getElementById("Multi-Level-btn20");
+  
+  // Set an initial flag to track visibility
+  var isHidden = false;
+
+  // Add an onclick event handler to the toggleButton
+  toggleButton7.onclick = function() {
+    // Toggle the visibility based on the current state
+  if (isHidden) {
+    divToHide2.style.visibility = "visible";
+  } else {
+    divToHide2.style.visibility = "hidden";
+  }
+
+  if (iconElement2.classList.contains("bx-chevron-up")) {
+    // Change to "fa-chevron-up"
+    iconElement2.classList.remove("bx-chevron-up");
+    iconElement2.classList.add("bx-chevron-down");
+} else {
+    // Change back to "bx-chevron-down"
+    iconElement2.classList.remove("bx-chevron-down");
+    iconElement2.classList.add("bx-chevron-up");
+}
+  
+  // Update the flag
+  isHidden = !isHidden;
+};
+
+
+
+
+
+
+$(function() {
+  $("#Sales_tax").on("click",function() {
+    $(".tax_inputs").toggle(this.checked);
+  });
+});
+
+
+
     </script>
     <script>
         const myBtns = document.getElementById('myBtns');
@@ -610,6 +704,7 @@ toggleButton.addEventListener("click", toggleDisplay);
         });
 
     </script>
+
 
 </body>
 

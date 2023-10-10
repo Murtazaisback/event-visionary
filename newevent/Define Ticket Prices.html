@@ -23,7 +23,10 @@
     <div class="white_effect"></div>
     <nav class="nav">
         <div class="logo">
-            <img src="../imgs/b37371f7c9f89d198dd7ecd158ec99fb.png" alt="Logo Image">
+            <a href="../index.html">
+
+                <img src="../imgs/b37371f7c9f89d198dd7ecd158ec99fb.png" alt="Logo Image">
+            </a>
         </div>
         <div class="hamburger">
             <div class="line1"></div>
@@ -33,7 +36,7 @@
         <ul class="navs-links">
             <li><a href="../index.html">Home</a></li>
             <li><a href="#">ORGANIZERS</a></li>
-            <li><a href="../event.html">EVENTS</a></li>
+            <li><a href="../eventpage.html">EVENTS</a></li>
             <li><a href="../newevent.html" class="li_active">CREATE EVENT</a></li>
         </ul>
         <!-- <button class="login-button" href="#">Login</button> -->
@@ -601,6 +604,7 @@
         AOS.init();
     </script>
     <script src="../js.js"></script>
+    <script src="../java.js"></script>
 
     <script>
         function toggleIcon() {
@@ -653,10 +657,67 @@ toggleDiv2.addEventListener('click', function() {
 
 
 
+var divToHide2 = document.getElementById("ds");
+  var toggleButton7 = document.getElementById("Multi-Level-btn");
+  var iconElement2 = document.getElementById("Multi-Level-btn");
+  
+  // Set an initial flag to track visibility
+  var isHidden = false;
+
+  // Add an onclick event handler to the toggleButton
+  toggleButton7.onclick = function() {
+    // Toggle the visibility based on the current state
+  if (isHidden) {
+    divToHide2.style.visibility = "visible";
+  } else {
+    divToHide2.style.visibility = "hidden";
+  }
+
+  if (iconElement2.classList.contains("bx-chevron-up")) {
+    // Change to "fa-chevron-up"
+    iconElement2.classList.remove("bx-chevron-up");
+    iconElement2.classList.add("bx-chevron-down");
+} else {
+    // Change back to "bx-chevron-down"
+    iconElement2.classList.remove("bx-chevron-down");
+    iconElement2.classList.add("bx-chevron-up");
+}
+  
+  // Update the flag
+  isHidden = !isHidden;
+};
+
+
+
+
+
+
+$(function() {
+  $("#Sales_tax").on("click",function() {
+    $(".tax_inputs").toggle(this.checked);
+  });
+});
 
 
 
     </script>
+    <script>
+        const myBtns = document.getElementById('myBtns');
+
+        // Add a click event listener to the div element
+        myBtns.addEventListener('click', function () {
+            // Toggle the CSS class on the div element
+            if (myBtns.classList.contains('bx-chevron-right')) {
+                myBtns.classList.remove('bx-chevron-right');
+                myBtns.classList.add('bx-chevron-left');
+            } else {
+                myBtns.classList.remove('bx-chevron-left');
+                myBtns.classList.add('bx-chevron-right');
+            }
+        });
+
+    </script>
+
 </body>
 
 </html>

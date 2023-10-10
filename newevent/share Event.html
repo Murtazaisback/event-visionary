@@ -23,7 +23,10 @@
     <div class="white_effect"></div>
     <nav class="nav">
         <div class="logo">
-            <img src="../imgs/b37371f7c9f89d198dd7ecd158ec99fb.png" alt="Logo Image">
+            <a href="../index.html">
+
+                <img src="../imgs/b37371f7c9f89d198dd7ecd158ec99fb.png" alt="Logo Image">
+            </a>
         </div>
         <div class="hamburger">
             <div class="line1"></div>
@@ -33,7 +36,7 @@
         <ul class="navs-links">
             <li><a href="../index.html">Home</a></li>
             <li><a href="#">ORGANIZERS</a></li>
-            <li><a href="../event.html">EVENTS</a></li>
+            <li><a href="../eventpage.html">EVENTS</a></li>
             <li><a href="../newevent.html" class="li_active">CREATE EVENT</a></li>
         </ul>
         <!-- <button class="login-button" href="#">Login</button> -->
@@ -67,7 +70,7 @@
                         <li id="Iconss" class="arrow2 showMenu">
                             <a >
 
-                                <i class='bx bx-chevron-right'></i>
+                                <i class='bx bx-chevron-right' id="myBtns"></i>
                                 <!-- <span class="link_name yellow_m">menu</span> -->
                             </a>
                         </li>
@@ -387,6 +390,23 @@
             }
         }
     </script>
+    <script>
+        const myBtns = document.getElementById('myBtns');
+
+        // Add a click event listener to the div element
+        myBtns.addEventListener('click', function () {
+            // Toggle the CSS class on the div element
+            if (myBtns.classList.contains('bx-chevron-right')) {
+                myBtns.classList.remove('bx-chevron-right');
+                myBtns.classList.add('bx-chevron-left');
+            } else {
+                myBtns.classList.remove('bx-chevron-left');
+                myBtns.classList.add('bx-chevron-right');
+            }
+        });
+
+    </script>
+
 </body>
 
 </html>
