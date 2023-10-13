@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>create an event</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+</head>
+
+<body>
+
+
+    <div class="white_effect"></div>
+    <nav class="nav">
+        <div class="logo">
+            <a href="./index.html">
+
+                <img src="./imgs/b37371f7c9f89d198dd7ecd158ec99fb.png" alt="Logo Image">
+            </a>
+        </div>
+        <div class="hamburger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <ul class="navs-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./pricing.html">Pricing</a></li>
+            <li><a href="./eventpage.html">EVENTS</a></li>
+            <li><a href="./newevent.html" class="li_active">CREATE EVENT</a></li>
+        </ul>
+        <!-- <button class="login-button" href="#">Login</button> -->
+        <div class="dropdown">
+            <button class="dropbtn">
+                Hero of house
+                <i class='bx bx-chevron-down'  ></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="./dashboard.html">Dashboard</a>
+              <a href="./event.html">Create an Event</a>
+              <a href="">Events</a>
+              <a href="#">Settings</a>
+              <a href="#">SMS Campaigns</a>
+              <a href="#">My Account</a>
+              
+            </div>
+          </div>
+    </nav>
+
+
+    <main>
+        <div class="dashboard_main">
+            <div class="dashboard_section">
+                <div class="sidebar ">
+                    <div class="logo-details">
+                        <!-- <i class='bx bxl-c-plus-plus'></i> -->
+                        <!-- <span class="logo_name">CodingLab</span> -->
+                    </div>
+                    <ul class="nav-links">
+                        <li id="Iconss" class="arrow2 showMenu">
+                            <a >
+
+                                <i class='bx bx-left-arrow-alt' id="myBtns"></i>
+                                <!-- <span class="link_name yellow_m">menu</span> -->
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./dashboard.html">
+
+
+                                <i class="dashboard_icon w">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                        fill="none">
+                                        <path
+                                            d="M10 4.53125C4.78125 4.53125 0.53125 9.125 0.53125 14.7812C0.53125 15.1562 0.84375 15.5 1.25 15.5H18.75C19.125 15.5 19.4688 15.1875 19.4688 14.7812C19.4688 9.125 15.2188 4.53125 10 4.53125ZM9.6875 14.0625L10 13.0938L10.3125 14.0625H9.6875ZM11.7812 14.0625L10.9375 11.4375C10.8125 11.0312 10.4375 10.75 10 10.75C9.5625 10.75 9.1875 11.0312 9.0625 11.4375L8.21875 14.0625H1.96875C2.3125 9.53125 5.78125 5.9375 10 5.9375C14.2188 5.9375 17.6875 9.53125 18.0312 14.0625H11.7812Z" />
+                                        <path
+                                            d="M10 7.78125C9.625 7.78125 9.28125 8.09375 9.28125 8.5V9.28125C9.28125 9.65625 9.59375 10 10 10C10.375 10 10.7187 9.6875 10.7187 9.28125V8.5C10.7187 8.09375 10.375 7.78125 10 7.78125Z" />
+                                        <path
+                                            d="M14.5 10.0939L14 10.5939C13.7187 10.8752 13.7187 11.3127 14 11.5939C14.125 11.7189 14.3125 11.7814 14.5 11.7814C14.6875 11.7814 14.875 11.7189 15 11.5627L15.5 11.0627C15.7812 10.7814 15.7812 10.3439 15.5 10.0627C15.2187 9.78141 14.7813 9.81266 14.5 10.0939Z" />
+                                        <path
+                                            d="M5.53085 10.0938C5.28085 9.81258 4.8121 9.78133 4.53085 10.0313C4.2496 10.2813 4.21835 10.7501 4.46835 11.0313L4.9371 11.5313C5.0621 11.6876 5.28085 11.7501 5.46835 11.7501C5.6246 11.7501 5.8121 11.6876 5.9371 11.5626C6.21835 11.3126 6.2496 10.8438 5.9996 10.5626L5.53085 10.0938Z" />
+                                    </svg>
+                                </i>
+                                <span class="link_name ">Dashboard</span>
+                            </a>
+                            <!-- <ul class="sub-menu blank">
+                                <li><a class="link_name" href="./dashboard.html">Dashboard</a></li>
+                            </ul> -->
+                        </li>
+                        <li>
+                            <div class="iocn-link">
+                                <a href="./newevent.html">
+                                    <i class='bx bx-plus-circle' style='color:#ffffff'></i>
+                                    <span class="link_name ">CREATE AN EVENT</span>
+                                </a>
+                                <!-- <ul class="sub-menu blank">
+                                    <li><a class="link_name" href="./newevent.html">CREATE AN EVENT</a></li>
+                                </ul> -->
+                                <!-- <i class='bx bxs-chevron-down arrow' ></i> -->
+                            </div>
+                        </li>
+                        <li>
+                            <div class="iocn-link">
+                                <a href="./event.html">
+                                    <i class='bx bx-calendar yellow_m '></i>
+                                    <span class="link_name yellow_m">EVENTS</span>
+                                </a>
+                                <!-- <ul class="sub-menu blank">
+                                    <li><a class="link_name" href="./event.html">EVENT</a></li>
+                                </ul> -->
+                                <!-- <i class='bx bxs-chevron-down arrow' ></i> -->
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class='bx bx-map' style='color:#ffffff'></i>
+                                <span class="link_name">VENUES</span>
+                            </a>
+                            <!-- <ul class="sub-menu blank">
+                                <li><a class="link_name" href="#">VENUES</a></li>
+                            </ul> -->
+                        </li>
+                        <li>
+                            <a href="#">
+                                <!-- <box-icon name='money-withdraw' color='#ffffff' ></box-icon> -->
+                                <i class='bx bx-money-withdraw' style='color:#ffffff'></i>
+                                <span class="link_name">REPORTS</span>
+                            </a>
+                            <!-- <ul class="sub-menu blank">
+                                <li><a class="link_name" href="#">REPORTS</a></li>
+                            </ul> -->
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class='bx bx-cog'></i>
+                                <span class="link_name">SETTINGS</span>
+                            </a>
+                            <!-- <ul class="sub-menu blank">
+                                <li><a class="link_name" href="#">SETTINGS</a></li>
+                            </ul> -->
+                        </li>
+                        <li>
+                            <div class="iocn-link">
+                                <a href="#">
+                                    <i class='bx bx-message' style='color:#ffffff'></i>
+                                    <span class="link_name">SMS CAMPAIGNS</span>
+                                </a>
+                                <!-- <ul class="sub-menu blank">
+                                    <li><a class="link_name" href="#">SMS CAMPAIGNS</a></li>
+                                </ul> -->
+                            </div>
+                        </li>
+                        <li>
+                            <div class="iocn-link">
+                                <a href="#">
+                                    <i class='bx bx-user' style='color:#ffffff'></i>
+                                    <span class="link_name">MY ACCOUNT</span>
+                                </a>
+                                <!-- <ul class="sub-menu blank">
+                                    <li><a class="link_name" href="#">MY ACCOUNT</a></li>
+                                </ul> -->
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <section class="home-section">
+                    <div class="home-content">
+
+
+
+                        <!-- <div class="main_btns_side">
+                            <span class="triangle">
+                                <div class="icon">
+
+                                    <input type="checkbox" id="animation1">
+                                    <label for="animation1">
+                                        <div class="arrow"></div>
+                                    </label>
+                                </div>
+                            </span>
+                        </div> -->
+
+
+                        <div class="main_sell_ticket_section">
+                            <div class="event_sell_info">
+                                <h1>Event Title Show Here</h1>
+                                <p>12/31/2099 - 01/02/2100</p>
+                                <p>7:50 PM PST</p>
+                                <div class="sell_ticket_table">
+                                    <div class="table_data_row">
+                                        <input type="text" name="" id="" placeholder="Ticket Type Name">
+                                        <p>$25.00</p>
+                                        <button class="full_btn">Add to Cart</button>
+                                    </div>
+                                    <div class="table_data_row">
+                                        <input type="text" name="" id="" placeholder="Ticket Type Name">
+                                        <p>$25.00</p>
+                                        <button class="full_btn">Add to Cart</button>
+                                    </div>
+                                    <div class="table_data_row">
+                                        <input type="text" name="" id="" placeholder="Ticket Type Name (Multi-Level)" class="longplac">
+                                    </div>
+                                    <div class="table_data_row">
+                                        <input type="text" name="" id="" placeholder="Ticket Type Name">
+                                        <p>$25.00</p>
+                                        <button class="full_btn">Add to Cart</button>
+                                    </div>
+                                    <div class="table_data_row">
+                                        <input type="text" name="" id="" placeholder="Ticket Type Name">
+                                        <p>$25.00</p>
+                                        <button class="full_btn">Add to Cart</button>
+                                    </div>
+                                    <div class="table_data_row">
+                                        <input type="text" name="" id="" placeholder="Ticket Type Name">
+                                        <p>$25.00</p>
+                                        <button class="full_btn">Add to Cart</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="order_summary">
+                                <h2>Order Summary</h2>
+                                <div class="order_sum_text">
+
+                                    <div class="order_summary_data">
+                                        <p class="no">x1</p>
+                                        <div class="order_tinfo">
+                                            <p class="type_name">Ticket Type Name </p>
+                                            <p class="type_id">Seat ID or Table ID or Both</p>
+                                        </div>
+                                        <div class="order_pinfo">$25.00</div>
+                                        <div class="order_trash">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                                viewBox="0 0 15 15" fill="none">
+                                                <path
+                                                    d="M3.04688 15H11.9531V2.34375H12.6562V1.875H9.375V0H5.625V1.875H2.34375V2.34375H3.04688V15ZM6.09375 0.46875H8.90625V1.875H6.09375V0.46875ZM11.4844 2.34375V14.5312H3.51562V2.34375H11.4844Z"
+                                                    fill="#FF0000" />
+                                                <path d="M6.32812 4.6875H5.85938V12.6562H6.32812V4.6875Z"
+                                                    fill="#FF0000" />
+                                                <path d="M9.14062 4.6875H8.67188V12.6562H9.14062V4.6875Z"
+                                                    fill="#FF0000" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="order_summary_data">
+                                        <p class="no">x1</p>
+                                        <div class="order_tinfo">
+                                            <p class="type_name">Ticket Type Name </p>
+                                            <p class="type_id">Seat ID or Table ID or Both</p>
+                                        </div>
+                                        <div class="order_pinfo">$25.00</div>
+                                        <div class="order_trash">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                                viewBox="0 0 15 15" fill="none">
+                                                <path
+                                                    d="M3.04688 15H11.9531V2.34375H12.6562V1.875H9.375V0H5.625V1.875H2.34375V2.34375H3.04688V15ZM6.09375 0.46875H8.90625V1.875H6.09375V0.46875ZM11.4844 2.34375V14.5312H3.51562V2.34375H11.4844Z"
+                                                    fill="#FF0000" />
+                                                <path d="M6.32812 4.6875H5.85938V12.6562H6.32812V4.6875Z"
+                                                    fill="#FF0000" />
+                                                <path d="M9.14062 4.6875H8.67188V12.6562H9.14062V4.6875Z"
+                                                    fill="#FF0000" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order_main_list">
+                                    <div class="order_list_items">
+                                        <div class="order_list_item">
+                                            <p>Subtotal</p>
+                                            <p>$50.00</p>
+                                        </div>
+                                        <div class="order_list_item">
+                                            <p>Taxes</p>
+                                            <p>$50.00</p>
+                                        </div>
+                                        <div class="order_list_item">
+                                            <p>Service Fees</p>
+                                            <p>$50.00</p>
+                                        </div>
+                                        <div class="order_list_item">
+                                            <p>Total</p>
+                                            <p>$50.00</p>
+                                        </div>
+                                    </div>
+
+
+
+
+                                </div>
+                                <!-- ----------------------popup------------------------- -->
+                                <div class="box">
+                                    <a class="btn main_sell_btn" href="">Checkout</a>
+                                </div>
+                                <!-- </div> -->
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+            </div>
+            </section>
+
+            <!-- <div class="one"></div> -->
+
+
+        </div>
+        </div>
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ------------------------fooooooooter---------------- -->
+
+    <footer>
+        <div class="footer_container">
+            <div class="footer_mail">
+                <h2 class="footer_mail_heading">Join our mailing list</h2>
+                <form action="" class="footer_form">
+                    <div class="footer_form_input">
+                        <!-- <label for="">Email *</label> -->
+                        <input type="email" required>
+                    </div>
+                    <button type="submit">Sign Up</button>
+                </form>
+            </div>
+            <div class="footer_info">
+                <div class="footer_info_imgs">
+                    <img src="./imgs/4736150369408c50504a5b1df6f6db67.png" alt="logo">
+                    <p>support@eventvisionary.com</p>
+                    <p>Event Visionary, LLC</p>
+                    <p>30 N Gould St, Ste R,<br>
+                        Sheridan, WY 82801</p>
+                </div>
+                <div class="footer_info_links">
+                    <b>Quick Links</b>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="./newevent.html">Create an Event</a></li>
+                        <li><a href="./dashboard.html">Organizer Dashboard</a></li>
+                        <li><a href="./pricing.html">Pricing</a></li>
+                        <li><a href="./Terms.html">Privacy Policy</a></li>
+                        <li><a href="./Terms.html">Terms and Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="footer_info_follow">
+                    <b>Follow Us.</b>
+                    <div class="footer_info_follow_img">
+                        <a href="https://www.facebook.com/">
+                            <img src="./imgs/facebook.png" alt="">
+
+                        </a>
+                        <a href="https://www.instagram.com/">
+                            <img src="./imgs/Group.png" alt="">
+
+                        </a>
+                        <a href="https://twitter.com/home">
+
+                            <img src="./imgs/twitter.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_copy">
+            Copyright 2023, Event Visionary LLC
+        </div>
+    </footer>
+
+
+    <script>
+        let arrow = document.querySelectorAll(".arrow2");
+        for (var i = 0; i < arrow.length; i++) {
+          arrow[i].addEventListener("click", (e)=>{
+         let arrowParent = e.target.parentElement.parentElement;//selecting main parent of arrow
+         arrowParent.classList.toggle("showMenu");
+          });
+        }
+        let sidebar = document.querySelector(".sidebar");
+        let sidebarBtn = document.querySelector("#Iconss");
+        console.log(sidebarBtn);
+        sidebarBtn.addEventListener("click", ()=>{
+          sidebar.classList.toggle("close");
+        });
+        </script>
+    <script src="./js.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+  <script>
+    const myBtns = document.getElementById('myBtns');
+
+    // Add a click event listener to the div element
+    myBtns.addEventListener('click', function () {
+        // Toggle the CSS class on the div element
+        if (myBtns.classList.contains('bx-left-arrow-alt')) {
+            myBtns.classList.remove('bx-left-arrow-alt');
+            myBtns.classList.add('bx-right-arrow-alt');
+        } else {
+            myBtns.classList.remove('bx-right-arrow-alt');
+            myBtns.classList.add('bx-left-arrow-alt');
+        }
+    });
+
+</script>
+
+
+</body>
+
+</html>
