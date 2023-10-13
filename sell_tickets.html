@@ -31,7 +31,7 @@
         </div>
         <ul class="navs-links">
             <li><a href="./index.html">Home</a></li>
-            <li><a href="#">ORGANIZERS</a></li>
+            <li><a href="./pricing.html">Pricing</a></li>
             <li><a href="./eventpage.html">EVENTS</a></li>
             <li><a href="./newevent.html" class="li_active">CREATE EVENT</a></li>
         </ul>
@@ -39,18 +39,18 @@
         <div class="dropdown">
             <button class="dropbtn">
                 Hero of house
-                <i class='bx bx-chevron-down'  ></i>
+                <i class='bx bx-chevron-down'></i>
             </button>
             <div class="dropdown-content">
-              <a href="./dashboard.html">Dashboard</a>
-              <a href="./event.html">Create an Event</a>
-              <a href="">Events</a>
-              <a href="#">Settings</a>
-              <a href="#">SMS Campaigns</a>
-              <a href="#">My Account</a>
-              
+                <a href="./dashboard.html">Dashboard</a>
+                <a href="./event.html">Create an Event</a>
+                <a href="">Events</a>
+                <a href="#">Settings</a>
+                <a href="#">SMS Campaigns</a>
+                <a href="#">My Account</a>
+
             </div>
-          </div>
+        </div>
     </nav>
 
 
@@ -64,9 +64,9 @@
                     </div>
                     <ul class="nav-links">
                         <li id="Iconss" class="arrow2 showMenu">
-                            <a >
+                            <a>
 
-                                <i class='bx bx-chevron-left' id="myBtns"></i>
+                                <i class='bx bx-left-arrow-alt' id="myBtns"></i>
                                 <!-- <span class="link_name yellow_m">menu</span> -->
                             </a>
                         </li>
@@ -112,16 +112,21 @@
                                     <span class="link_name yellow_m">EVENTS</span>
                                 </a>
                                 <div class="inner_nav_links" id="none_h">
-                                    <p class="Event_Title yellow_m">Event Title</p>
-                                    <ul class="inner_nav_items">
-                                        <li class="inner_nav_item"><a href="./sell_tickets.html" class="yellow_m">Sell Tickets</a></li>
+                                    <div class="Event_Title yellow_m accordion">
+                                        <p class="yellow_m">Event Title</p>
+                                        <i class='bx bx-down-arrow-alt'></i>
+                                    </div>
+                                    <ul class="inner_nav_items panel">
+                                        <li class="inner_nav_item"><a href="./sell_tickets.html" class="yellow_m">Sell
+                                                Tickets</a></li>
                                         <li class="inner_nav_item"><a href="./managetwo.html">Hold Seats</a></li>
                                         <li class="inner_nav_item"><a href="./scan_tickets.html">Scan Tickets</a></li>
                                         <li class="inner_nav_item"><a href="./attendees.html">Attendees</a></li>
-                                        <li class="inner_nav_item"><a href="./manage_order.html"  >Manage Orders</a></li>
+                                        <li class="inner_nav_item"><a href="./manage_order.html">Manage Orders</a></li>
                                         <li class="inner_nav_item"><a href="./eventdetails.html">Event Details</a></li>
                                         <li class="inner_nav_item"><a href="./ticketprices.html">Ticket Prices</a></li>
-                                        <li class="inner_nav_item"><a href="./setting_chart.html">setting_chart</a></li>
+                                        <li class="inner_nav_item"><a href="./setting_chart.html">Seating Charts</a>
+                                        </li>
                                     </ul>
                                 </div>
                                 <!-- <ul class="sub-menu blank">
@@ -287,8 +292,8 @@
                                             <h2>Enter Payment Information and Confirm Purchase</h2>
                                             <h3>Event Title</h3>
                                             <a class="jclose" href="#">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="25"
-                                                    height="25" viewBox="0 0 25 25" fill="none">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                                    viewBox="0 0 25 25" fill="none">
                                                     <g clip-path="url(#clip0_517_27)">
                                                         <path
                                                             d="M12.5 0.703125C5.97656 0.703125 0.703125 5.97656 0.703125 12.5C0.703125 19.0234 5.97656 24.3359 12.5 24.3359C19.0234 24.3359 24.3359 19.0234 24.3359 12.5C24.3359 5.97656 19.0234 0.703125 12.5 0.703125ZM12.5 22.5781C6.95313 22.5781 2.46094 18.0469 2.46094 12.5C2.46094 6.95313 6.95313 2.46094 12.5 2.46094C18.0469 2.46094 22.5781 6.99219 22.5781 12.5391C22.5781 18.0469 18.0469 22.5781 12.5 22.5781Z"
@@ -367,8 +372,7 @@
                                                     <div>
 
 
-                                                        <input type="radio" id="showRadio" name="form" value="Card"
-                                                             />
+                                                        <input type="radio" id="showRadio" name="form" value="Card" />
                                                         <label for="Card">Credit/Debit Card</label>
                                                     </div>
 
@@ -377,7 +381,7 @@
                                                         <label for="Cash">Cash</label>
                                                     </div>
                                                 </div>
-                                                <div class="sell_forma " id="sell_fos2" style="display: none;"  >
+                                                <div class="sell_forma " id="sell_fos2" style="display: none;">
                                                     <div class="row_form">
                                                         <input type="number" placeholder="Card Number" class="cnumber">
                                                     </div>
@@ -465,13 +469,16 @@
                                             </div>
 
                                         </div>
-                                    </div>  
+                                    </div>
                                 </div>
                                 <div id="popup2" class="overlay">
+
                                     <div class="popupmain">
 
 
+
                                         <div class="order_done">
+
                                             <p>Order successful!</p>
                                             <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64"
                                                 viewBox="0 0 64 64" fill="none">
@@ -487,13 +494,17 @@
 
                                 <div id="popup3" class="overlay">
                                     <div class="popupmain">
+                                        <!-- ---------------auto-------redircting-function------------------------ -->
 
 
                                         <div class="order_done">
                                             <p>Order was not processed.</p>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="58" height="58" viewBox="0 0 58 58" fill="none">
-                                                <path d="M32.1996 29L56.5996 4.59998C57.4996 3.69998 57.4996 2.29998 56.5996 1.39998C55.6996 0.499976 54.2996 0.499976 53.3996 1.39998L28.9996 25.8L4.59961 1.39998C3.69961 0.499976 2.29961 0.499976 1.39961 1.39998C0.499609 2.29998 0.499609 3.69998 1.39961 4.59998L25.7996 29L1.39961 53.4C0.499609 54.3 0.499609 55.7 1.39961 56.6C1.79961 57 2.39961 57.3 2.99961 57.3C3.59961 57.3 4.19961 57.1 4.59961 56.6L28.9996 32.2L53.3996 56.6C53.7996 57 54.3996 57.3 54.9996 57.3C55.5996 57.3 56.1996 57.1 56.5996 56.6C57.4996 55.7 57.4996 54.3 56.5996 53.4L32.1996 29Z" fill="#FF0000"/>
-                                              </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="58" height="58"
+                                                viewBox="0 0 58 58" fill="none">
+                                                <path
+                                                    d="M32.1996 29L56.5996 4.59998C57.4996 3.69998 57.4996 2.29998 56.5996 1.39998C55.6996 0.499976 54.2996 0.499976 53.3996 1.39998L28.9996 25.8L4.59961 1.39998C3.69961 0.499976 2.29961 0.499976 1.39961 1.39998C0.499609 2.29998 0.499609 3.69998 1.39961 4.59998L25.7996 29L1.39961 53.4C0.499609 54.3 0.499609 55.7 1.39961 56.6C1.79961 57 2.39961 57.3 2.99961 57.3C3.59961 57.3 4.19961 57.1 4.59961 56.6L28.9996 32.2L53.3996 56.6C53.7996 57 54.3996 57.3 54.9996 57.3C55.5996 57.3 56.1996 57.1 56.5996 56.6C57.4996 55.7 57.4996 54.3 56.5996 53.4L32.1996 29Z"
+                                                    fill="#FF0000" />
+                                            </svg>
                                             <p>Invalid card details</p>
                                         </div>
                                     </div>
@@ -559,13 +570,13 @@
                 <div class="footer_info_links">
                     <b>Quick Links</b>
                     <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Create an Event</a></li>
-                        <li><a href="">Organizer Dashboard</a></li>
-                        <li><a href="">Pricing</a></li>
-                        <li><a href="">Privacy Policy</a></li>
-                        <li><a href="">Terms and Conditions</a></li>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="./newevent.html">Create an Event</a></li>
+                        <li><a href="./dashboard.html">Organizer Dashboard</a></li>
+                        <li><a href="./pricing.html">Pricing</a></li>
+                        <li><a href="./Terms.html">Privacy Policy</a></li>
+                        <li><a href="./Terms.html">Terms and Conditions</a></li>
                     </ul>
                 </div>
                 <div class="footer_info_follow">
@@ -596,34 +607,34 @@
     <script>
         let arrow = document.querySelectorAll(".arrow2");
         for (var i = 0; i < arrow.length; i++) {
-          arrow[i].addEventListener("click", (e)=>{
-         let arrowParent = e.target.parentElement.parentElement;//selecting main parent of arrow
-         arrowParent.classList.toggle("showMenu");
-          });
+            arrow[i].addEventListener("click", (e) => {
+                let arrowParent = e.target.parentElement.parentElement;//selecting main parent of arrow
+                arrowParent.classList.toggle("showMenu");
+            });
         }
         let sidebar = document.querySelector(".sidebar");
         let sidebarBtn = document.querySelector("#Iconss");
         console.log(sidebarBtn);
-        sidebarBtn.addEventListener("click", ()=>{
-          sidebar.classList.toggle("close");
+        sidebarBtn.addEventListener("click", () => {
+            sidebar.classList.toggle("close");
         });
 
 
         var toggleButton = document.getElementById("Iconss");
-var toggleElement = document.getElementById("none_h");
+        var toggleElement = document.getElementById("none_h");
 
-// Function to toggle the display property
-function toggleDisplay() {
-  if (toggleElement.style.display === "none") {
-    toggleElement.style.display = "flex";
-  } else {
-    toggleElement.style.display = "none";
-  }
-}
+        // Function to toggle the display property
+        function toggleDisplay() {
+            if (toggleElement.style.display === "none") {
+                toggleElement.style.display = "flex";
+            } else {
+                toggleElement.style.display = "none";
+            }
+        }
 
-// Add a click event listener to the button
-toggleButton.addEventListener("click", toggleDisplay);
-        </script>
+        // Add a click event listener to the button
+        toggleButton.addEventListener("click", toggleDisplay);
+    </script>
     <script src="./js.js"></script>
 
 
@@ -640,16 +651,39 @@ toggleButton.addEventListener("click", toggleDisplay);
         // Add a click event listener to the div element
         myBtns.addEventListener('click', function () {
             // Toggle the CSS class on the div element
-            if (myBtns.classList.contains('bx-chevron-left')) {
-                myBtns.classList.remove('bx-chevron-left');
-                myBtns.classList.add('bx-chevron-right');
+            if (myBtns.classList.contains('bx-left-arrow-alt')) {
+                myBtns.classList.remove('bx-left-arrow-alt');
+                myBtns.classList.add('bx-right-arrow-alt');
             } else {
-                myBtns.classList.remove('bx-chevron-right');
-                myBtns.classList.add('bx-chevron-left');
+                myBtns.classList.remove('bx-right-arrow-alt');
+                myBtns.classList.add('bx-left-arrow-alt');
             }
         });
 
+
+
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                /* Toggle between adding and removing the "active" class,
+                to highlight the button that controls the panel */
+                this.classList.toggle("active");
+
+                /* Toggle between hiding and showing the active panel */
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "flex") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "flex";
+                }
+            });
+        }
+
+
     </script>
+
 
 </body>
 

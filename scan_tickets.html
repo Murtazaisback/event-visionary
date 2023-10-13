@@ -31,7 +31,7 @@
         </div>
         <ul class="navs-links">
             <li><a href="./index.html">Home</a></li>
-            <li><a href="#">ORGANIZERS</a></li>
+            <li><a href="./pricing.html">Pricing</a></li>
             <li><a href="./eventpage.html">EVENTS</a></li>
             <li><a href="./newevent.html" class="li_active">CREATE EVENT</a></li>
         </ul>
@@ -66,7 +66,7 @@
                         <li id="Iconss" class="arrow2 showMenu">
                             <a >
 
-                                <i class='bx bx-chevron-left' id="myBtns"></i>
+                                <i class='bx bx-left-arrow-alt' id="myBtns"></i>
                                 <!-- <span class="link_name yellow_m">menu</span> -->
                             </a>
                         </li>
@@ -112,8 +112,11 @@
                                     <span class="link_name yellow_m">EVENTS</span>
                                 </a>
                                 <div class="inner_nav_links " id="none_h">
-                                    <p class="Event_Title yellow_m">Event Title</p>
-                                    <ul class="inner_nav_items">
+                                    <div class="Event_Title yellow_m accordion">
+                                        <p class="yellow_m">Event Title</p>
+                                        <i class='bx bx-down-arrow-alt'></i>
+                                    </div>
+                                    <ul class="inner_nav_items panel    ">
                                         <li class="inner_nav_item"><a href="./sell_tickets.html">Sell Tickets</a></li>
                                         <li class="inner_nav_item"><a href="./managetwo.html">Hold Seats</a></li>
                                         <li class="inner_nav_item"><a href="./scan_tickets.html" class="yellow_m">Scan Tickets</a></li>
@@ -202,7 +205,7 @@
                         <div class="manage_order_area">
                             <div class="manage_two_sec">
                                 <div class="manage_two_info">
-                                    <p>  Scan Tickets: Event Title Show Here</p>
+                                    <h1>  Scan Tickets: Event Title Show Here</h1>
                                     <p>Use your mobile device to scan your customers’ tickets. You must enable permissions on your device in order to use this feature. </p>
                                 </div>
                             </div>
@@ -267,13 +270,13 @@
                 <div class="footer_info_links">
                     <b>Quick Links</b>
                     <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Create an Event</a></li>
-                        <li><a href="">Organizer Dashboard</a></li>
-                        <li><a href="">Pricing</a></li>
-                        <li><a href="">Privacy Policy</a></li>
-                        <li><a href="">Terms and Conditions</a></li>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="./newevent.html">Create an Event</a></li>
+                        <li><a href="./dashboard.html">Organizer Dashboard</a></li>
+                        <li><a href="./pricing.html">Pricing</a></li>
+                        <li><a href="./Terms.html">Privacy Policy</a></li>
+                        <li><a href="./Terms.html">Terms and Conditions</a></li>
                     </ul>
                 </div>
                 <div class="footer_info_follow">
@@ -344,20 +347,41 @@ toggleButton.addEventListener("click", toggleDisplay);
     </script>
     <script>
         const myBtns = document.getElementById('myBtns');
-
+    
         // Add a click event listener to the div element
         myBtns.addEventListener('click', function () {
             // Toggle the CSS class on the div element
-            if (myBtns.classList.contains('bx-chevron-left')) {
-                myBtns.classList.remove('bx-chevron-left');
-                myBtns.classList.add('bx-chevron-right');
+            if (myBtns.classList.contains('bx-left-arrow-alt')) {
+                myBtns.classList.remove('bx-left-arrow-alt');
+                myBtns.classList.add('bx-right-arrow-alt');
             } else {
-                myBtns.classList.remove('bx-chevron-right');
-                myBtns.classList.add('bx-chevron-left');
+                myBtns.classList.remove('bx-right-arrow-alt');
+                myBtns.classList.add('bx-left-arrow-alt');
             }
         });
 
+
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                /* Toggle between adding and removing the "active" class,
+                to highlight the button that controls the panel */
+                this.classList.toggle("active");
+
+                /* Toggle between hiding and showing the active panel */
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "flex") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "flex";
+                }
+            });
+        }
+    
     </script>
+    
 
 </body>
 

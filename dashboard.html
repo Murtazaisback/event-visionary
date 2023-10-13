@@ -88,7 +88,7 @@
         </div>
         <ul class="navs-links">
             <li><a href="./index.html">Home</a></li>
-            <li><a href="#">ORGANIZERS</a></li>
+            <li><a href="./pricing.html">Pricing</a></li>
             <li><a href="./eventpage.html">EVENTS</a></li>
             <li><a href="./newevent.html" class="li_active">CREATE EVENT</a></li>
         </ul>
@@ -123,7 +123,8 @@
                         <li id="Iconss" class="arrow2 showMenu">
                             <a>
 
-                                <i class='bx bx-chevron-left' id="myBtns"></i>
+                                <!-- <i class='bx bx-chevron-left' ></i> -->
+                                <i class='bx bx-left-arrow-alt' id="myBtns"></i>
                                 <!-- <span class="link_name yellow_m">menu</span> -->
                             </a>
                         </li>
@@ -131,9 +132,9 @@
                             <a href="./dashboard.html">
 
 
-                                <i class="dashboard_icon w yellow_m">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
-                                        fill="none">
+                                <i class="dashboard_icon w ">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" class="yellow_m"
+                                        >
                                         <path
                                             d="M10 4.53125C4.78125 4.53125 0.53125 9.125 0.53125 14.7812C0.53125 15.1562 0.84375 15.5 1.25 15.5H18.75C19.125 15.5 19.4688 15.1875 19.4688 14.7812C19.4688 9.125 15.2188 4.53125 10 4.53125ZM9.6875 14.0625L10 13.0938L10.3125 14.0625H9.6875ZM11.7812 14.0625L10.9375 11.4375C10.8125 11.0312 10.4375 10.75 10 10.75C9.5625 10.75 9.1875 11.0312 9.0625 11.4375L8.21875 14.0625H1.96875C2.3125 9.53125 5.78125 5.9375 10 5.9375C14.2188 5.9375 17.6875 9.53125 18.0312 14.0625H11.7812Z" />
                                         <path
@@ -245,8 +246,7 @@
 
                         <div class="dash_container">
                             <div class="dash_data">
-                                <div class="upcoming_events" style="overflow-x:auto;" data-aos="fade-up"
-                                    data-aos-delay="50">
+                                <div class="upcoming_events" style="overflow-x:auto;" >
                                     <table>
                                         <caption>Upcoming Events</caption>
                                         <thead>
@@ -276,7 +276,7 @@
                                     </table>
                                 </div>
 
-                                <div class="line_chat_section" data-aos="fade-up" data-aos-delay="200">
+                                <div class="line_chat_section" >
                                     <h3>Revenue to Date by Event </h3>
                                     <div id="chart_wrap">
                                         <div id="number_format_chart">
@@ -286,7 +286,7 @@
 
                             </div>
                             <div class="dash_options">
-                                <div class="sms" data-aos="fade-up" data-aos-delay="">
+                                <div class="sms" >
                                     <h4>SMS Campaigns</h4>
                                     <p>Credits</p>
                                     <p>450 Remaining of 1400 Total</p>
@@ -371,13 +371,13 @@
                 <div class="footer_info_links">
                     <b>Quick Links</b>
                     <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Create an Event</a></li>
-                        <li><a href="">Organizer Dashboard</a></li>
-                        <li><a href="">Pricing</a></li>
-                        <li><a href="">Privacy Policy</a></li>
-                        <li><a href="">Terms and Conditions</a></li>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="./newevent.html">Create an Event</a></li>
+                        <li><a href="./dashboard.html">Organizer Dashboard</a></li>
+                        <li><a href="./pricing.html">Pricing</a></li>
+                        <li><a href="./Terms.html">Privacy Policy</a></li>
+                        <li><a href="./Terms.html">Terms and Conditions</a></li>
                     </ul>
                 </div>
                 <div class="footer_info_follow">
@@ -433,16 +433,17 @@
     // Add a click event listener to the div element
     myBtns.addEventListener('click', function () {
         // Toggle the CSS class on the div element
-        if (myBtns.classList.contains('bx-chevron-left')) {
-            myBtns.classList.remove('bx-chevron-left');
-            myBtns.classList.add('bx-chevron-right');
+        if (myBtns.classList.contains('bx-left-arrow-alt')) {
+            myBtns.classList.remove('bx-left-arrow-alt');
+            myBtns.classList.add('bx-right-arrow-alt');
         } else {
-            myBtns.classList.remove('bx-chevron-right');
-            myBtns.classList.add('bx-chevron-left');
+            myBtns.classList.remove('bx-right-arrow-alt');
+            myBtns.classList.add('bx-left-arrow-alt');
         }
     });
 
 </script>
+
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
