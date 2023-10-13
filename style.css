@@ -1400,6 +1400,16 @@
 
     .event_from {
         display: flex;
+        width: 95%;
+        justify-content: space-between;
+        /* align-items: center; */
+        gap: 20px;
+        padding-bottom: 10px;
+        /* overflow-x: scroll !important; */
+        /* flex-wrap: wrap; */
+    }
+    .event_froml {
+        display: flex;
         width: 100%;
         justify-content: space-between;
         /* align-items: center; */
@@ -1517,7 +1527,7 @@
         /* align-items: flex-end; */
         align-items: center;
         flex-direction: column;
-        width: 100%;
+        max-width: 90%;
         gap: 20px;
         align-items: flex-end;
     }
@@ -1953,7 +1963,7 @@
     }
 
     .ticket_form_sec {
-        padding: 20px;
+        padding: 5px;
     }
 
     .second_sec {
@@ -2101,7 +2111,7 @@
     .ticket_form_sec_hide {
         transition: all ease-in-out 35s;
         /* background: rebeccapurple; */
-        padding: 20px;
+        padding: 10px;
         border-radius: 10px;
         background: #131310;
         display: none;
@@ -5335,6 +5345,12 @@
         }
 
         .event_from {
+            flex-direction: column;
+            align-items: center;
+            overflow-x: scroll;
+            /* flex-wrap: wrap; */
+        }
+        .event_froml {
             flex-direction: column;
             align-items: center;
             overflow-x: scroll;
