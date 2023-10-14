@@ -48,8 +48,8 @@
             <div class="dropdown-content">
                 <a href="./dashboard.html">Dashboard</a>
                 <a href="./event.html">Create an Event</a>
-                <a href="">Events</a>
-                <a href="#">Settings</a>
+                <a href="./eventpage.html">Events</a>
+                <a href="./settingdash.html">Settings</a>
                 <a href="#">SMS Campaigns</a>
                 <a href="#">My Account</a>
 
@@ -68,7 +68,7 @@
                     </div>
                     <ul class="nav-links">
                         <li id="Iconss" class="arrow2 showMenu">
-                            <a >
+                            <a>
 
                                 <i class='bx bx-left-arrow-alt' id="myBtns"></i>
                                 <!-- <span class="link_name yellow_m">menu</span> -->
@@ -192,29 +192,33 @@
 
                         <div class="tabs_container">
                             <div class="w3-bar w3-black tabs_section">
-                                <a class="w3-bar-item w3-button tablink w3-red tab_btn  team-member" href="./newevent.html">1. Enter
+                                <a class="w3-bar-item w3-button tablink w3-red tab_btn  team-member"
+                                    href="./newevent.html">1. Enter
                                     Event Details
                                     <img src="./imgs/Ellipse 3.png" class="team-member-info one_active" alt="">
 
 
                                 </a>
-                                <a class="w3-bar-item w3-button tablink tab_btn  team-member" href="./newevent/Define Ticket Prices.html">2. Define Ticket Prices
+                                <a class="w3-bar-item w3-button tablink tab_btn  team-member"
+                                    href="./newevent/Define Ticket Prices.html">2. Define Ticket Prices
                                     <!-- <img src="./imgs/Ellipse 3.png" class="team-member-info" alt=""> -->
 
 
 
                                 </a>
-                                <a class="w3-bar-item w3-button tablink tab_btn  team-member team-member-small" href="./newevent/Publish Event.html">3. Publish Event
+                                <a class="w3-bar-item w3-button tablink tab_btn  team-member team-member-small"
+                                    href="./newevent/Publish Event.html">3. Publish Event
                                     <!-- <img src="./imgs/Ellipse 3.png" class="team-member-info" alt=""> -->
 
 
 
                                 </a>
-                                <a class="w3-bar-item w3-button tablink tab_btn  team-member team-member-small" href="./newevent/share Event.html">4. share Event
+                                <a class="w3-bar-item w3-button tablink tab_btn  team-member team-member-small"
+                                    href="./newevent/share Event.html">4. share Event
                                     <!-- <img src="./imgs/Ellipse 3.png" class="team-member-info" alt=""> -->
 
 
-                            </a>
+                                </a>
                             </div>
                             <div id="Details" class="w3-container w3-border city" data-aos="fade-in"
                                 data-aos-delay="300">
@@ -222,10 +226,12 @@
 
 
                                     <div class="left_area_form">
+                                        <div class="event_inputs2">
 
+                                            <label for="">Event Title</label>
+                                            <input type="text">
+                                        </div>
 
-                                        <label for="">Event Title</label>
-                                        <input type="text">
                                         <div class="event_inputs">
                                             <div class="event_in">
                                                 <label for="">Event Type</label>
@@ -241,10 +247,10 @@
                                                         <a href="#">Event</a>
                                                         <a href="#">SMS Event</a>
                                                         <a href="#">My Event</a>
-                                        
+
                                                     </div>
                                                 </div>
-                                                
+
                                             </div>
                                             <div class="event_in">
                                                 <label for="">Category</label>
@@ -255,12 +261,12 @@
                                                     </button>
                                                     <div class="dropdown-content2">
                                                         <a href="./dashboard.html">Category</a>
-                                                        <a href="./event.html">  Category</a>
+                                                        <a href="./event.html"> Category</a>
                                                         <a href="">Category</a>
                                                         <a href="#">Category</a>
                                                         <a href="#">SMS Campaigns</a>
                                                         <a href="#">My Account</a>
-                                        
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -281,7 +287,7 @@
                                                         <a href="#">Venue</a>
                                                         <a href="#">SMS Campaigns</a>
                                                         <a href="#">My Account</a>
-                                        
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -369,7 +375,7 @@
                                         <div class="date_inputs">
                                             <div class="date_in">
                                                 <label for="">Start Date/Start Time</label>
-                                                <div class="event_inputs">
+                                                <div class="event_inputs1">
                                                     <input type="date" class="cursor_pointer">
                                                     <input type="time" class="cursor_pointer">
 
@@ -377,7 +383,7 @@
                                             </div>
                                             <div class="date_in">
                                                 <label for="">End Date/End Time</label>
-                                                <div class="event_inputs">
+                                                <div class="event_inputs1">
                                                     <input type="date" class="cursor_pointer">
                                                     <input type="time" class="cursor_pointer">
 
@@ -435,7 +441,7 @@
                                                         id="watch-main" value="A">
                                                     <span class="slider round"></span>
                                                 </label>
-                                                <p>Let customers select their own seats</p>
+                                                <p>Let customers select their <br> own seats</p>
                                             </div>
                                             <div class="main_optionsa" style="display: none;" id="show-main">
 
@@ -466,8 +472,9 @@
                                         </div>
                                         <div class="next_btn">
 
-                                            <a class="w3-bar-item w3-button tablink tab_btn cursor_pointer  " href="./newevent/Define Ticket Prices.html">Next</a>
-                                                
+                                            <a class="w3-bar-item w3-button tablink tab_btn cursor_pointer  "
+                                                href="./newevent/Define Ticket Prices.html">Next</a>
+
                                         </div>
 
                                     </div>
@@ -566,18 +573,18 @@
     <script>
         let arrow = document.querySelectorAll(".arrow2");
         for (var i = 0; i < arrow.length; i++) {
-          arrow[i].addEventListener("click", (e)=>{
-         let arrowParent = e.target.parentElement.parentElement;//selecting main parent of arrow
-         arrowParent.classList.toggle("showMenu");
-          });
+            arrow[i].addEventListener("click", (e) => {
+                let arrowParent = e.target.parentElement.parentElement;//selecting main parent of arrow
+                arrowParent.classList.toggle("showMenu");
+            });
         }
         let sidebar = document.querySelector(".sidebar");
         let sidebarBtn = document.querySelector("#Iconss");
         console.log(sidebarBtn);
-        sidebarBtn.addEventListener("click", ()=>{
-          sidebar.classList.toggle("close");
+        sidebarBtn.addEventListener("click", () => {
+            sidebar.classList.toggle("close");
         });
-        </script>
+    </script>
     <script src="./js.js"></script>
 
 
@@ -612,22 +619,22 @@
             }
         }
     </script>
-   <script>
-    const myBtns = document.getElementById('myBtns');
+    <script>
+        const myBtns = document.getElementById('myBtns');
 
-    // Add a click event listener to the div element
-    myBtns.addEventListener('click', function () {
-        // Toggle the CSS class on the div element
-        if (myBtns.classList.contains('bx-left-arrow-alt')) {
-            myBtns.classList.remove('bx-left-arrow-alt');
-            myBtns.classList.add('bx-right-arrow-alt');
-        } else {
-            myBtns.classList.remove('bx-right-arrow-alt');
-            myBtns.classList.add('bx-left-arrow-alt');
-        }
-    });
+        // Add a click event listener to the div element
+        myBtns.addEventListener('click', function () {
+            // Toggle the CSS class on the div element
+            if (myBtns.classList.contains('bx-left-arrow-alt')) {
+                myBtns.classList.remove('bx-left-arrow-alt');
+                myBtns.classList.add('bx-right-arrow-alt');
+            } else {
+                myBtns.classList.remove('bx-right-arrow-alt');
+                myBtns.classList.add('bx-left-arrow-alt');
+            }
+        });
 
-</script>
+    </script>
 
 
 </body>
