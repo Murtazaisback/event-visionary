@@ -359,6 +359,9 @@
     .header_text p {
         font-size: 17px !important;
     }
+    .mb{
+        margin-bottom: 20px;
+    }
 
     .header_text_yellow {
         color: #FAE100 !important;
@@ -1437,6 +1440,7 @@
         padding-bottom: 0;
         padding-top: 10px;
         padding-left: 0;
+        padding-right: 0;
     }
 
     .left_area_form input {
@@ -1455,7 +1459,8 @@
         margin-top: 10px;
         gap: 85px;
         margin-bottom: 10px;
-        width: 100%;
+        width: 80%;
+        justify-content: space-between;
     }
     .event_inputs1 {
         display: flex;
@@ -1472,6 +1477,9 @@
         margin-top: 10px;
         /* gap: 85px; */
         margin-bottom: 10px;
+    }
+    .event_inputs2 input{
+        width: 77%;
     }
 
     .flexd_div {
@@ -4162,6 +4170,7 @@
 
     .team-member {
         position: relative;
+        text-transform: capitalize;
     }
 
     .team-member img {
@@ -4259,14 +4268,15 @@
         cursor: pointer;
         display: flex;
         align-items: center;
+        justify-content: space-between;
         gap: 5px;
         border-radius: 25px;
         background: #131310;
         margin-top: 20px;
         cursor: pointer;
         /* width: 100%; */
-        padding: 10px 140px 10px 10px;
-        /* width: 215px; */
+        padding: 10px 10px 10px 10px;
+        width: 215px;
 
     }
 
@@ -4545,7 +4555,7 @@
         /* background: red; */
         margin: auto;
         align-items: center;
-        margin-bottom: 200px;
+        margin-bottom: 100px;
 
     }
 
@@ -4572,7 +4582,7 @@
         flex-direction: column;
         align-items: center;
         padding: 30px;
-        gap: 30px;
+        gap: 25px;
         width: 40%;
         border-radius: 10px;
         font-size: 19px;
@@ -4796,7 +4806,7 @@
 
         .header_box {
             flex-direction: column-reverse;
-            gap: 100px;
+            gap: 25px;
             justify-content: center;
             align-items: center;
         }
@@ -4812,13 +4822,13 @@
         }
 
         .header_video {
-            margin-top: -20px;
+            margin-top: -110px;
         }
 
         .header_video video {
             width: 220px;
             height: 220px;
-            margin-top: 100px;
+            margin-top: 110px;
         }
 
         .header_video img {
@@ -5360,6 +5370,14 @@
                 /* flex-wrap: wrap; */
             
         }
+        .service_cards_section{
+            margin-top: 50px;
+        }
+        #Iconss {
+            /* margin: 20px ; */
+            margin-left: 5px !important;
+        }
+    
     }
 
     @media screen and (max-width: 1300px) {
