@@ -5,15 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>create an event</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js">
-    </script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
 
 </head>
 
@@ -23,9 +19,9 @@
     <div class="white_effect"></div>
     <nav class="nav">
         <div class="logo">
-            <a href="../index.html">
+            <a href="./index.html">
 
-                <img src="../imgs/b37371f7c9f89d198dd7ecd158ec99fb.png" alt="Logo Image">
+                <img src="./imgs/b37371f7c9f89d198dd7ecd158ec99fb.png" alt="Logo Image">
             </a>
         </div>
         <div class="hamburger">
@@ -34,27 +30,27 @@
             <div class="line3"></div>
         </div>
         <ul class="navs-links">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../pricing.html">Pricing</a></li>
-            <li><a href="../eventpage.html">EVENTS</a></li>
-            <li><a href="../newevent.html" class="li_active">CREATE EVENT</a></li>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./pricing.html">Pricing</a></li>
+            <li><a href="./eventpage.html">EVENTS</a></li>
+            <li><a href="./newevent.html" class="li_active">CREATE EVENT</a></li>
         </ul>
         <!-- <button class="login-button" href="#">Login</button> -->
         <div class="dropdown">
             <button class="dropbtn">
                 Hero of house
-                <i class='bx bx-chevron-down'></i>
+                <i class='bx bx-chevron-down'  ></i>
             </button>
             <div class="dropdown-content">
-                <a href="../dashboard.html">Dashboard</a>
-                <a href="../event.html">Create an Event</a>
-                <a href="../eventpage.html">Events</a>
-                <a href="../settingdash.html">Settings</a>
+                <a href="./dashboard.html">Dashboard</a>
+                <a href="./event.html">Create an Event</a>
+                <a href="./eventpage.html">Events</a>
+                <a href="./settingdash.html">Settings</a>
                 <a href="#">SMS Campaigns</a>
                 <a href="#">My Account</a>
-
-            </div>
-        </div>
+                
+              </div>
+          </div>
     </nav>
 
 
@@ -75,7 +71,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="../dashboard.html">
+                            <a href="./dashboard.html">
 
 
                                 <i class="dashboard_icon w">
@@ -99,9 +95,9 @@
                         </li>
                         <li>
                             <div class="iocn-link">
-                                <a href="../newevent.html">
-                                    <i class='bx bx-plus-circle yellow_m '></i>
-                                    <span class="link_name yellow_m">CREATE AN EVENT</span>
+                                <a href="./newevent.html">
+                                    <i class='bx bx-plus-circle' style='color:#ffffff'></i>
+                                    <span class="link_name ">CREATE AN EVENT</span>
                                 </a>
                                 <!-- <ul class="sub-menu blank">
                                     <li><a class="link_name" href="./newevent.html">CREATE AN EVENT</a></li>
@@ -111,10 +107,35 @@
                         </li>
                         <li>
                             <div class="iocn-link">
-                                <a href="../event.html">
-                                    <i class='bx bx-calendar' style='color:#ffffff'></i>
-                                    <span class="link_name">EVENTS</span>
-                                </a>
+                                <div class="inner_nav_links " id="">
+                                    <div class="Event_Title yellow_m accordion">
+                                        <div class="yellow_m inner_flex">
+                                            <i class='bx bx-calendar yellow_m '></i>
+                                            EVENTS
+                                        </div>
+                                        <i class='bx bx-down-arrow-alt'></i>
+                                    </div>
+                                    <ul class="upper_nav_i panel">
+                                        
+                                        <a href="./index.html">Draft</a>
+                                        <a href="./about.html" >Archives</a>
+                                        <li class="accordion2 inner_flex">
+                                            Event Title
+                                            <i class='bx bx-down-arrow-alt'></i>
+                                        </li>
+                                        <ul class="inner_nav_items panel2">
+                                            <li class="inner_nav_item"><a href="./sell_tickets.html">Sell Tickets</a></li>
+                                        <li class="inner_nav_item"><a href="./managetwo.html">Hold Seats</a></li>
+                                        <li class="inner_nav_item"><a href="./scan_tickets.html">Scan Tickets</a></li>
+                                        <li class="inner_nav_item"><a href="./attendees.html">Attendees</a></li>
+                                        <li class="inner_nav_item"><a href="./manage_order.html">Manage Orders</a></li>
+                                        <li class="inner_nav_item"><a href="./eventdetails.html">Event Details</a></li>
+                                        <li class="inner_nav_item"><a href="./ticketprices.html">Ticket Prices</a></li>
+                                        <li class="inner_nav_item"><a href="./setting_chart.html" class="yellow_m">Seating Chart</a></li>
+                                        </ul>
+                                    </ul>
+                                    
+                                </div>
                                 <!-- <ul class="sub-menu blank">
                                     <li><a class="link_name" href="./event.html">EVENT</a></li>
                                 </ul> -->
@@ -122,7 +143,7 @@
                             </div>
                         </li>
                         <li>
-                            <a href="../venues.html">
+                            <a href="./venues.html">
                                 <i class='bx bx-map' style='color:#ffffff'></i>
                                 <span class="link_name">VENUES</span>
                             </a>
@@ -141,9 +162,9 @@
                             </ul> -->
                         </li>
                         <li>
-                            <a href="../settingdash.html">
-                                <i class='bx bx-cog'></i>
-                                <span class="link_name">SETTINGS</span>
+                            <a href="./settingdash.html">
+                                <i class='bx bx-cog '></i>
+                                <span class="link_name ">SETTINGS</span>
                             </a>
                             <!-- <ul class="sub-menu blank">
                                 <li><a class="link_name" href="#">SETTINGS</a></li>
@@ -176,7 +197,8 @@
                 <section class="home-section">
                     <div class="home-content">
 
-                        <!-- <i class='bx bx-chevron-right' style='color:#FFE100'></i> -->
+
+
                         <!-- <div class="main_btns_side">
                             <span class="triangle">
                                 <div class="icon">
@@ -189,57 +211,33 @@
                             </span>
                         </div> -->
 
-
-                        <div class="tabs_container">
-                            <div class="w3-bar w3-black tabs_section">
-                                <a class="w3-bar-item w3-button tablink w3-red tab_btn  team-member" href="../newevent.html">1. Enter
-                                    Event Details
-                                    <img src="./imgs/Ellipse 3.png" class="team-member-info " alt="">
-
-
-                                </a>
-                                <a class="w3-bar-item w3-button tablink tab_btn  team-member" href="./Define Ticket Prices.html">2. Define Ticket Prices
-                                    <img src="./imgs/Ellipse 3.png" class="team-member-info" alt="">
-
-
-
-                                </a>
-                                <a class="w3-bar-item w3-button tablink tab_btn  team-member team-member-small" href="./Publish Event.html">3. Publish Event
-                                    <img src="../imgs/Ellipse 3.png" class="team-member-info one_active" alt="">
-
-
-
-                                </a>
-                                <a class="w3-bar-item w3-button tablink tab_btn  team-member team-member-small" href="./share Event.html">4. Share Event
-                                    <img src="./imgs/Ellipse 3.png" class="team-member-info" alt="">
-
-
-                                </a>
-                            </div>
-
-                            <div id="Publish" class="w3-container w3-border city">
-                                <div class="publish_section">
-
-
-                                    <img src="../imgs/Designer - Section 1.png" alt="">
-
-                                    <div class="publish_btns">
-                                        <button class="save_btn">Save Draft</button>
-                                        <a class="w3-bar-item w3-button tablink tab_btn publish_btn" href="./share Event.html">Publish</a>
-                                    </div>
+                        <div class="manage_order_area">
+                            <div class="manage_two_sec">
+                                <div class="manage_two_info">
+                                    <h1>Seating Chart: Venue (Venue Alias)</h1>
+                                    <p>This is the seating chart associated with the venue you created under the alias ‘alias name’.  </p>
+                                    <p>WARNING: It is not recommended that you edit this seating chart while your event is published. If you proceed, your customers may lose reserved seats, and you may risk double bookings. Proceed at your own risk.</p>
                                 </div>
-                            </div>
+                                <div class="manage_iframe">
+                                    Insert iframe here
+                                </div>
 
+                            </div>
+                            <div class="tiktct_mbtns">
+                                <button>Publish Changes</button>
+                            </div>
                         </div>
 
-
                     </div>
-                </section>
-
-                <!-- <div class="one"></div> -->
 
 
             </div>
+            </section>
+
+            <!-- <div class="one"></div> -->
+
+
+        </div>
         </div>
     </main>
 
@@ -277,7 +275,7 @@
             </div>
             <div class="footer_info">
                 <div class="footer_info_imgs">
-                    <img src="../imgs/4736150369408c50504a5b1df6f6db67.png" alt="logo">
+                    <img src="./imgs/4736150369408c50504a5b1df6f6db67.png" alt="logo">
                     <p>support@eventvisionary.com</p>
                     <p>Event Visionary, LLC</p>
                     <p>30 N Gould St, Ste R,<br>
@@ -299,16 +297,16 @@
                     <b>Follow Us.</b>
                     <div class="footer_info_follow_img">
                         <a href="https://www.facebook.com/">
-                            <img src="../imgs/facebook.png" alt="">
+                            <img src="./imgs/facebook.png" alt="">
 
                         </a>
                         <a href="https://www.instagram.com/">
-                            <img src="../imgs/Group.png" alt="">
+                            <img src="./imgs/Group.png" alt="">
 
                         </a>
                         <a href="https://twitter.com/home">
 
-                            <img src="../imgs/twitter.png" alt="">
+                            <img src="./imgs/twitter.png" alt="">
                         </a>
                     </div>
                 </div>
@@ -334,58 +332,94 @@
         sidebarBtn.addEventListener("click", ()=>{
           sidebar.classList.toggle("close");
         });
+
+
+
+        var toggleButton = document.getElementById("Iconss");
+var toggleElement = document.getElementById("none_h");
+
+// Function to toggle the display property
+function toggleDisplay() {
+  if (toggleElement.style.display === "none") {
+    toggleElement.style.display = "flex";
+  } else {
+    toggleElement.style.display = "none";
+  }
+}
+
+// Add a click event listener to the button
+toggleButton.addEventListener("click", toggleDisplay);
         </script>
-    <script src="../js.js"></script>
+    <script src="./js.js"></script>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
     </script>
-
-
-
-
-
-
-
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
-    <script src="../java.js"></script>
-
     <script>
-        function toggleIcon() {
-            var iconElement = document.getElementById("Multi-Level-btn");
-
-            // Check if the current class is "fa-chevron-down"
-            if (iconElement.classList.contains("bx-chevron-down")) {
-                // Change to "fa-chevron-up"
-                iconElement.classList.remove("bx-chevron-down");
-                iconElement.classList.add("bx-chevron-up");
+        const myBtns = document.getElementById('myBtns');
+    
+        // Add a click event listener to the div element
+        myBtns.addEventListener('click', function () {
+            // Toggle the CSS class on the div element
+            if (myBtns.classList.contains('bx-left-arrow-alt')) {
+                myBtns.classList.remove('bx-left-arrow-alt');
+                myBtns.classList.add('bx-right-arrow-alt');
             } else {
-                // Change back to "bx-chevron-down"
-                iconElement.classList.remove("bx-chevron-up");
-                iconElement.classList.add("bx-chevron-down");
+                myBtns.classList.remove('bx-right-arrow-alt');
+                myBtns.classList.add('bx-left-arrow-alt');
             }
+        });
+
+
+
+
+
+
+
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                /* Toggle between adding and removing the "active" class,
+                to highlight the button that controls the panel */
+                this.classList.toggle("active");
+
+                /* Toggle between hiding and showing the active panel */
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "flex") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "flex";
+                }
+            });
         }
+
+        var acc = document.getElementsByClassName("accordion2");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                /* Toggle between adding and removing the "active" class,
+                to highlight the button that controls the panel */
+                this.classList.toggle("active");
+
+                /* Toggle between hiding and showing the active panel */
+                var panel2 = this.nextElementSibling;
+                if (panel2.style.display === "flex") {
+                    panel2.style.display = "none";
+                } else {
+                    panel2.style.display = "flex";
+                }
+            });
+        }
+    
     </script>
-   <script>
-    const myBtns = document.getElementById('myBtns');
-
-    // Add a click event listener to the div element
-    myBtns.addEventListener('click', function () {
-        // Toggle the CSS class on the div element
-        if (myBtns.classList.contains('bx-left-arrow-alt')) {
-            myBtns.classList.remove('bx-left-arrow-alt');
-            myBtns.classList.add('bx-right-arrow-alt');
-        } else {
-            myBtns.classList.remove('bx-right-arrow-alt');
-            myBtns.classList.add('bx-left-arrow-alt');
-        }
-    });
-
-</script>
-
+    
 
 </body>
 

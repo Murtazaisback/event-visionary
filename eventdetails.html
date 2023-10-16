@@ -108,25 +108,34 @@
                         </li>
                         <li>
                             <div class="iocn-link">
-                                <a href="./event.html">
-                                    <i class='bx bx-calendar yellow_m '></i>
-                                    <span class="link_name yellow_m">EVENTS</span>
-                                </a>
-                                <div class="inner_nav_links " id="none_h">
+                                <div class="inner_nav_links " id="">
                                     <div class="Event_Title yellow_m accordion">
-                                        <p class="yellow_m">Event Title</p>
+                                        <div class="yellow_m inner_flex">
+                                            <i class='bx bx-calendar yellow_m '></i>
+                                            EVENTS
+                                        </div>
                                         <i class='bx bx-down-arrow-alt'></i>
                                     </div>
-                                    <ul class="inner_nav_items panel">
-                                        <li class="inner_nav_item"><a href="./sell_tickets.html">Sell Tickets</a></li>
+                                    <ul class="upper_nav_i panel">
+                                        
+                                        <a href="./index.html">Draft</a>
+                                        <a href="./about.html" >Archives</a>
+                                        <li class="accordion2 inner_flex">
+                                            Event Title
+                                            <i class='bx bx-down-arrow-alt'></i>
+                                        </li>
+                                        <ul class="inner_nav_items panel2">
+                                            <li class="inner_nav_item"><a href="./sell_tickets.html">Sell Tickets</a></li>
                                         <li class="inner_nav_item"><a href="./managetwo.html">Hold Seats</a></li>
                                         <li class="inner_nav_item"><a href="./scan_tickets.html">Scan Tickets</a></li>
                                         <li class="inner_nav_item"><a href="./attendees.html">Attendees</a></li>
-                                        <li class="inner_nav_item "><a href="./manage_order.html"  >Manage Orders</a></li>
+                                        <li class="inner_nav_item"><a href="./manage_order.html">Manage Orders</a></li>
                                         <li class="inner_nav_item"><a href="./eventdetails.html" class="yellow_m">Event Details</a></li>
                                         <li class="inner_nav_item"><a href="./ticketprices.html">Ticket Prices</a></li>
                                         <li class="inner_nav_item"><a href="./setting_chart.html">Seating Chart</a></li>
+                                        </ul>
                                     </ul>
+                                    
                                 </div>
                                 <!-- <ul class="sub-menu blank">
                                     <li><a class="link_name" href="./event.html">EVENT</a></li>
@@ -135,7 +144,7 @@
                             </div>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="./venues.html">
                                 <i class='bx bx-map' style='color:#ffffff'></i>
                                 <span class="link_name">VENUES</span>
                             </a>
@@ -204,7 +213,7 @@
 
 
                         <div class="tabs_container">
-                            <div >
+                            <div class="Details">
                                     <div class="event_from">
 
                                     
@@ -217,18 +226,67 @@
                                         <div class="event_inputs">
                                             <div class="event_in">
                                                 <label for="">Event Type</label>
-                                                <input type="text">
+                                                <!-- <div class="dropdown2">
+                                                    <button class="dropbtn2">
+                                                        Event
+                                                        <i class='bx bx-chevron-down'></i>
+                                                    </button>
+                                                    <div class="dropdown-content2">
+                                                        <a href="./dashboard.html">Event</a>
+                                                        <a href="./event.html">Create an Event</a>
+                                                        <a href="">Events</a>
+                                                        <a href="#">Event</a>
+                                                        <a href="#">SMS Event</a>
+                                                        <a href="#">My Event</a>
+
+                                                    </div>
+                                                </div> -->
+                                                <select name="" id="" class="new_menu">
+                                                    <option value="f">Event Type</option>
+                                                    <option value="f"> Type</option>
+                                                    <option value="f">jnj</option>
+                                                </select>
+
                                             </div>
-                                            <div class="event_in">
+                                            <div class="event_in ">
                                                 <label for="">Category</label>
-                                                <input type="text">
+                                                <!-- <div class="dropdown2">
+                                                    <button class="dropbtn2">
+                                                        Category
+                                                        <i class='bx bx-chevron-down'></i>
+                                                    </button>
+                                                    <div class="dropdown-content2">
+                                                        <a href="./dashboard.html">Category</a>
+                                                        <a href="./event.html"> Category</a>
+                                                        <a href="">Category</a>
+                                                        <a href="#">Category</a>
+                                                        <a href="#">SMS Campaigns</a>
+                                                        <a href="#">My Account</a>
+
+                                                    </div>
+                                                </div> -->
+                                                <select name="" id="" class="new_menu">
+                                                    <option value="f" disabled selected>Category</option>
+                                                    <option value="f">Concert</option>
+                                                    <option value="f">Dance Performance</option>
+                                                    <option value="f">Festival</option>
+                                                    <option value="f">Theatre</option>
+                                                    <option value="f">Contest</option>
+                                                    <option value="f">Live Speaker Panel</option>
+                                                    <option value="f">Nightclub Event</option>
+                                                    <option value="f">Other</option>
+                                                </select>
                                             </div>
                                         </div>
 
                                         <div class="event_inputs">
                                             <div class="event_in">
                                                 <label for="">Venue</label>
-                                                <input type="text">
+                                                <select name="" id="" class="new_menu">
+                                                    <option value="f">Venue</option>
+                                                    <option value="f">knn</option>
+                                                    <option value="f">lknnojnoj</option>
+                                                </select>
                                             </div>
                                             <div class="event_in">
                                                 <a class="" href="#popup20">
@@ -350,14 +408,14 @@
                                                     <input type="checkbox"  class="Present 1" name="attedence[]" id ="1" value="A">
                                                     <span class="slider round"></span>
                                                 </label>
-                                                <p>This event is an All Ages event</p>
+                                                <p>This event is for persons 18+</p>
                                             </div>
                                             <div class="age_row">
                                                 <label class="switch">
                                                     <input type="checkbox" class="Present 1" name="attedence[]" id ="1"  value="H" >
                                                     <span class="slider round"></span>
                                                 </label>
-                                                <p>This event is an All Ages event</p>
+                                                <p>This event is for persons 21+</p>
                                             </div>
                                         </form>
                                         </div>
@@ -569,6 +627,25 @@
                     panel.style.display = "none";
                 } else {
                     panel.style.display = "flex";
+                }
+            });
+        }
+
+        var acc = document.getElementsByClassName("accordion2");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                /* Toggle between adding and removing the "active" class,
+                to highlight the button that controls the panel */
+                this.classList.toggle("active");
+
+                /* Toggle between hiding and showing the active panel */
+                var panel2 = this.nextElementSibling;
+                if (panel2.style.display === "flex") {
+                    panel2.style.display = "none";
+                } else {
+                    panel2.style.display = "flex";
                 }
             });
         }

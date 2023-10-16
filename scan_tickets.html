@@ -134,7 +134,7 @@
                             </div>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="./venues.html">
                                 <i class='bx bx-map' style='color:#ffffff'></i>
                                 <span class="link_name">VENUES</span>
                             </a>
@@ -376,6 +376,25 @@ toggleButton.addEventListener("click", toggleDisplay);
                     panel.style.display = "none";
                 } else {
                     panel.style.display = "flex";
+                }
+            });
+        }
+
+        var acc = document.getElementsByClassName("accordion2");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                /* Toggle between adding and removing the "active" class,
+                to highlight the button that controls the panel */
+                this.classList.toggle("active");
+
+                /* Toggle between hiding and showing the active panel */
+                var panel2 = this.nextElementSibling;
+                if (panel2.style.display === "flex") {
+                    panel2.style.display = "none";
+                } else {
+                    panel2.style.display = "flex";
                 }
             });
         }

@@ -107,27 +107,34 @@
                         </li>
                         <li>
                             <div class="iocn-link">
-                                <a href="./event.html">
-                                    <i class='bx bx-calendar yellow_m '></i>
-                                    <span class="link_name yellow_m">EVENTS</span>
-                                </a>
-                                <div class="inner_nav_links" id="none_h">
+                                <div class="inner_nav_links " id="">
                                     <div class="Event_Title yellow_m accordion">
-                                        <p class="yellow_m">Event Title</p>
+                                        <div class="yellow_m inner_flex">
+                                            <i class='bx bx-calendar yellow_m '></i>
+                                            EVENTS
+                                        </div>
                                         <i class='bx bx-down-arrow-alt'></i>
                                     </div>
-                                    <ul class="inner_nav_items panel">
-                                        <li class="inner_nav_item"><a href="./sell_tickets.html" class="yellow_m">Sell
-                                                Tickets</a></li>
+                                    <ul class="upper_nav_i panel">
+                                        
+                                        <a href="./index.html">Draft</a>
+                                        <a href="./about.html" >Archives</a>
+                                        <li class="accordion2 inner_flex">
+                                            Event Title
+                                            <i class='bx bx-down-arrow-alt'></i>
+                                        </li>
+                                        <ul class="inner_nav_items panel2">
+                                            <li class="inner_nav_item"><a href="./sell_tickets.html" class="yellow_m">Sell Tickets</a></li>
                                         <li class="inner_nav_item"><a href="./managetwo.html">Hold Seats</a></li>
                                         <li class="inner_nav_item"><a href="./scan_tickets.html">Scan Tickets</a></li>
                                         <li class="inner_nav_item"><a href="./attendees.html">Attendees</a></li>
                                         <li class="inner_nav_item"><a href="./manage_order.html">Manage Orders</a></li>
                                         <li class="inner_nav_item"><a href="./eventdetails.html">Event Details</a></li>
                                         <li class="inner_nav_item"><a href="./ticketprices.html">Ticket Prices</a></li>
-                                        <li class="inner_nav_item"><a href="./setting_chart.html">Seating Charts</a>
-                                        </li>
+                                        <li class="inner_nav_item"><a href="./setting_chart.html">Seating Chart</a></li>
+                                        </ul>
                                     </ul>
+                                    
                                 </div>
                                 <!-- <ul class="sub-menu blank">
                                     <li><a class="link_name" href="./event.html">EVENT</a></li>
@@ -136,7 +143,7 @@
                             </div>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="./venues.html">
                                 <i class='bx bx-map' style='color:#ffffff'></i>
                                 <span class="link_name">VENUES</span>
                             </a>
@@ -680,7 +687,24 @@
                 }
             });
         }
+        var acc = document.getElementsByClassName("accordion2");
+        var i;
 
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                /* Toggle between adding and removing the "active" class,
+                to highlight the button that controls the panel */
+                this.classList.toggle("active");
+
+                /* Toggle between hiding and showing the active panel */
+                var panel2 = this.nextElementSibling;
+                if (panel2.style.display === "flex") {
+                    panel2.style.display = "none";
+                } else {
+                    panel2.style.display = "flex";
+                }
+            });
+        }
 
     </script>
 

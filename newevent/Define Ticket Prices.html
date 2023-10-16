@@ -121,7 +121,7 @@
                             </div>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="../venues.html">
                                 <i class='bx bx-map' style='color:#ffffff'></i>
                                 <span class="link_name">VENUES</span>
                             </a>
@@ -408,7 +408,7 @@
                                                         </div>
                                                     </div>
                                                     <div>
-                                                        <button type="reset" class="start_tax_caption"
+                                                        <button type="reset" class="start_tax_caption" onclick="changeColor(this)"
                                                             id="toggleButton2"> Start Ticket Sales Immediately</button>
 
                                                     </div>
@@ -425,7 +425,7 @@
                                                         </div>
                                                     </div>
                                                     <div>
-                                                        <button type="reset" class="start_tax_caption  "
+                                                        <button type="reset" class="start_tax_caption  " onclick="changeColor(this)"
                                                             id="toggleButton3">End Ticket Sales Immediately</button>
 
                                                     </div>
@@ -689,13 +689,31 @@ var divToHide2 = document.getElementById("ds");
 
 
 
+var prevButton = null;
 
+function changeColor(button) {
+  if (prevButton !== button) {
+    if (prevButton !== null) {
+      prevButton.style.backgroundColor = 'black';
+    }
+    button.style.backgroundColor = '#FFE100';
+    prevButton = button;
+  } else {
+    if (button.style.backgroundColor === 'yellow') {
+      button.style.backgroundColor = 'black';
+    } else {
+      button.style.backgroundColor = '#FFE100';
+    }
+  }
+}
 
 $(function() {
   $("#Sales_tax").on("click",function() {
     $(".tax_inputs").toggle(this.checked);
   });
 });
+
+
 
 
 

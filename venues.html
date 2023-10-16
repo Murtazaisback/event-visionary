@@ -114,9 +114,9 @@
                             </div>
                         </li>
                         <li>
-                            <a href="./venues.html">
-                                <i class='bx bx-map' style='color:#ffffff'></i>
-                                <span class="link_name">VENUES</span>
+                            <a href="#">
+                                <i class='bx bx-map yellow_m' style='color:#ffffff'></i>
+                                <span class="link_name yellow_m">VENUES</span>
                             </a>
                             <!-- <ul class="sub-menu blank">
                                 <li><a class="link_name" href="#">VENUES</a></li>
@@ -125,8 +125,8 @@
                         <li>
                             <a href="#">
                                 <!-- <box-icon name='money-withdraw' color='#ffffff' ></box-icon> -->
-                                <i class='bx bx-money-withdraw yellow_m' style='color:#ffffff'></i>
-                                <span class="link_name yellow_m">REPORTS</span>
+                                <i class='bx bx-money-withdraw ' style='color:#ffffff'></i>
+                                <span class="link_name ">REPORTS</span>
                             </a>
                             <!-- <ul class="sub-menu blank">
                                 <li><a class="link_name" href="#">REPORTS</a></li>
@@ -185,26 +185,15 @@
                         <div class="manage_order_area">
 
                             <div class="manage_order_section">
-                                <h1>Manage Orders: Event Title Show Here</h1>
+                                <h1>Venues</h1>
                                 <form action="" class="manage_order_form">
     
                                     <div class="manage_filter_row">
                                         <div class="manage_filter_in">
-                                            <input type="search" placeholder="Search by name, order #, or amount...">
+                                            <input type="search" placeholder="Search by name">
                                             <i class='bx bx-search'></i>
                                         </div>
                                     </div>
-                                        <div class="manage_filter_d">
-                                            <div class="filterid">
-                                                <label for="">Filter by Date:</label>
-                                                <input type="date">
-                                            </div>
-                                            --
-                                            <div class="filterid">
-                                                <input type="date">
-                                            </div>
-                                        </div>
-                                        <button class="manage_filter_btn">Export CSV</button>
     
                                 </form>
                                     
@@ -213,54 +202,161 @@
                                     <table class="manage_filter_tables">
                                         <thead>
                                         <tr>
-                                            <th>Event Title</th>
-                                            <th>Event Start Date</th>
-                                            <th># of Tickets Sold</th>
-                                            <th>Total Revenue</th>
-                                            <th>Total Service Fees</th>
-                                            <th>Taxes</th>
+                                            <th>Venue Name</th>
+                                            <th>Date Created</th>
+                                            <th>Alias</th>
+                                            <th>Active Events</th>
+                                            <th></th>
+                                            <th></th>
                                         </tr>
                                         </thead>
                                         <tbody>
                                         <tr>
-                                            <td>event 1 title ...</td>
+                                            <td class="flex_data">
+                                                <p>Venue 1 name</p>
+                                                <p class="c_grey">123 Test Address, <br>Test city, State 90001</p>
+                                            </td>
                                             <td>11/20/2026</td>
-                                            <td>157</td>
-                                            <td>$3140.00</td>
-                                            <td>$100.67</td>
-                                            <td>$50.10</td>
+                                            <td>House of Blues 1</td>
+                                            <td>1</td>
+                                            <td><a href="./venuec.html">Edit Details</a></td>
+                                            <td>
+                                                <a class="table_e" href="#popup22">Edit Seating</a>
+                                                <div id="popup22" class="overlay">
+                                                    <div class="main_edit">
+
+                                                        <div class="add_venue">
+                                                            <a class="jclose" href="#">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="25"
+                                                                    height="25" viewBox="0 0 25 25" fill="none">
+                                                                    <g clip-path="url(#clip0_517_27)">
+                                                                        <path
+                                                                            d="M12.5 0.703125C5.97656 0.703125 0.703125 5.97656 0.703125 12.5C0.703125 19.0234 5.97656 24.3359 12.5 24.3359C19.0234 24.3359 24.3359 19.0234 24.3359 12.5C24.3359 5.97656 19.0234 0.703125 12.5 0.703125ZM12.5 22.5781C6.95313 22.5781 2.46094 18.0469 2.46094 12.5C2.46094 6.95313 6.95313 2.46094 12.5 2.46094C18.0469 2.46094 22.5781 6.99219 22.5781 12.5391C22.5781 18.0469 18.0469 22.5781 12.5 22.5781Z"
+                                                                            fill="#FAE100" />
+                                                                        <path
+                                                                            d="M16.0937 8.86719C15.7422 8.51562 15.1953 8.51562 14.8438 8.86719L12.5 11.25L10.1172 8.86719C9.76562 8.51562 9.21875 8.51562 8.86719 8.86719C8.51562 9.21875 8.51562 9.76562 8.86719 10.1172L11.25 12.5L8.86719 14.8828C8.51562 15.2344 8.51562 15.7812 8.86719 16.1328C9.02344 16.2891 9.25781 16.4062 9.49219 16.4062C9.72656 16.4062 9.96094 16.3281 10.1172 16.1328L12.5 13.75L14.8828 16.1328C15.0391 16.2891 15.2734 16.4062 15.5078 16.4062C15.7422 16.4062 15.9766 16.3281 16.1328 16.1328C16.4844 15.7812 16.4844 15.2344 16.1328 14.8828L13.75 12.5L16.1328 10.1172C16.4453 9.76562 16.4453 9.21875 16.0937 8.86719Z"
+                                                                            fill="#FAE100" />
+                                                                    </g>
+                                                                    <defs>
+                                                                        <clipPath id="clip0_517_27">
+                                                                            <rect width="25" height="25" fill="white" />
+                                                                        </clipPath>
+                                                                    </defs>
+                                                                </svg>
+                                                            </a>
+                                                            <h2>Edit Venue Details</h2>
+                                                            <form action="" class="edit_ve">
+                                                                <label for="">Venue Name</label>
+                                                                <input type="text">
+                                                                <label for="">Venue Alias</label>
+                                                                <input type="text">
+                                                                <h3>Venue Location</h3>
+                                                                <label for="">Address</label>
+                                                                <input type="text">
+                                                                <div class="sub_venue">
+                                                                    <div class="sub_vi">
+    
+                                                                        <label for="">City</label>
+                                                                        <input type="text">
+                                                                    </div>
+                                                                    <div class="sub_vi">
+    
+                                                                        <label for="">State</label>
+                                                                        <input type="text">
+                                                                    </div>
+    
+                                                                </div>
+                                                                <div class="sub_venue">
+                                                                    <div class="sub_vi">
+    
+                                                                        <label for="">Postal Code</label>
+                                                                        <input type="text">
+                                                                    </div>
+                                                                    <div class="sub_vi">
+    
+                                                                        <label for="">Country</label>
+                                                                        <input type="text">
+                                                                    </div>
+    
+                                                                </div>
+                                                                <button type="submit" class="btn">Save Changes</button>
+                                                            </form>
+    
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
                                         </tr>
                                         <tr>
-                                            <td>event 1 title ...</td>
+                                            <td class="flex_data">
+                                                <p>Venue 1 name</p>
+                                                <p class="c_grey">123 Test Address, <br>Test city, State 90001</p>
+                                            </td>
                                             <td>11/20/2026</td>
-                                            <td>157</td>
-                                            <td>$3140.00</td>
-                                            <td>$100.67</td>
-                                            <td>$50.10</td>
-                                        </tr>
-                                        <tr>
-                                            <td>event 1 title ...</td>
-                                            <td>11/20/2026</td>
-                                            <td>157</td>
-                                            <td>$3140.00</td>
-                                            <td>$100.67</td>
-                                            <td>$50.10</td>
-                                        </tr>
-                                        <tr>
-                                            <td>event 1 title ...</td>
-                                            <td>11/20/2026</td>
-                                            <td>157</td>
-                                            <td>$3140.00</td>
-                                            <td>$100.67</td>
-                                            <td>$50.10</td>
-                                        </tr>
-                                        <tr class="yellow_tables">
-                                            <td></td>
-                                            <td>Totals</td>
-                                            <td>678</td>
-                                            <td>$12,890.50</td>
-                                            <td>$410.17</td>
-                                            <td>$50.10</td>
+                                            <td>House of Blues 1</td>
+                                            <td>1</td>
+                                            <td><a href="./venuec.html">Edit Details</a></td>
+                                            <td>
+                                                <a class="table_e" href="#popup23">Edit Seating</a>
+                                                <div id="popup23" class="overlay">
+                                                    <div class="main_edit">
+
+                                                        <div class="add_venue">
+                                                            <a class="jclose" href="#">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                                                                    <g clip-path="url(#clip0_762_261)">
+                                                                      <path d="M12.5 0.703125C5.97656 0.703125 0.703125 5.97656 0.703125 12.5C0.703125 19.0234 5.97656 24.3359 12.5 24.3359C19.0234 24.3359 24.3359 19.0234 24.3359 12.5C24.3359 5.97656 19.0234 0.703125 12.5 0.703125ZM12.5 22.5781C6.95313 22.5781 2.46094 18.0469 2.46094 12.5C2.46094 6.95313 6.95313 2.46094 12.5 2.46094C18.0469 2.46094 22.5781 6.99219 22.5781 12.5391C22.5781 18.0469 18.0469 22.5781 12.5 22.5781Z" fill="#FAE100"/>
+                                                                      <path d="M16.0937 8.86719C15.7422 8.51562 15.1953 8.51562 14.8438 8.86719L12.5 11.25L10.1172 8.86719C9.76562 8.51562 9.21875 8.51562 8.86719 8.86719C8.51562 9.21875 8.51562 9.76562 8.86719 10.1172L11.25 12.5L8.86719 14.8828C8.51562 15.2344 8.51562 15.7812 8.86719 16.1328C9.02344 16.2891 9.25781 16.4062 9.49219 16.4062C9.72656 16.4062 9.96094 16.3281 10.1172 16.1328L12.5 13.75L14.8828 16.1328C15.0391 16.2891 15.2734 16.4062 15.5078 16.4062C15.7422 16.4062 15.9766 16.3281 16.1328 16.1328C16.4844 15.7812 16.4844 15.2344 16.1328 14.8828L13.75 12.5L16.1328 10.1172C16.4453 9.76562 16.4453 9.21875 16.0937 8.86719Z" fill="#FAE100"/>
+                                                                    </g>
+                                                                    <defs>
+                                                                      <clipPath id="clip0_762_261">
+                                                                        <rect width="25" height="25" fill="white"/>
+                                                                      </clipPath>
+                                                                    </defs>
+                                                                  </svg>
+                                                            </a>
+                                                            <h2>Edit Venue Details</h2>
+                                                            <form action="" class="edit_ve">
+                                                                <label for="">Venue Name</label>
+                                                                <input type="text">
+                                                                <label for="">Venue Alias</label>
+                                                                <input type="text">
+                                                                <h3>Venue Location</h3>
+                                                                <label for="">Address</label>
+                                                                <input type="text">
+                                                                <div class="sub_venue">
+                                                                    <div class="sub_vi">
+    
+                                                                        <label for="">City</label>
+                                                                        <input type="text">
+                                                                    </div>
+                                                                    <div class="sub_vi">
+    
+                                                                        <label for="">State</label>
+                                                                        <input type="text">
+                                                                    </div>
+    
+                                                                </div>
+                                                                <div class="sub_venue">
+                                                                    <div class="sub_vi">
+    
+                                                                        <label for="">Postal Code</label>
+                                                                        <input type="text">
+                                                                    </div>
+                                                                    <div class="sub_vi">
+    
+                                                                        <label for="">Country</label>
+                                                                        <input type="text">
+                                                                    </div>
+    
+                                                                </div>
+                                                                <button type="submit" class="btn">Save Changes</button>
+                                                            </form>
+    
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
                                         </tr>
                                         </tbody>
                                     </table>
@@ -403,4 +499,4 @@
 
 </body>
 
-</html>
+</html> 
