@@ -9,6 +9,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 
 </head>
@@ -35,6 +36,7 @@
             <li><a href="./eventpage.html">EVENTS</a></li>
             <li><a href="./newevent.html" class="li_active">CREATE EVENT</a></li>
         </ul>
+        <!-- <button class="login-button" href="#">Login</button> -->
         <div class="dropdown">
             <button class="dropbtn">
                 Hero of house
@@ -109,9 +111,9 @@
                                 <div class="inner_nav_links " id="">
                                     <div class="flex_option_row accordion" onclick="changeClass()">
 
-                                        <i class='bx bx-calendar  '></i>
+                                        <i class='bx bx-calendar yellow_m '></i>
                                         <div class="Event_Title  ">
-                                            <div class=" inner_flex">
+                                            <div class=" inner_flex yellow_m ">
                                                 EVENTS
                                             </div>
                                             <i class='bx bxs-chevron-down'  id="myElement"></i>
@@ -120,16 +122,16 @@
                                     <ul class="upper_nav_i panel inner_nav_items2">
                                         
                                         <a href="./archived.html" class="">Archived</a>
-                                        <a href="./Draft.html">Draft</a>
+                                        <a href="./Draft.html" class="yellow_m">Draft</a>
                                         <a href="./eventdash.html">
-                                            <li class=" inner_flex">
+
+                                            <li class=" inner_flex"  >
                                                 Event Title
                                                 <i class='bx bxs-chevron-down'  id="myElement2"></i>
                                             </li>
-
                                         </a>
                                         <ul class="inner_nav_items panel2">
-                                            <li class="inner_nav_item"><a href="./sell_tickets.html" class="">Sell Tickets</a></li>
+                                            <li class="inner_nav_item"><a href="./sell_tickets.html">Sell Tickets</a></li>
                                         <li class="inner_nav_item"><a href="./managetwo.html">Hold Seats</a></li>
                                         <li class="inner_nav_item"><a href="./scan_tickets.html">Scan Tickets</a></li>
                                         <li class="inner_nav_item"><a href="./attendees.html">Attendees</a></li>
@@ -149,8 +151,8 @@
                         </li>
                         <li>
                             <a href="./venues.html">
-                                <i class='bx bx-map' style='color:#ffffff'></i>
-                                <span class="link_name">VENUES</span>
+                                <i class='bx bx-map '></i>
+                                <span class="link_name ">VENUES</span>
                             </a>
                             <!-- <ul class="sub-menu blank">
                                 <li><a class="link_name" href="#">VENUES</a></li>
@@ -168,8 +170,8 @@
                         </li>
                         <li>
                             <a href="./settingdash.html">
-                                <i class='bx bx-cog yellow_m'></i>
-                                <span class="link_name yellow_m">SETTINGS</span>
+                                <i class='bx bx-cog '></i>
+                                <span class="link_name ">SETTINGS</span>
                             </a>
                             <!-- <ul class="sub-menu blank">
                                 <li><a class="link_name" href="#">SETTINGS</a></li>
@@ -188,9 +190,9 @@
                         </li>
                         <li>
                             <div class="iocn-link">
-                                <a href="./myaccount.html">
-                                    <i class='bx bx-user' style='color:#ffffff'></i>
-                                    <span class="link_name">MY ACCOUNT</span>
+                                <a href="#">
+                                    <i class='bx bx-user ' ></i>
+                                    <span class="link_name ">MY ACCOUNT</span>
                                 </a>
                                 <!-- <ul class="sub-menu blank">
                                     <li><a class="link_name" href="#">MY ACCOUNT</a></li>
@@ -204,134 +206,120 @@
 
 
 
-                         <!-- <div class="main_btns_side">
-                        <span class="triangle">
-                        <div class="icon">
+                        <!-- <div class="main_btns_side">
+                            <span class="triangle">
+                                <div class="icon">
 
-                                <input type="checkbox" id="animation1">
-                                <label for="animation1">
-                                    <div class="arrow"></div>
-                                </label>
-                            </div>
-                        </span>
-                        
-                        
-                    </div> -->
-                    <div class="main_setting">
-                        <h1>Settings</h1>
-                        <div class="main_set">
-                            <div class="main_set_left">
-                                <h2>Payout Method</h2>
-                                <p>Choose an option below to connect your account to a payout method. This is how you will receive payouts for customers’ ticket purchases.</p>
-                                <div class="set_icons">
-                                    <img src="./imgs/stripe 3.png" alt="">
-                                    <img src="./imgs/Square_LogoLockup_White 1.png" alt="">
+                                    <input type="checkbox" id="animation1">
+                                    <label for="animation1">
+                                        <div class="arrow"></div>
+                                    </label>
                                 </div>
-                                <div class="logo2">
-                                    <p>logo</p>
-                                    <img src="./imgs/Rectangle 74.png" alt="">
-                                </div>
-                                
-                                <p>Display Contact Information</p>
-                                <div class="info_tdisplay">
-                                    <div class="itdisplay">
-                                        <label class="switch">
-                                            <input type="checkbox" checked>
-                                            <span class="slider round"></span>
-                                        </label>
-                                        <label for="">Email:</label>
-                                        <input type="email">
+                            </span>
+                        </div> -->
 
-                                    </div>
-                                    <div class="itdisplay">
-                                        <label class="switch">
-                                            <input type="checkbox" checked>
-                                            <span class="slider round"></span>
-                                        </label>
-                                        <label for="">Phone:</label>
-                                        <input type="number">
+                        <div class="manage_order_area">
 
-                                    </div>
-                                </div>
-                               
-
-                            </div>
-                            <div class="main_set_right">
-                                <form action="">
-                                    <h2>Payment Method</h2>
-                                    <p>Billing Information</p>
-                                    <p>You will only be charged in the event you elect to absorb service fees or use our SMS campaigns service.</p>
-                                    <div class="set_form">
-                                        <div class="set_formI">
-
-                                            <label for="">First Name</label>
-                                            <input type="text">
-                                        </div>
-                                        <div class="set_formI">
-
-                                            <label for="">Last Name</label>
-                                            <input type="text">
+                            <div class="manage_order_section">
+                                <h1>Draft(3)</h1>
+                                <form action="" class="manage_order_form">
+    
+                                    <div class="manage_filter_row">
+                                        <div class="manage_filter_in">
+                                            <input type="search" placeholder="Search by name">
+                                            <i class='bx bx-search'></i>
                                         </div>
                                     </div>
-                                    <div class="set_formI">
-                                        
-                                        <label for="">Billing Address</label>
-                                        <input type="text" class="in_long">
-                                    </div>
-                                    
-                                    <div class="set_form">
-                                        <div class="set_formI">
-
-                                            <label for=""> City</label>
-                                            <input type="text">
-                                        </div>
-                                        <div class="set_formI">
-
-                                            <label for="">State </label>
-                                            <input type="text">
-                                        </div>
-                                    </div>
-                                    
-                                    
-                                    <div class="set_form">  
-                                        <div class="set_form2">
-                                            
-                                            <label for=""> Postal Code</label>
-                                            <input type="text">
-                                        </div>
-                                    </div>
-                                    <div class="set_formI">
-                                        
-                                        <label for="">Credit/Debit Card</label>
-                                        <input type="text" class="in_long">
-                                    </div>
-
-
-                                    <div class="set_form">
-                                        <div class="set_form2">
-
-                                            <label for=""> Security Code</label>
-                                            <input type="text">
-                                        </div>
-                                        <div class="set_form2">
-
-                                            <label for="">Exp Date</label>
-                                            <input type="text">
-                                        </div>
-                                    </div>
+    
                                 </form>
-                                <button type="submit" class="setting_save cursor_pointer">Save</button>
-                                
-                            </div>
+                                    
+                                </div>
+                                   <div class="custom_table">
+                                    <div class="ct_head">
+                                        <p class="ct_main_data">Event Title</p>
+                                        <p class="mar_l">Date Created</p>
+                                        <p class="none">.</p>
+                                        <p class="none">.</p>
+                                    </div>
+                                    <div class="ct_body">
+                                        <div class="ct_tr_container">
 
+                                            <div class="ct_tr ">
+                                                <div class="ct_main_data">
+                                                    <p>Event Title 1</p>
+                                                    <p class="c_grey">Event start time - end time</p>
+                                                </div>
+                                                <p class="mar_l">11/10/2025</p>
+                                                <p class=" cursor_pointer">
+                                                    <a href="./newevent.html" class="yellow_m">
+                                                        Edit
+
+                                                    </a>
+                                                </p>
+    
+    
+                                                
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16" fill="none" class="cursor_pointer">
+                                                    <g clip-path="url(#clip0_799_205)">
+                                                      <path d="M3.04688 15.5H11.9531V2.84375H12.6562V2.375H9.375V0.5H5.625V2.375H2.34375V2.84375H3.04688V15.5ZM6.09375 0.96875H8.90625V2.375H6.09375V0.96875ZM11.4844 2.84375V15.0312H3.51562V2.84375H11.4844Z" fill="#FF0000"/>
+                                                      <path d="M6.32812 5.1875H5.85938V13.1562H6.32812V5.1875Z" fill="#FF0000"/>
+                                                      <path d="M9.14062 5.1875H8.67188V13.1562H9.14062V5.1875Z" fill="#FF0000"/>
+                                                    </g>
+                                                    <defs>
+                                                      <clipPath id="clip0_799_205">
+                                                        <rect width="15" height="15" fill="white" transform="translate(0 0.5)"/>
+                                                      </clipPath>
+                                                    </defs>
+                                                  </svg>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="ct_tr_container">
+
+                                            <div class="ct_tr ">
+                                                <div class="ct_main_data">
+                                                    <p>Event Title 1</p>
+                                                    <p class="c_grey">Event start time - end time</p>
+                                                </div>
+                                                <p class="mar_l">11/10/2025</p>
+                                                <p class=" cursor_pointer">
+                                                    <a href="./newevent.html" class="yellow_m">
+                                                        Edit
+
+                                                    </a>
+                                                </p>
+    
+    
+                                                
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16" fill="none" class="cursor_pointer">
+                                                    <g clip-path="url(#clip0_799_205)">
+                                                      <path d="M3.04688 15.5H11.9531V2.84375H12.6562V2.375H9.375V0.5H5.625V2.375H2.34375V2.84375H3.04688V15.5ZM6.09375 0.96875H8.90625V2.375H6.09375V0.96875ZM11.4844 2.84375V15.0312H3.51562V2.84375H11.4844Z" fill="#FF0000"/>
+                                                      <path d="M6.32812 5.1875H5.85938V13.1562H6.32812V5.1875Z" fill="#FF0000"/>
+                                                      <path d="M9.14062 5.1875H8.67188V13.1562H9.14062V5.1875Z" fill="#FF0000"/>
+                                                    </g>
+                                                    <defs>
+                                                      <clipPath id="clip0_799_205">
+                                                        <rect width="15" height="15" fill="white" transform="translate(0 0.5)"/>
+                                                      </clipPath>
+                                                    </defs>
+                                                  </svg>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                         </div>
-                    </div>
-                </section>
 
-                <!-- <div class="one"></div> -->
+                    </div>
 
 
             </div>
+            </section>
+
+            <!-- <div class="one"></div> -->
+
+
+        </div>
         </div>
     </main>
 
@@ -434,9 +422,11 @@
     </script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init();
+        AOS.init();
     </script>
-   <script>
+
+
+<script>
     const myBtns = document.getElementById('myBtns');
 
     // Add a click event listener to the div element
@@ -453,24 +443,26 @@
 
 
     var acc = document.getElementsByClassName("accordion");
-        var i;
+var i;
 
-        for (i = 0; i < acc.length; i++) {
-            acc[i].addEventListener("click", function () {
-                /* Toggle between adding and removing the "active" class,
-                to highlight the button that controls the panel */
-                this.classList.toggle("active");
+for (i = 0; i < acc.length; i++) {
+    var panel = acc[i].nextElementSibling;
+    panel.style.display = "flex"; // set initial display property to flex
 
-                /* Toggle between hiding and showing the active panel */
-                var panel = this.nextElementSibling;
-                if (panel.style.display === "flex") {
-                    panel.style.display = "none";
-                } else {
-                    panel.style.display = "flex";
-                }
-            });
+    acc[i].addEventListener("click", function () {
+        /* Toggle between adding and removing the "active" class,
+        to highlight the button that controls the panel */
+        this.classList.toggle("active");
+
+        /* Toggle between hiding and showing the active panel */
+        panel = this.nextElementSibling;
+        if (panel.style.display === "flex") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "flex";
         }
-
+    });
+}
         var acc = document.getElementsByClassName("accordion2");
         var i;
 
@@ -489,9 +481,12 @@
                 }
             });
         }
+
+
+
+     
 </script>
 <script src="./java.js"></script>
-
 
 </body>
 

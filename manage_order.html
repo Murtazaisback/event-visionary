@@ -108,27 +108,30 @@
                         <li>
                             <div class="iocn-link">
                                 <div class="inner_nav_links " id="">
-                                    <div class="Event_Title yellow_m accordion">
-                                        <div class="yellow_m inner_flex">
-                                            <i class='bx bx-calendar yellow_m '></i>
-                                            EVENTS
+                                    <div class="flex_option_row accordion" onclick="changeClass()">
+
+                                        <i class='bx bx-calendar yellow_m '></i>
+                                        <div class="Event_Title yellow_m ">
+                                            <div class="yellow_m inner_flex">
+                                                EVENTS
+                                            </div>
+                                            <i class='bx bxs-chevron-down' id="myElement"></i>
                                         </div>
-                                        <i class='bx bx-down-arrow-alt'></i>
                                     </div>
-                                    <ul class="upper_nav_i panel">
+                                    <ul class="upper_nav_i panel inner_nav_items2">
                                         
-                                        <a href="./index.html">Draft</a>
-                                        <a href="./about.html" >Archives</a>
-                                        <li class="accordion2 inner_flex">
+                                        <a href="./archived.html" class="">Archived</a>
+                                        <a href="./Draft.html">Draft</a>
+                                        <li class="accordion2 inner_flex" onclick="changeClass2()">
                                             Event Title
-                                            <i class='bx bx-down-arrow-alt'></i>
+                                            <i class='bx bxs-chevron-down' id="myElement2"></i>
                                         </li>
                                         <ul class="inner_nav_items panel2">
                                             <li class="inner_nav_item"><a href="./sell_tickets.html">Sell Tickets</a></li>
                                         <li class="inner_nav_item"><a href="./managetwo.html">Hold Seats</a></li>
                                         <li class="inner_nav_item"><a href="./scan_tickets.html">Scan Tickets</a></li>
                                         <li class="inner_nav_item"><a href="./attendees.html">Attendees</a></li>
-                                        <li class="inner_nav_item"><a href="./manage_order.html" class="yellow_m">Manage Orders</a></li>
+                                        <li class="inner_nav_item"><a href="./manage_order.html"  class="yellow_m">Manage Orders</a></li>
                                         <li class="inner_nav_item"><a href="./eventdetails.html">Event Details</a></li>
                                         <li class="inner_nav_item"><a href="./ticketprices.html">Ticket Prices</a></li>
                                         <li class="inner_nav_item"><a href="./setting_chart.html">Seating Chart</a></li>
@@ -152,7 +155,7 @@
                             </ul> -->
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="./reports.html">
                                 <!-- <box-icon name='money-withdraw' color='#ffffff' ></box-icon> -->
                                 <i class='bx bx-money-withdraw' style='color:#ffffff'></i>
                                 <span class="link_name">REPORTS</span>
@@ -183,7 +186,7 @@
                         </li>
                         <li>
                             <div class="iocn-link">
-                                <a href="#">
+                                <a href="./myaccount.html">
                                     <i class='bx bx-user' style='color:#ffffff'></i>
                                     <span class="link_name">MY ACCOUNT</span>
                                 </a>
@@ -212,9 +215,13 @@
                         </div> -->
 
                         <div class="manage_order_area">
+                            <a class="arc_btn" href="./archived.html">
+                                <i class='bx bx-chevron-left'></i>
+                                <p>Back</p>
+                            </a>
 
                             <div class="manage_order_section">
-                                <h1>Manage Orders: Event Title Show Here</h1>
+                                <h1>Archived: Event Title: Manage Orders</h1>
                                 <form action="" class="manage_order_form">
     
                                     <div class="manage_filter_row">
@@ -320,10 +327,10 @@
                                                                             <a class="" href="#popup9">Partial Refund</a>
                                                                         </div>
                                                                         <div class="box ">
-                                                                            <a class="" href="#popup9">Send eTickets</a>
+                                                                            <a class="" href="#popup27">Send eTickets</a>
                                                                         </div>
                                                                         <div class="box ">
-                                                                            <a class="" href="#popup9">Add Ticket(s)</a>
+                                                                            <a class="" href="#popup28">Add Ticket(s)</a>
                                                                         </div>
                                                                     </div>
                                                                   </div>
@@ -390,27 +397,70 @@
                                                 </div>
                                             </div>
                                             <div id="popup10" class="overlay ">
-                                                <a class="jclose" href="#">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="25"
-                                                        height="25" viewBox="0 0 25 25" fill="none">
-                                                        <g clip-path="url(#clip0_517_27)">
-                                                            <path
-                                                                d="M12.5 0.703125C5.97656 0.703125 0.703125 5.97656 0.703125 12.5C0.703125 19.0234 5.97656 24.3359 12.5 24.3359C19.0234 24.3359 24.3359 19.0234 24.3359 12.5C24.3359 5.97656 19.0234 0.703125 12.5 0.703125ZM12.5 22.5781C6.95313 22.5781 2.46094 18.0469 2.46094 12.5C2.46094 6.95313 6.95313 2.46094 12.5 2.46094C18.0469 2.46094 22.5781 6.99219 22.5781 12.5391C22.5781 18.0469 18.0469 22.5781 12.5 22.5781Z"
-                                                                fill="#FAE100" />
-                                                            <path
-                                                                d="M16.0937 8.86719C15.7422 8.51562 15.1953 8.51562 14.8438 8.86719L12.5 11.25L10.1172 8.86719C9.76562 8.51562 9.21875 8.51562 8.86719 8.86719C8.51562 9.21875 8.51562 9.76562 8.86719 10.1172L11.25 12.5L8.86719 14.8828C8.51562 15.2344 8.51562 15.7812 8.86719 16.1328C9.02344 16.2891 9.25781 16.4062 9.49219 16.4062C9.72656 16.4062 9.96094 16.3281 10.1172 16.1328L12.5 13.75L14.8828 16.1328C15.0391 16.2891 15.2734 16.4062 15.5078 16.4062C15.7422 16.4062 15.9766 16.3281 16.1328 16.1328C16.4844 15.7812 16.4844 15.2344 16.1328 14.8828L13.75 12.5L16.1328 10.1172C16.4453 9.76562 16.4453 9.21875 16.0937 8.86719Z"
-                                                                fill="#FAE100" />
-                                                        </g>
-                                                        <defs>
-                                                            <clipPath id="clip0_517_27">
-                                                                <rect width="25" height="25" fill="white" />
-                                                            </clipPath>
-                                                        </defs>
-                                                    </svg>
-                                                </a>
                                                 <div class="main_popupre">
-                                                    <p>Refund Successfully Initiated</p>
+                                                    <a class="jclose" href="#">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="25"
+                                                            height="25" viewBox="0 0 25 25" fill="none">
+                                                            <g clip-path="url(#clip0_517_27)">
+                                                                <path
+                                                                    d="M12.5 0.703125C5.97656 0.703125 0.703125 5.97656 0.703125 12.5C0.703125 19.0234 5.97656 24.3359 12.5 24.3359C19.0234 24.3359 24.3359 19.0234 24.3359 12.5C24.3359 5.97656 19.0234 0.703125 12.5 0.703125ZM12.5 22.5781C6.95313 22.5781 2.46094 18.0469 2.46094 12.5C2.46094 6.95313 6.95313 2.46094 12.5 2.46094C18.0469 2.46094 22.5781 6.99219 22.5781 12.5391C22.5781 18.0469 18.0469 22.5781 12.5 22.5781Z"
+                                                                    fill="#FAE100" />
+                                                                <path
+                                                                    d="M16.0937 8.86719C15.7422 8.51562 15.1953 8.51562 14.8438 8.86719L12.5 11.25L10.1172 8.86719C9.76562 8.51562 9.21875 8.51562 8.86719 8.86719C8.51562 9.21875 8.51562 9.76562 8.86719 10.1172L11.25 12.5L8.86719 14.8828C8.51562 15.2344 8.51562 15.7812 8.86719 16.1328C9.02344 16.2891 9.25781 16.4062 9.49219 16.4062C9.72656 16.4062 9.96094 16.3281 10.1172 16.1328L12.5 13.75L14.8828 16.1328C15.0391 16.2891 15.2734 16.4062 15.5078 16.4062C15.7422 16.4062 15.9766 16.3281 16.1328 16.1328C16.4844 15.7812 16.4844 15.2344 16.1328 14.8828L13.75 12.5L16.1328 10.1172C16.4453 9.76562 16.4453 9.21875 16.0937 8.86719Z"
+                                                                    fill="#FAE100" />
+                                                            </g>
+                                                            <defs>
+                                                                <clipPath id="clip0_517_27">
+                                                                    <rect width="25" height="25" fill="white" />
+                                                                </clipPath>
+                                                            </defs>
+                                                        </svg>
+                                                    </a>
+                                                <p>Refund Successfully Initiated</p>
                                                     <p>Your customer should receive their refund within 3-5 business days </p>
+                                                </div>
+                                            </div>
+                                            <div id="popup9" class="overlay ">
+                                                <div class="main_popupre">
+                                                    <a class="mclose" href="#">
+                                                       <i class="bx x"></i>
+                                                    </a>
+                                                    <div class="popup_center">
+
+                                                        <h3>Enter Partial Refund Amount</h3>
+                                                        <p class="sm">Order Total: $200.59</p>
+                                                        <div class="inputs_pup">
+                                                                <label for="">Partial Refund Amount:</label>
+                                                                <input type="text">
+                                                        </div>
+                                                    </div>
+                                                    <div class="main_popupre_btns">
+                                                        <a href="" class="tran">Cancel</a>
+                                                        <div class="box ">
+                                                            <a class="yellow" href="#">Refund</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="popup27" class="overlay ">
+                                                <div class="main_popupre">
+                                                    <a class="mclose" href="#">
+                                                       <i class="bx x"></i>
+                                                    </a>
+                                                    <div class="popup_center">
+
+                                                        <h3>Send e-Tickets</h3>
+                                                        <div class="inputs_pup lg">
+                                                                <label for="">Email:</label>
+                                                                <input type="text">
+                                                        </div>
+                                                    </div>
+                                                    <div class="main_popupre_btns">
+                                                        <a href="" class="tran">Cancel</a>
+                                                        <div class="box ">
+                                                            <a class="yellow" href="#">Send e-Tickets</a>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </tr>
@@ -524,16 +574,16 @@
                     <b>Follow Us.</b>
                     <div class="footer_info_follow_img">
                         <a href="https://www.facebook.com/">
-                            <img src="./imgs/facebook.png" alt="">
+                            <i class='bx bxl-facebook'></i>
 
                         </a>
                         <a href="https://www.instagram.com/">
-                            <img src="./imgs/Group.png" alt="">
+                            <i class='bx bxl-instagram'  ></i>
 
                         </a>
                         <a href="https://twitter.com/home">
 
-                            <img src="./imgs/twitter.png" alt="">
+                            <i class='bx bxl-twitter'  ></i>
                         </a>
                     </div>
                 </div>
@@ -625,7 +675,7 @@
             });
         }
     </script>
-    
+    <script src="./java.js"></script>
 
 </body>
 

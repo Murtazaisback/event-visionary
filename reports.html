@@ -103,10 +103,41 @@
                         </li>
                         <li>
                             <div class="iocn-link">
-                                <a href="./event.html">
-                                    <i class='bx bx-calendar' style='color:#ffffff'></i>
-                                    <span class="link_name">EVENTS</span>
-                                </a>
+                                <div class="inner_nav_links " id="">
+                                    <div class="flex_option_row accordion" onclick="changeClass()">
+
+                                        <i class='bx bx-calendar  '></i>
+                                        <div class="Event_Title  ">
+                                            <div class=" inner_flex">
+                                                EVENTS
+                                            </div>
+                                            <i class='bx bxs-chevron-down'  id="myElement"></i>
+                                        </div>
+                                    </div>
+                                    <ul class="upper_nav_i panel inner_nav_items2">
+                                        
+                                        <a href="./archived.html" class="">Archived</a>
+                                        <a href="./Draft.html">Draft</a>
+                                        <a href="./eventdash.html">
+                                            <li class=" inner_flex">
+                                                Event Title
+                                                <i class='bx bxs-chevron-down'  id="myElement2"></i>
+                                            </li>
+
+                                        </a>
+                                        <ul class="inner_nav_items panel2">
+                                            <li class="inner_nav_item"><a href="./sell_tickets.html" class="">Sell Tickets</a></li>
+                                        <li class="inner_nav_item"><a href="./managetwo.html">Hold Seats</a></li>
+                                        <li class="inner_nav_item"><a href="./scan_tickets.html">Scan Tickets</a></li>
+                                        <li class="inner_nav_item"><a href="./attendees.html">Attendees</a></li>
+                                        <li class="inner_nav_item"><a href="./manage_order.html">Manage Orders</a></li>
+                                        <li class="inner_nav_item"><a href="./eventdetails.html" >Event Details</a></li>
+                                        <li class="inner_nav_item"><a href="./ticketprices.html">Ticket Prices</a></li>
+                                        <li class="inner_nav_item"><a href="./setting_chart.html">Seating Chart</a></li>
+                                        </ul>
+                                    </ul>
+                                    
+                                </div>
                                 <!-- <ul class="sub-menu blank">
                                     <li><a class="link_name" href="./event.html">EVENT</a></li>
                                 </ul> -->
@@ -154,7 +185,7 @@
                         </li>
                         <li>
                             <div class="iocn-link">
-                                <a href="#">
+                                <a href="./myaccount.html">
                                     <i class='bx bx-user' style='color:#ffffff'></i>
                                     <span class="link_name">MY ACCOUNT</span>
                                 </a>
@@ -336,16 +367,16 @@
                     <b>Follow Us.</b>
                     <div class="footer_info_follow_img">
                         <a href="https://www.facebook.com/">
-                            <img src="./imgs/facebook.png" alt="">
+                            <i class='bx bxl-facebook'></i>
 
                         </a>
                         <a href="https://www.instagram.com/">
-                            <img src="./imgs/Group.png" alt="">
+                            <i class='bx bxl-instagram'  ></i>
 
                         </a>
                         <a href="https://twitter.com/home">
 
-                            <img src="./imgs/twitter.png" alt="">
+                            <i class='bx bxl-twitter'  ></i>
                         </a>
                     </div>
                 </div>
@@ -398,7 +429,47 @@
         }
     });
 
+
+    var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                /* Toggle between adding and removing the "active" class,
+                to highlight the button that controls the panel */
+                this.classList.toggle("active");
+
+                /* Toggle between hiding and showing the active panel */
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "flex") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "flex";
+                }
+            });
+        }
+
+        var acc = document.getElementsByClassName("accordion2");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                /* Toggle between adding and removing the "active" class,
+                to highlight the button that controls the panel */
+                this.classList.toggle("active");
+
+                /* Toggle between hiding and showing the active panel */
+                var panel2 = this.nextElementSibling;
+                if (panel2.style.display === "flex") {
+                    panel2.style.display = "none";
+                } else {
+                    panel2.style.display = "flex";
+                }
+            });
+        }
+
 </script>
+<script src="./java.js"></script>
 
 
 </body>
