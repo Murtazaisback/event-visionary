@@ -23,28 +23,28 @@ hideRadio.addEventListener("change", function() {
 
 
 
-function changeClass() {
-  var element = document.getElementById("myElement");
-  if (element.classList.contains("bxs-chevron-down")) {
-    element.classList.remove("bxs-chevron-down");
-    element.classList.add("bxs-chevron-up");
-  } else {
-    element.classList.remove("bxs-chevron-up");
-    element.classList.add("bxs-chevron-down");
-  }
-}
+// function changeClass() {
+//   var element = document.getElementById("myElement");
+//   if (element.classList.contains("bxs-chevron-down")) {
+//     element.classList.remove("bxs-chevron-down");
+//     element.classList.add("bxs-chevron-up");
+//   } else {
+//     element.classList.remove("bxs-chevron-up");
+//     element.classList.add("bxs-chevron-down");
+//   }
+// }
 
 
-function changeClass2() {
-  var element = document.getElementById("myElement2");
-  if (element.classList.contains("bxs-chevron-down")) {
-    element.classList.remove("bxs-chevron-down");
-    element.classList.add("bxs-chevron-up");
-  } else {
-    element.classList.remove("bxs-chevron-up");
-    element.classList.add("bxs-chevron-down");
-  }
-}
+// function changeClass2() {
+//   var element = document.getElementById("myElement2");
+//   if (element.classList.contains("bxs-chevron-down")) {
+//     element.classList.remove("bxs-chevron-down");
+//     element.classList.add("bxs-chevron-up");
+//   } else {
+//     element.classList.remove("bxs-chevron-up");
+//     element.classList.add("bxs-chevron-down");
+//   }
+// }
 
 
 
